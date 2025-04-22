@@ -1,2 +1,0 @@
-./comp < test_case1.in
-./comp < test_case2.in
