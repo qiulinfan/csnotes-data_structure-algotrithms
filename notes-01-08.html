@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Overview - CS Notes</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "notes-01-08.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> CS Notes
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">notes 01 08</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#lab-1">Lab 1</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#lab">Lab 流程</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#caen">关于 CAEN</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mac-mission-control">Mac mission control</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#makefile">Makefile</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#perf">Perf</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#valgrind">Valgrind</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vectorreserve">vector::reserve</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#c-int-xy-1-initialization-syntax">一个冷知识: C++并不支持 int x,y = 1 的 initialization syntax</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#getopt_long">getopt_long</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lec-2">Lec 2</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#heap">heap</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vectordeque-make_heap-priority-queue">vector/deque + make_heap 实现Priority Queue</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stl-built-in-pq">使用 stl built-in 的 PQ</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lec-3">Lec 3</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#amortized-complexity">Amortized complexity</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lec-5-recursion">Lec 5 - Recursion</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fourth-condition-of-master-thm">Fourth Condition of Master Thm</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#algorithm-problem-2d-table-search">Algorithm Problem: 2D table search</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lec-6-arrays-containers">Lec 6 - Arrays &amp; Containers</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#2d-dynamic-array-with-double-ptr">2D dynamic array with double ptr</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pros-and-cons-of-fixeddymc-array">Pros and Cons of fixed/dymc array</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#c11-range-based-for-loop">C++11 range-based for loop</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#algorithm-problem-finding-the-majority-element">Algorithm Problem: Finding the majority element</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#containers">Containers</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#double-ptr-instead-of-random-access-to-traversal">使用 double ptr instead of random access to traversal</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#what-to-storeget-in-a-container">What to Store/Get in a container</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#use-dynamic-array-in-c">Use dynamic array in C++</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#best-deep-copy-copy-swap-method">Best deep copy 方法：copy-swap method</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#c11-move-ctor-for-r-value">C++11: Move ctor for r-value</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#move-syntax">Move syntax 的好处</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#array-class-operation-insert">Array class operation: [] 和 insert</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lab-2">Lab 2</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#algorithm-problem-find-1k-th-element-of-linked-list">Algorithm Problem: Find 1/k ^th element of Linked List</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#algorithm-problem-sort-a-stack">Algorithm Problem: Sort a Stack</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#algorithm-problem-stack-queue">Algorithm Problem: 用两个 stack 写一个 queue</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lec-7-stl">Lec 7 - STL</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#types-of-iterators">Types of Iterators</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#stl-iterators">STL: 每个容器都支持的 iterators</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#memory-overhead">Memory overhead</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#simple-syntax-for-3-dim-vector">simple syntax for 3 dim vector</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#functor">Functor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lambda">Lambda</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#lambda-functor">使用 lambda 表达式起到 functor 一样的作用</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#captures-list">captures list 的用例</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#algorithm-problem-functor">Algorithm problem: functor</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stdrandom">std::random</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lec-8-heap-pq-heapsort">Lec 8 - Heap &amp; PQ &amp; Heapsort</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tree">tree</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#complete-binary-tree-array">Complete Binary tree: 可以用 array 表示</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#heap-ordered-tree">Heap-ordered tree</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#heap_1">Heap</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#alter-element-fixup-fixdown-heap">Alter element: fixup(), fixdown() 以保持 Heap 结构</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#priority-queue">Priority Queue</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#heapify">Heapify</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#algorithm-heapsort">Algorithm: Heapsort</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lab-1">Lab 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-2">Lec 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-3">Lec 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-5-recursion">Lec 5 - Recursion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-6-arrays-containers">Lec 6 - Arrays &amp; Containers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lab-2">Lab 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-7-stl">Lec 7 - STL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-8-heap-pq-heapsort">Lec 8 - Heap &amp; PQ &amp; Heapsort</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">notes 09 16</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="notes-09-16.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-9-ordered-sorted-containers">Lec 9 - ordered &amp; sorted containers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-10-elementary-sorting">Lec 10 Elementary Sorting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-11-quicksort">Lec 11: Quicksort</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-12-mergesort">Lec 12: Mergesort</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-13-strings-and-seqs">Lec 13 strings and seqs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lab-5-sorting">Lab 5 (Sorting)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lab-6-maps-and-sets">Lab 6 (Maps and sets)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-15-hashing">Lec 15: hashing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-16-hash-collision-resolution">Lec 16: Hash Collision Resolution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lab-7-hashing">Lab 7 Hashing</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">notes 17 25</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="notes-17-25.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-17-trees">Lec 17 (Trees)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-18-bst-avl-tree">Lec 18 (BST &amp; AVL tree)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-19-graphs">Lec 19 (Graphs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-20-mst">Lec 20 (MST)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lab-09-graphs">Lab 09 (Graphs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-21-algorithm-family">Lec 21 (Algorithm Family)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-22-backtracking-branch-and-bound">Lec 22 (Backtracking &amp;&amp; branch and bound)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-23-dp">Lec 23 (DP)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-24-knapsack-and-floyds-algorithm">Lec 24 (Knapsack and Floyd's algorithm)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lab-10-dp">Lab 10 (DP)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CS Notes</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">notes 01 08</li>
+      <li class="breadcrumb-item active">Overview</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div class="toc">
+<ul>
+<li><a href="#281-record">281-record</a><ul>
+<li><a href="#lab-1">Lab 1</a><ul>
+<li><a href="#lab">Lab 流程</a></li>
+<li><a href="#caen">关于 CAEN</a></li>
+<li><a href="#mac-mission-control">Mac mission control</a></li>
+<li><a href="#makefile">Makefile</a></li>
+<li><a href="#perf">Perf</a></li>
+<li><a href="#valgrind">Valgrind</a></li>
+<li><a href="#vectorreserve">vector::reserve</a></li>
+<li><a href="#c-int-xy-1-initialization-syntax">一个冷知识: C++并不支持 int x,y = 1 的 initialization syntax</a></li>
+<li><a href="#getopt_long">getopt_long</a></li>
+</ul>
+</li>
+<li><a href="#lec-2">Lec 2</a><ul>
+<li><a href="#heap">heap</a></li>
+<li><a href="#vectordeque-make_heap-priority-queue">vector/deque + make_heap 实现Priority Queue</a></li>
+<li><a href="#stl-built-in-pq">使用 stl built-in 的 PQ</a></li>
+</ul>
+</li>
+<li><a href="#lec-3">Lec 3</a><ul>
+<li><a href="#amortized-complexity">Amortized complexity</a></li>
+</ul>
+</li>
+<li><a href="#lec-5-recursion">Lec 5 - Recursion</a><ul>
+<li><a href="#fourth-condition-of-master-thm">Fourth Condition of Master Thm</a><ul>
+<li><a href="#algorithm-problem-2d-table-search">Algorithm Problem: 2D table search</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#lec-6-arrays-containers">Lec 6 - Arrays &amp; Containers</a><ul>
+<li><a href="#2d-dynamic-array-with-double-ptr">2D dynamic array with double ptr</a></li>
+<li><a href="#pros-and-cons-of-fixeddymc-array">Pros and Cons of fixed/dymc array</a><ul>
+<li><a href="#c11-range-based-for-loop">C++11 range-based for loop</a></li>
+<li><a href="#algorithm-problem-finding-the-majority-element">Algorithm Problem: Finding the majority element</a></li>
+</ul>
+</li>
+<li><a href="#containers">Containers</a><ul>
+<li><a href="#double-ptr-instead-of-random-access-to-traversal">使用 double ptr instead of random access to traversal</a></li>
+<li><a href="#what-to-storeget-in-a-container">What to Store/Get in a container</a></li>
+<li><a href="#use-dynamic-array-in-c">Use dynamic array in C++</a></li>
+</ul>
+</li>
+<li><a href="#best-deep-copy-copy-swap-method">Best deep copy 方法：copy-swap method</a></li>
+<li><a href="#c11-move-ctor-for-r-value">C++11: Move ctor for r-value</a><ul>
+<li><a href="#move-syntax">Move syntax 的好处</a></li>
+</ul>
+</li>
+<li><a href="#array-class-operation-insert">Array class operation: [] 和 insert</a></li>
+</ul>
+</li>
+<li><a href="#lab-2">Lab 2</a><ul>
+<li><a href="#algorithm-problem-find-1k-th-element-of-linked-list">Algorithm Problem: Find 1/k ^th element of Linked List</a></li>
+<li><a href="#algorithm-problem-sort-a-stack">Algorithm Problem: Sort a Stack</a></li>
+<li><a href="#algorithm-problem-stack-queue">Algorithm Problem: 用两个 stack 写一个 queue</a></li>
+</ul>
+</li>
+<li><a href="#lec-7-stl">Lec 7 - STL</a><ul>
+<li><a href="#types-of-iterators">Types of Iterators</a><ul>
+<li><a href="#stl-iterators">STL: 每个容器都支持的 iterators</a></li>
+</ul>
+</li>
+<li><a href="#memory-overhead">Memory overhead</a><ul>
+<li><a href="#simple-syntax-for-3-dim-vector">simple syntax for 3 dim vector</a></li>
+</ul>
+</li>
+<li><a href="#functor">Functor</a></li>
+<li><a href="#lambda">Lambda</a><ul>
+<li><a href="#lambda-functor">使用 lambda 表达式起到 functor 一样的作用</a></li>
+<li><a href="#captures-list">captures list 的用例</a></li>
+<li><a href="#algorithm-problem-functor">Algorithm problem: functor</a></li>
+</ul>
+</li>
+<li><a href="#stdrandom">std::random</a></li>
+</ul>
+</li>
+<li><a href="#lec-8-heap-pq-heapsort">Lec 8 - Heap &amp; PQ &amp; Heapsort</a><ul>
+<li><a href="#tree">tree</a><ul>
+<li><a href="#complete-binary-tree-array">Complete Binary tree: 可以用 array 表示</a></li>
+<li><a href="#heap-ordered-tree">Heap-ordered tree</a></li>
+</ul>
+</li>
+<li><a href="#heap_1">Heap</a><ul>
+<li><a href="#alter-element-fixup-fixdown-heap">Alter element: fixup(), fixdown() 以保持 Heap 结构</a></li>
+</ul>
+</li>
+<li><a href="#priority-queue">Priority Queue</a></li>
+<li><a href="#heapify">Heapify</a></li>
+<li><a href="#algorithm-heapsort">Algorithm: Heapsort</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="281-record">281-record</h1>
+<h2 id="lab-1">Lab 1</h2>
+<h3 id="lab">Lab 流程</h3>
+<p>发现其实很简单：</p>
+<ol>
+<li>
+<p>在 lab 上做好 notes 并完成手写</p>
+</li>
+<li>
+<p>在 lab 后直接 assignment pdf，一步一步做就可以。其中一部分是 quiz 一部分是 autograder.</p>
+</li>
+</ol>
+<h3 id="caen">关于 CAEN</h3>
+<p>直接在 VSCode 里打开</p>
+<pre><code class="language-sh">ssh rynnefan@login.engin.umich.edu
+</code></pre>
+<p>连接到 remote 服务器，我自己的 remote 文件夹。VSCode 有一个非常人性化的点是会记得 remote 文件夹。打开了一次 lab1 之后下次打开 VSCode Remote 就有一个通往这个 /home/rynnefan/eecs-281/lab1 的快捷方式了。</p>
+<p>我们的东西必须兼容 CAEN 的环境才能得分。其实并不是一个必要的事情，因为远程 linux 和本地 linux 差别不大。但是这样的好处就是在 mac 上我也可以编辑用 linux 环境了。</p>
+<p>在本地运行，把本地的文件夹一整个复制到 remote 的一个文件夹中。：</p>
+<pre><code class="language-sh">scp -r ../auto-Music-Sorting rynnefan@login.engin.umich.edu:/home/rynnefan/eecs-281/lab1
+</code></pre>
+<p>如果要传回本地就倒过来，在本地运行:</p>
+<pre><code class="language-sh">scp -r rynnefan@login.engin.umich.edu:/home/rynnefan/eecs-281/lab1/example-Perf ~/desktop
+</code></pre>
+<p>如果只要复制一个文件就去掉 <code>-r</code>.</p>
+<p>这个东西麻烦就在于不能使用 rsa免密。。。。每次连接远程都需要输入密码</p>
+<h3 id="mac-mission-control">Mac mission control</h3>
+<p>F3 直接打开 mac mission control 来控制桌面会快很多。。</p>
+<h3 id="makefile">Makefile</h3>
+<p>看起来很长但其实只要做四件事情：</p>
+<ol>
+<li>根据 spec 更改 <code>IDENTIFIER</code></li>
+<li>根据 spec 更改 <code>EXECUTABLE</code> </li>
+<li>把 <code>PROJECTFILE</code> 更改成有 main 函数的那个 cpp 文件（直接把 main 放在 EXECUTABLE 同名 cpp 里就可以）</li>
+<li>更改 dependency </li>
+</ol>
+<h3 id="perf">Perf</h3>
+<p>Perf 是一个 linux 系统的 profiling tool. </p>
+<p>必须要 -g3 flag 才可以运行。不过我们的 Makefile 的 debug 模式已经加上了。</p>
+<p>所以先 make debug：</p>
+<pre><code class="language-sh">make debug
+perf record -F 1000 --call-graph dwarf -e cycles:u ./executable_debug
+perf report
+</code></pre>
+<p>用 symbol 表示只显示用户程序中的库和符号</p>
+<pre><code class="language-sh">perf report --sort symbol
+</code></pre>
+<h3 id="valgrind">Valgrind</h3>
+<p>Valgrind 可以检测未初始化的变量；out of bound 的读写；memory leak；</p>
+<p>并且可以 memory profiling.</p>
+<p>运行十分方便。</p>
+<pre><code class="language-sh">make valgrind
+valgrind ./executable_valgrind
+</code></pre>
+<p>用 more 指令可以让结果分页，这样不会刷屏。more 模式下，空格进入下一页，enter进入下一行</p>
+<pre><code class="language-sh">valgrind ./exeutable_valgrind |&amp; more
+</code></pre>
+<h3 id="vectorreserve"><code>vector::reserve</code></h3>
+<p>如果你试图向 <code>vector</code> 中插入超过 <code>capacity()</code> 的元素，那么 <code>vector</code> 会进行内存重新分配。</p>
+<p><code>reserve</code> 只是增加了 <code>vector</code> 的容量（即 <code>capacity()</code>），但不会增加或减少 <code>vector</code> 中的元素。如果提前 reserve，那么当 <code>vector</code> 的元素数量达到预留的容量时，不会触发内存重新分配操作，避免性能上的开销。</p>
+<h3 id="c-int-xy-1-initialization-syntax">一个冷知识: C++并不支持 <code>int x,y = 1</code> 的 initialization syntax</h3>
+<pre><code>int x, y = 1;
+</code></pre>
+<p>In this case, only <code>y</code> is initialized to <code>1</code>, while <code>x</code> remains uninitialized. </p>
+<p>但是可以:</p>
+<pre><code>int x=1, y=1;
+</code></pre>
+<h3 id="getopt_long"><code>getopt_long</code></h3>
+<pre><code class="language-c++">{&quot;level&quot;, required_argument, nullptr, 'l'}
+</code></pre>
+<p><code>required-argument</code> 表示如果加了这个 option 必须带参数；<code>option-argument</code> 表示这个 option 可以不带参数; <code>no_argument</code> 表示这个 option 并没有参数.</p>
+<p>(<code>nullptr</code>) is used to indicate there’s no flag variable associated with this option (or another specific value can be used if a variable is needed).</p>
+<p><code>l</code> 是这个 option 的简写.</p>
+<pre><code class="language-c++">    while ((option = getopt_long(argc, argv, &quot;p:h&quot;, longOpts, &amp;option_index)) != -1) {
+        switch (option) {
+            case 'p':
+                //...
+                case 'h':
+                    //...
+</code></pre>
+<p>其中 <code>p:h</code> 表示所有的选项。 一个选项之后的冒号取决于：</p>
+<ul>
+<li><strong>无冒号</strong>：<code>no_argument</code>，选项不接受参数。例如，<code>p</code> 表示选项 <code>-p</code> 不需要任何参数。</li>
+<li><strong>一个冒号 (<code>:</code>)</strong>：<code>required-argument</code>， 选项 <strong>必须</strong> 带有一个参数。例如，<code>d:</code> 表示选项 <code>-d</code> 需要一个参数。</li>
+<li><strong>两个冒号 (<code>::</code>)</strong>：<code>option-argument</code>，选项的参数是 <strong>可选的</strong>。例如，<code>o::</code> 表示选项 <code>-o</code> 可以有一个参数，但它是可选的。</li>
+</ul>
+<h2 id="lec-2">Lec 2</h2>
+<h3 id="heap">heap</h3>
+<p>heap 是一种树形数据结构，分为 max_heap 和 min_heap. </p>
+<p><strong>最大堆（Max Heap）</strong>：在最大堆中，每个节点的值都大于或等于其子节点的值。因此，根节点始终包含整个堆中的最大值。</p>
+<p><strong>最小堆（Min Heap）</strong>：在最小堆中，每个节点的值都小于或等于其子节点的值。因此，根节点始终包含整个堆中的最小值。</p>
+<pre><code>   10
+  /  \
+ 5    3
+/ \  / \
+4  1 2  0
+//max heap
+</code></pre>
+<p>c++ 具有 built-in 的 make_heap 函数，对于所有支持 random access 的 container 都可以使用，<code>make_heap()</code> 是一种排序方式，允许你<strong>使用自己定义的比较函数来对一个 container 进行 heap 排序.</strong></p>
+<p>三个参数： container 的 begin(), container的 end() 以及比较函数。第三个参数可以忽略, for built in data </p>
+<pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;  // 包含 heap 操作的函数
+struct Task {
+    int id;
+    int priority;
+    Task(int id, int priority) : id(id), priority(priority) {}
+};
+// 比较函数，定义最小堆的排序规则
+bool compareTasks(const Task&amp; t1, const Task&amp; t2) {
+    return t1.priority &gt; t2.priority;
+}
+int main() {
+    std::vector&lt;Task&gt; tasks;
+    tasks.emplace_back(1, 10);
+    tasks.emplace_back(2, 5);
+    tasks.emplace_back(3, 20);
+
+    // 创建最小堆
+    std::make_heap(tasks.begin(), tasks.end(), compareTasks);
+
+    // 新加入元素, 重新调整堆.
+    v.push_back(25);
+    std::push_heap(v.begin(), v.end()); // 重新调整堆
+
+    std::cout &lt;&lt; &quot;Tasks in heap order:&quot; &lt;&lt; std::endl;
+}
+</code></pre>
+<h3 id="vectordeque-make_heap-priority-queue">vector/deque + <code>make_heap</code> 实现Priority Queue</h3>
+<p>PQ 的 underlying container 是赋予 heap 性质的 vector</p>
+<pre><code class="language-c++">class PriorityQueue {
+public:
+    // 插入元素到堆中，并调整堆结构
+    void push(Task element) {
+        data.push_back(element);           // 插入到 vector 的末尾
+        std::push_heap(data.begin(), data.end(), comp); // 调整堆结构（上浮）
+    }
+    // 删除堆顶元素，并调整堆结构
+    void pop() {
+        std::pop_heap(data.begin(), data.end(), comp); // 最大元素放到末尾
+        data.pop_back();                        // 删除末尾元素
+    }
+
+    T&amp; top() const {return data.front();}
+    bool empty() const {return data.empty();}
+    sizer_t size() const {return data.size();}
+
+private:
+    std::vector&lt;Task&gt; data; // 用于存储堆的 vector 
+    Compare comp; // 比较函数
+};
+</code></pre>
+<h3 id="stl-built-in-pq">使用 stl built-in 的 PQ</h3>
+<p>三个参数，一个是 data type，还有两个可选，一个是想要用什么 container（默认vector），一个是比较函数（默认从大到小比较 built-in data type）.</p>
+<pre><code class="language-c++">std::priority_queue&lt;Task, std::vector&lt;Task&gt;, CompareTask&gt; queue;
+</code></pre>
+<h2 id="lec-3">Lec 3</h2>
+<h3 id="amortized-complexity">Amortized complexity</h3>
+<p>我们知道 resize vector 的 complexity 是 O(n)，而平时的 push 操作则是 O(1). 但是对于一个 linear growth 的 vector，通常每当我们 push O(n) 个元素，才会 resize 一次.</p>
+<p>我们可以把一系列操作 amortize(摊销) 来获得“这一系列操作的平均 complexity".</p>
+<p>比如 linear growth 的 vector 的 "push" 这一操作的 amortized complexity 是 
+$$
+\frac{O(n) + n \cdot O(1)}{n} = O(1)
+$$
+的 amortized cost.</p>
+<p>但是 constant growth 的 vector 则是：</p>
+<p>假设 vector 每次 grow const <span class="arithmatex">\(c\)</span> 个单位</p>
+<p>那么 constant growth 的 vector 的 "push" 这一操作的 amortized complexity 是 
+$$
+\frac{O(n) + c \cdot O(1)}{c} = O(n)
+$$
+这就是为什么我们通常采取 linear growth 而不是 const growth.</p>
+<h2 id="lec-5-recursion">Lec 5 - Recursion</h2>
+<h3 id="fourth-condition-of-master-thm">Fourth Condition of Master Thm</h3>
+<p>我们知道 master thm apply to:
+$$
+T(n) = aT({n \over b}) + f(n) \;\;, f(n) \in \Theta(n^c)
+$$
+直观上 a 越大，b 越小，f(n) 越大则 <span class="arithmatex">\(T\)</span> 越大. 可以得到:</p>
+<p>如果 <span class="arithmatex">\(a &gt; b^c\)</span>，那么  <span class="arithmatex">\(a,b\)</span> 的组合 dominate， $T(n) \in \Theta(n^{\log_b a}) $</p>
+<p>如果 <span class="arithmatex">\(a = b^c\)</span>，那么 <span class="arithmatex">\(a,b\)</span> 的组合和 <span class="arithmatex">\(f\)</span> 同时 take dominance，<span class="arithmatex">\(T(n) \in \Theta(n^c \log n)\)</span></p>
+<p>如果 <span class="arithmatex">\(a &lt; b^c\)</span>，那么 <span class="arithmatex">\(f\)</span> take dominance，<span class="arithmatex">\(T(n) \in \Theta(n^c)\)</span></p>
+<p>使用的条件比较严格。for ex: <span class="arithmatex">\(T(n) = T(n-1) + n\)</span> 就无法使用，需要手动归纳，结果是 <span class="arithmatex">\(\Theta(n^2)\)</span>.</p>
+<p>但是如果 <span class="arithmatex">\(f(n) \in \Theta(n^{\log_b a} \log^k n)\)</span> 时是一个特殊情况，称为 fourth condition，此时可以直接得到 <span class="arithmatex">\(T(n) \in \Theta(n^{\log_b a} \log^{k+1} n)\)</span>.</p>
+<p>比如 <span class="arithmatex">\(T(n) = 2T({n \over 2}) + n \log n\)</span>，那么 <span class="arithmatex">\(T(n) = \Theta(n \log^2 n)\)</span></p>
+<h4 id="algorithm-problem-2d-table-search"><strong>Algorithm Problem: 2D table search</strong></h4>
+<p>在一个 row, col 都 ordered 的 2D table 中 找到一个元素：</p>
+<p><img src="note-assets/{5E9B3521-4665-444A-95A3-8DCA56A3A9E2}.png" alt="{5E9B3521-4665-444A-95A3-8DCA56A3A9E2}" style="zoom:75%;" /></p>
+<p>普通算法：<span class="arithmatex">\(O(n^2)\)</span></p>
+<p>我们可以使用 Binary Partition 来进行 <span class="arithmatex">\(O(n)\)</span> 的搜索.</p>
+<ol>
+<li>把 table 差不多均分分成四块（多一个行少一列没关系）</li>
+<li>binary search 中间列，看要搜索的元素的大小在哪两个元素之间</li>
+<li>可以排除掉四块中的两块。recursion</li>
+</ol>
+<p><span class="arithmatex">\(T(n) = 2T({n\over 2}) + c \log n = O(n)\)</span></p>
+<h2 id="lec-6-arrays-containers">Lec 6 - Arrays &amp; Containers</h2>
+<h3 id="2d-dynamic-array-with-double-ptr">2D dynamic array with double ptr</h3>
+<pre><code class="language-c++">size_t rows, cols, r, c;
+int **a = new int *[rows];
+for (r = 0; r &lt; rows; ++r)
+    a[r] = new int[cols];
+
+for (r = 0; r &lt; rows; ++r)
+    for (c = 0; c &lt; cols; ++c) 
+        a[r][c] = 0;
+</code></pre>
+<h3 id="pros-and-cons-of-fixeddymc-array">Pros and Cons of fixed/dymc array</h3>
+<p>Fixed array is allocated on the stack.</p>
+<p>Pros:</p>
+<ol>
+<li>出 scope 时自动被 deallocated</li>
+<li><strong><code>a[i][j]</code> 只使用一次 Memory operation 而不是两次（连续 Memory）</strong></li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li>无法 work for large size，stack 太小</li>
+<li>size fixed</li>
+<li>作为参数传给函数会有问题。会自动转成ptr，容易越界访问.</li>
+</ol>
+<p>Double pointer dynamic array is allocated on the heap.</p>
+<p>Pros:</p>
+<ol>
+<li>支持 <strong>triangular arrays.</strong></li>
+<li>可以 copy 以及 swap rows quickly (one operation)</li>
+<li>size 可变</li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li><code>a[i][j]</code> random access 略慢一些</li>
+<li>有 leak memory 的风险</li>
+</ol>
+<h4 id="c11-range-based-for-loop">C++11 range-based for loop</h4>
+<pre><code class="language-c++">for (int &amp;item: my_array)
+    item *= 2;
+
+for (int i = 0; i &lt; 5; ++i)
+    my_array[i] *= 2;
+</code></pre>
+<p>time / memory 和语义完全一样. </p>
+<p>记得要加 reference for range based.</p>
+<h4 id="algorithm-problem-finding-the-majority-element"><strong>Algorithm Problem: Finding the majority element</strong></h4>
+<p>如果一个 array 中有一个 element 数量超过 50%，可以通过 Moore's voting algorithm 找到它：</p>
+<p>Idea: </p>
+<ul>
+<li>variable <code>string candidate</code>, <code>int count</code></li>
+<li>Traverse the array once:</li>
+<li>If  <code>count</code> = 0, set <code>candidate</code>  to the current element and set <code>count</code> to one.</li>
+<li>If the current element 是 <code>candidate</code>，则 <code>count++</code></li>
+<li>If the current element 不是 <code>candidate</code>，则 <code>count--</code></li>
+</ul>
+<p>这个 算法利用了这个元素数量过半的特点，达到了 <span class="arithmatex">\(O(n)\)</span> time 和 <span class="arithmatex">\(O(1)\)</span> space.</p>
+<pre><code class="language-c++">int majorityElement(const vector&lt;int&gt;&amp; arr) {
+    int n = arr.size();
+    int candidate = -1;
+    int count = 0;
+
+    // Find a candidate
+    for (int num : arr) {
+        if (count == 0) {
+            candidate = num;
+            count = 1;
+        } else if (num == candidate) {
+            count++;
+        } else {
+            count--;
+        }
+    }
+
+    // Validate the candidate
+    count = 0;
+    for (int num : arr) {
+        if (num == candidate) {
+            count++;
+        }
+    }
+
+    // If count is greater than n / 2, return the candidate; otherwise, return -1
+    if (count &gt; n / 2) {
+        return candidate;
+    } else {
+        return -1;
+    }
+}
+</code></pre>
+<p>如果这个元素的数量并不过半，而是要找到最多的元素，那么只能用 hash map， <span class="arithmatex">\(O(n)\)</span> time 和 <span class="arithmatex">\(O(n)\)</span> space.</p>
+<pre><code class="language-c++">int majorityElement(const vector&lt;int&gt;&amp; arr) {
+    int n = arr.size();
+    unordered_map&lt;int, int&gt; countMap;
+
+    // Traverse the array and count occurrences using the hash map
+    for (int num : arr) {
+        countMap[num]++;
+
+        // Check if current element count exceeds n / 2
+        if (countMap[num] &gt; n / 2) {
+            return num;
+        }
+    }
+
+    // If no majority element is found, return -1
+    return -1;
+}
+</code></pre>
+<h3 id="containers">Containers</h3>
+<p>Containers: </p>
+<p>vectors, lists, stack, queue, map, heaps, trees &amp; graphs,...</p>
+<p>需要能够 copy/edit/sort/order many objs at once.</p>
+<p>containers within containers 用以 implement complex data structures. 比如 Database 也是一种 container.</p>
+<p><strong>accessing container items 的方法：</strong></p>
+<ol>
+<li>sequential</li>
+</ol>
+<p>Find n-th item by 从头开始增加 index n 次达到 n-th item 的位置.</p>
+<p>Used by disk in computers, slow</p>
+<ol>
+<li>random access</li>
+</ol>
+<p>go directly to n-th item</p>
+<p>Used by main memory in computers (LDUR, SDUR, ...), fast</p>
+<h4 id="double-ptr-instead-of-random-access-to-traversal">使用 double ptr instead of random access to traversal</h4>
+<pre><code class="language-c++">const size_t SIZE = 4;
+double src_ar[] {3,5,6,1};
+double dest_ar[SIZE];
+
+// with no ptr
+for (size_t i = 0; i &lt; SIZE; ++i)
+  dest_ar[i] = src_ar[i];
+
+// with double ptr: faster
+double *sptr = srca_ar;
+double *dptr = dest_ar;
+
+while (sptr != src_ar + SIZE)
+  *dptr++ = *sptr++;
+</code></pre>
+<p>好处是使用 1 次 sequntial access 而不是 n 次 random access，速度更快.</p>
+<p>random access 的时间消耗相比 dereference 要大。使用 1 次 sequntial access 比 1 次 random access 耗时大，但使用 1 次 sequntial access 比 n 次 random access 耗时显著小。所以如果要 traversal 应该使用 double ptr.</p>
+<h4 id="what-to-storeget-in-a-container">What to Store/Get in a container</h4>
+<p>Store:</p>
+<ol>
+<li>
+<p>Value: <strong>最常用</strong>. 只有 container 可以 edit，安全. 但是缺点是 copy large objects 行为 costly</p>
+</li>
+<li>
+<p>ptr: copy objects 速度快，但是 unsafe，因为其他 object 也可以修改 container 里面的 objects. 且容易造成 double delete.</p>
+</li>
+</ol>
+<p>defensive programming tip: 使用 <code>ptr = nullptr;</code> after <code>delete ptr;</code></p>
+<ol>
+<li>reference：无法 delete by reference，不实用.</li>
+</ol>
+<p>Get:</p>
+<ol>
+<li>Value: copy large objects 行为 costly.</li>
+<li>Ptr: unsafe， ptr may be invalid</li>
+<li>Reference:  <strong>good choice</strong>，尤其是 const ref if 不想 edit.</li>
+</ol>
+<h4 id="use-dynamic-array-in-c">Use dynamic array in C++</h4>
+<p><code>new[]</code> 在 heap 中生成一个 array 并对其中每个 object call default ctor</p>
+<p><code>delete[]</code> 对 array 中每个 object call tor.</p>
+<pre><code class="language-c++">class Array {
+  size_t length = 0;
+  double *data = nullptr;
+
+  public:
+  Array(size_t len) : length{len};
+                                data{new double[length]} {} // dynamic array
+
+  ~Array() {
+    delete[] data;  //delete dynamic array
+    data = nullptr;
+  }
+}
+</code></pre>
+<h3 id="best-deep-copy-copy-swap-method">Best deep copy 方法：copy-swap method</h3>
+<p>普通方法：在 operator= 中，先 <code>delete[] data;</code> 然后 <code>data = new double[length];</code> 然后 loop 进行 deep copy.</p>
+<p>Copy-swap method: </p>
+<pre><code class="language-c++">#include &lt;utility&gt; //为了使用 std::swap
+
+Array(const Array &amp;other) : Length{other.length},
+                                                        data{new double[length]} {
+    for (size_t i = 0; i &lt; length; ++i)
+    data[i] = other.data[i];
+}
+
+Array &amp;=operator=(const Array &amp;other) {
+  Array temp(other);    //temporary object
+
+  // assign by swap, 原 object 数据和 temp 交换
+  std::swap(length, temp.length);
+  std::swap(data, temp.data);
+
+  return *this; //temp out of scope 自动被 dtor 掉
+}
+</code></pre>
+<p>这个方法去除了 explicit deallocation in the assignment operator，同时很好地处理了 Self-Assignment Handling. </p>
+<h3 id="c11-move-ctor-for-r-value">C++11: Move ctor for r-value</h3>
+<p>Big 5 for using dynamic memory</p>
+<ol>
+<li>dtor</li>
+<li>copy ctor</li>
+<li><code>operator=()</code></li>
+<li><strong>copy ctor from r-value</strong></li>
+<li><strong><code>operator=()</code> from r-value</strong></li>
+</ol>
+<p>在 C++11 中，"copy constructor from r-value" 通常指的是 <strong>Move Constructo</strong></p>
+<p>当被 copy 的 obj 是一个右值（r-value）时，可以减少不必要的 deep copy</p>
+<ul>
+<li>在 C++ 中，<strong>左值（l-value）</strong>是指有名字并且持久存在的对象，而<strong>右值（r-value）</strong>是临时的、不持久的对象。</li>
+<li><strong>左值（l-value）</strong>：像变量 <code>int a = 5;</code> 中的 <code>a</code> 是一个左值，因为它有一个名字且在作用域内持续存在。</li>
+<li><strong>右值（r-value）</strong>：像表达式 <code>5</code> 或者函数返回的临时对象 <code>a + b</code> 是右值，它们的生命周期很短，只在语句中使用时存在。</li>
+</ul>
+<p>在 C++11 之前，所有的复制操作都只能通过  copy ctor 来完成，</p>
+<p>对于短生命周期的临时对象，deep copy 会增加不必要的 cost.</p>
+<p>为了更好地处理这种情况，C++11 引入了
+1. <strong>Move Constructor</strong>：用来从右值中“移动”资源，而不是复制。
+2. <strong>Move <code>operator=()</code></strong>.</p>
+<p>move ctor 的参数是一个右值引用（r-value reference），即使用 <code>&amp;&amp;</code> 来表示。例如：</p>
+<pre><code class="language-cpp">Array(Array &amp;&amp;other) noexcept {
+    length = other.length;
+    data = other.data;
+    other.length = 0;
+    other.data = nullptr;
+}
+Array&amp; operator=(Array &amp;&amp;other) noexcept {
+    if (this != &amp;other) {
+        delete[] data;
+        length = other.length;
+        data = other.data;
+        other.length = 0;
+        other.data = nullptr;
+    }
+    return *this;
+}
+</code></pre>
+<ul>
+<li><strong>右值引用 (<code>Array&amp;&amp; other</code>)</strong>：<code>&amp;&amp;</code> 表示一个右值引用，可以绑定到一个右值（例如临时对象）。</li>
+<li>在移动构造函数中，我们<strong>直接接管</strong>了右值 <code>other</code> 的资源：</li>
+<li><code>data = other.data;</code>：把 <code>other</code> 的指针直接赋值给当前对象，而不是进行深拷贝。</li>
+<li><code>other.data = nullptr;</code>：将 <code>other</code> 的指针置为 <code>nullptr</code>，表示它不再管理这块内存。</li>
+<li>这样，数据的所有权被转移，而不是拷贝，极大提高了效率，尤其是对于大规模数据对象。</li>
+</ul>
+<p>使用例：</p>
+<pre><code class="language-c++">Array createArray(size_t len) {
+    return Array(len); // 返回一个临时对象 (r-value)
+}
+
+int main() {
+    Array a(5); 
+    Array b = a; // deep copy
+
+    Array c = createArray(10); // 使用 move ctor
+
+    Array d(3);
+    d = createArray(15); // 使用 move opertor=
+
+    return 0;
+}
+</code></pre>
+<h4 id="move-syntax">Move syntax 的好处</h4>
+<p>c++11 之后：</p>
+<pre><code class="language-c++">vector&lt;string&gt; readData() {
+    vector&lt;string&gt; data;
+    string temp;
+    while (cin &gt;&gt; temp)
+        data.push_back(temp);
+    return data;  
+} // data 返回时不会被 copy 而是 move 到左边的 object 上, 节省 time
+</code></pre>
+<p>(Note: vector 是在 heap 上的，相当于 dynamic array)</p>
+<p>函数返回的 data 是临时对象，是一个 r-value. 返回时会直接 move 到左边的 vector 上而不会 deep copy. 节省了 deep copy 的 time.</p>
+<h3 id="array-class-operation-insert">Array class operation: <code>[]</code> 和 <code>insert</code></h3>
+<p>对于 <code>[]</code> 我们需要一个 const version 和一个 nonconst version. compiler 会自行选择. </p>
+<p>const version 可以 <strong>help compiler optimize code for speed.</strong></p>
+<pre><code class="language-c++">double &amp;operator[](size_t i) {
+  if (i &lt; length)
+    return data[i];
+  throw runtime_error(&quot;bad i&quot;);
+}
+
+const double &amp;operator[](size_t i) const {
+  if (i &lt; length)
+    return data[i];
+  throw runtime_error(&quot;bad i&quot;);
+}
+
+// const 的参数，compiler 会自动选择 const 的 operator
+ostream &amp;operator&lt;&lt;(ostream &amp;os, const Array &amp;a) {
+  //...
+}
+</code></pre>
+<p>Insert:</p>
+<pre><code class="language-c++">bool Array::insert(size_t index, double val) {
+  if (index &gt;= length)
+    return false;
+  for (size_t i = length - 1; i &gt; index; --i)   //at most n-1 times
+    data[i] = data[i-1];
+  data[index] = val;
+  return true;
+}
+</code></pre>
+<p>会向右 shift 整个 array 一格.</p>
+<h2 id="lab-2">Lab 2</h2>
+<h4 id="algorithm-problem-find-1k-th-element-of-linked-list">Algorithm Problem: Find 1/k ^th element of Linked List</h4>
+<p>策略：双指针。one fast(it+= k), one slow(it++).</p>
+<p>O(n)</p>
+<h4 id="algorithm-problem-sort-a-stack">Algorithm Problem: Sort a Stack</h4>
+<p>策略：使用一个 helper stack. 这个 stack 保持 sorted invariant，栈顶最小</p>
+<p>helper stack 和 input stack 之间保持它们元素的总和总是所有元素.</p>
+<p>当 <code>inputStack</code> 非空时，执行以下步骤：</p>
+<ul>
+<li>弹出 <code>inputStack</code> 的栈顶元素到 <code>int temp</code></li>
+<li>将 helperStack 顶部的元素和 temp 比较，如果比 temp 小就弹出放进 input stack 并 count++，直到找到比 temp 大的元素为止，把 temp 弹到这个元素上</li>
+<li>根据 count 把临时弹出 Helperstack 的元素都弹回来</li>
+</ul>
+<pre><code class="language-c++">void sortStack(stack&lt;int&gt;&amp; inputStack) {
+    stack&lt;int&gt; helperStack;
+
+    while (!inputStack.empty()) {
+        // Take the top element from inputStack
+        int temp = inputStack.top();
+        inputStack.pop();
+
+        while (!helperStack.empty() &amp;&amp; helperStack.top() &gt; temp) {
+            inputStack.push(helperStack.top());
+            helperStack.pop();
+        }
+
+        helperStack.push(temp);
+    }
+
+    // Move elements back to inputStack
+    while (!helperStack.empty()) {
+        inputStack.push(helperStack.top());
+        helperStack.pop();
+    }
+}
+</code></pre>
+<p>O(n^2)</p>
+<h4 id="algorithm-problem-stack-queue">Algorithm Problem: 用两个 stack 写一个 queue</h4>
+<p>进入 queue: 就是进入 stack；O(1)</p>
+<p>出 queue: 把 stack 中所有元素都 pop 到 stack2，然后把头 pop 掉，再 pop 回去；O(n)</p>
+<h2 id="lec-7-stl">Lec 7 - STL</h2>
+<p>Standard Template Library，is part of <code>&lt;stdlibc++&gt;</code></p>
+<p>主要内容包含了：1. container 和 iterators；2. memory allocators；3. utilities and function objects；4. algorithms</p>
+<p>STL 包含了 red-black tree 等难 implement 的数据结构和算法；以及 hash table, merge sort 等容易 implement 但很难 implement well 的算法。STL 的 <code>std::sort</code> 是一个 worst-case <span class="arithmatex">\(O(n \log n)\)</span> 的算法，混合了多种排序，比 quicksort 更快.</p>
+<p>STL 的 <code>std::nth_element()</code> 具有 average-case linear time.</p>
+<p>提一嘴：<code>explicit</code> 和 <code>mutable</code> 关键词</p>
+<p><code>explicit</code> 专用于 1-parameter ctor，目的是为了防止 accidental conversion from another type.</p>
+<pre><code class="language-c++">explicit FeetInches(int feet);
+FeetInches a(3); //ok
+FeetInches b = 3; // error
+</code></pre>
+<p><code>mutable</code> member variable 可以被 <code>const</code> member function 修改。（allow us to break the rule）</p>
+<p><code>mutable</code> 看起来没用，但其实很有用。因为很多 stl 函数会 return const reference，mutable 变量可以 help use these functions In container.</p>
+<h3 id="types-of-iterators">Types of Iterators</h3>
+<p>Iterators 是对 Pointer 的 generalization.</p>
+<p>Iterator 比 random access 更快. 比如 <code>*(it++)</code> 比 <code>ar[i++]</code> 更快一点，可以增加 traversal 的速度.</p>
+<p>iterator 有以下的类型：</p>
+<ol>
+<li><strong>Input Iterator</strong>：</li>
+<li>
+<p><em>Example</em>: 从标准输入中读取数据。</p>
+<p><code>std::istream_iterator&lt;int&gt;</code> 可以用于从文件中依次读取整数。</p>
+</li>
+</ol>
+<p><code>cpp
+   std::ifstream file("numbers.txt");
+   std::istream_iterator&lt;int&gt; input_it(file), eof;
+   while (input_it != eof) {
+       std::cout &lt;&lt; *input_it++ &lt;&lt; " ";
+   }</code></p>
+<ol>
+<li><strong>Output Iterator</strong>：</li>
+<li>
+<p><em>Example</em>: 向输出流中写入数据 </p>
+<p><code>std::ostream_iterator&lt;int&gt;</code> 可以用于将整数写到标准输出中。</p>
+</li>
+</ol>
+<p><code>cpp
+   std::ostream_iterator&lt;int&gt; output_it(std::cout, " ");
+   *output_it++ = 10;
+   *output_it++ = 20;</code></p>
+<ol>
+<li>
+<p><strong>Forward Iterator</strong>：</p>
+</li>
+<li>
+<p><em>Example</em>: 遍历 <code>std::forward_list</code>，它支持前向遍历（但不支持反向遍历）。</p>
+</li>
+</ol>
+<p><code>cpp
+   std::forward_list&lt;int&gt; fl = {1, 2, 3, 4};
+   for (auto it = fl.begin(); it != fl.end(); ++it) {
+       std::cout &lt;&lt; *it &lt;&lt; " ";
+   }</code></p>
+<ol>
+<li>
+<p><strong>Bidirectional Iterator</strong>：</p>
+</li>
+<li>
+<p><em>Example</em>: 遍历 <code>std::list</code>，它支持在链表中前进和后退。</p>
+</li>
+</ol>
+<p><code>cpp
+   std::list&lt;int&gt; lst = {1, 2, 3, 4};
+   for (auto it = lst.begin(); it != lst.end(); ++it) {
+       std::cout &lt;&lt; *it &lt;&lt; " ";
+   }
+   for (auto rit = lst.rbegin(); rit != lst.rend(); ++rit) {
+       std::cout &lt;&lt; *rit &lt;&lt; " ";
+   }</code></p>
+<ol>
+<li><strong>Random Access Iterator</strong>：</li>
+<li>
+<p>允许随机访问任意位置的元素，可以使用下标操作符进行访问。</p>
+<p><em>Example</em>: 使用 <code>std::vector</code></p>
+</li>
+</ol>
+<p><code>cpp
+   std::vector&lt;int&gt; vec = {10, 20, 30, 40};
+   std::cout &lt;&lt; vec[2] &lt;&lt; std::endl;  // 访问第三个元素</code></p>
+<ol>
+<li><strong>Reverse Iterator</strong>：</li>
+</ol>
+<p>反向遍历 <code>std::vector</code>，可以使用 <code>std::reverse_iterator</code> 或直接使用容器的 <code>rbegin()</code> 和 <code>rend()</code>。</p>
+<p><em>Example</em>: </p>
+<p><code>cpp
+   std::vector&lt;int&gt; vec = {1, 2, 3, 4};
+   for (auto rit = vec.rbegin(); rit != vec.rend(); ++rit) {
+       std::cout &lt;&lt; *rit &lt;&lt; " ";  // 输出 4 3 2 1
+   }</code></p>
+<h4 id="stl-iterators">STL: 每个容器都支持的 iterators</h4>
+<p><strong>STL operates on iterator range, not container</strong></p>
+<p><code>xxx.begin()</code>, <code>xxx.end()</code>：正常的 forward iterator</p>
+<p><code>xxx.cbegin()</code>, <code>xxx.cend()</code>：const iterator，不可以修改元素</p>
+<p><code>xxx.rbegin()</code>, <code>xxx.rend()</code>：reverse iterator</p>
+<p>ex:</p>
+<pre><code class="language-c++">std::vector&lt;int&gt; vec = {1, 2, 3, 4};
+for (auto rit = vec.rbegin(); rit != vec.rend(); ++rit) {
+    std::cout &lt;&lt; *rit &lt;&lt; &quot; &quot;;  // 输出 4 3 2 1
+}
+</code></pre>
+<p>使用例：</p>
+<pre><code class="language-c++">#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+using namespace std;
+
+const size_t N = 100;
+vector&lt;int&gt; v(N, 114514);
+int a[N];
+
+copy(v.begin(), v.end(), a);    //把 v.begin(), v.end() copy 到 a
+copy(a, a+N, v.begin());    //把 a[0] to a[N] copy 到 v
+sort(a, a+N);
+sort(v.begin(), v.end());
+
+vector&lt;int&gt; vreversed(v.rbegin(), v.rend());
+</code></pre>
+<h3 id="memory-overhead">Memory overhead</h3>
+<p><code>vector&lt;&gt;</code>: Compact memory usage.</p>
+<p><code>list&lt;&gt;</code>: Less compact</p>
+<p><code>unordered_map&lt;&gt;</code>: High memory usage, a "Memory hog."</p>
+<p>如果在一个 vector 里装其他 containers，装的只是它们第一个 object 的 address，也就是 ptr.</p>
+<pre><code class="language-c++">vector&lt;vector&lt;int&gt;&gt; twoDarray(10);
+// to initialize the elements:
+vector&lt;vector&lt;int&gt;&gt; twoDarrayInied(10, vector&lt;int&gt;(20,114514)));
+</code></pre>
+<p><strong>甚至可以每个元素是大小不一样的 vector.</strong> (triangular vector)</p>
+<h4 id="simple-syntax-for-3-dim-vector">simple syntax for 3 dim vector</h4>
+<p>c++支持这样的 syntax:</p>
+<pre><code class="language-c++">vector&lt;vector&lt;vector&lt;T&gt;&gt;&gt; ar3d(a, b, c);
+</code></pre>
+<p>这里的 memory overhead 数量 in terms of pointers 是：3 + 3a + 3ab</p>
+<h3 id="functor">Functor</h3>
+<pre><code class="language-c++">class SortByCoord }
+    const vector&lt;double&gt; &amp;_coords;
+
+public:
+    SortByCoord(const vector&lt;double&gt; &amp;z) : _coords(z) {}
+    bool operator()(size_t i, size_t j) const {
+        return _coords[i] &lt; _coords[j];
+    }   // operator(), 于是 SortByCood 的 instance 可以像一个 function 一样
+};
+
+vector&lt;size_t&gt; idx(100);    // as index
+vector&lt;double&gt; xCoord(100); // actual container
+for (size_t k = 0; k != 100; ++k) {
+    idx[k] = k;
+    xCoord[k] = rand(); % 1000 / 10.0;
+}
+
+SortByCoord sbx(xCoord);    //sbx 是一个 function object
+sort(begin(idx), end(idx), sbx);
+// sort: 从 idx 的 begin iterator (指向 0)
+//       到 idx 的 end iterator (指向 99)
+//       在这个 iterator range(0-99) 之间, 使用 sbx 的 operator() 作为 comp function 进行排序
+</code></pre>
+<p>Note: 对于每个 <code>it1</code>, <code>it2</code>，<code>sbx (*it1, *it2)</code> 返回的结果是 <code>_coords[*it1] &lt; _coords[*it2]</code></p>
+<p>因而最后排序的结果是所有在 <code>begin(idx), end(idx)</code> 范围内的 iterator <code>it</code>,  <code>sbx(*it, *it+1)</code> 都是 true 的. 也就等于排序了 <code>xCoord</code> .</p>
+<p>Note: C++ 中 fill 一个 container with 同一个 value，比起 iterate 更快的方法：</p>
+<pre><code class="language-c++">#include &lt;numeric&gt;
+vector&lt;int&gt; v(100);
+iota(begin(v), end(v), 0);
+</code></pre>
+<h3 id="lambda">Lambda</h3>
+<p>一个 lambda expression 是一个这样的形式：</p>
+<p>form 1:</p>
+<pre><code>[captures list] (parameter list) {function body}
+</code></pre>
+<p>（captures list 意思是 variables from the surrounding scope 中所有对这一条 Lambda 表达式 available 的.）</p>
+<p>ex:</p>
+<pre><code class="language-c++">[] (int n1, int n2) { return abs(n1 - n2) &gt; 5; }
+</code></pre>
+<p>form 2:</p>
+<pre><code class="language-c++">[captures list] (parameter list) -&gt; return_type {function body}
+</code></pre>
+<p>arrow operator 用来 explicitly specify return type.</p>
+<p>特别用在 return type 难以 deduce 的情况以及想要特别转换的情况.</p>
+<p>ex:</p>
+<pre><code class="language-c++">[] (double x, double y) -&gt; int {return x + y;}
+</code></pre>
+<h4 id="lambda-functor">使用 lambda 表达式起到 functor 一样的作用</h4>
+<pre><code class="language-c++">struct IsOddPred {
+    bool operator()(int n) {
+        return n%2 == 1;
+    }
+};
+
+int main() {
+    vector&lt;int&gt; v = //...
+
+    // 使用 functor
+    auto it1 = find_if(begin(v), end(v), IsOddPred());
+
+    // 使用 lambda in place of functor
+    auto it2 = find_if(begin(v), end(v), [](int n) {return n%2==1});
+}
+</code></pre>
+<h4 id="captures-list">captures list 的用例</h4>
+<p><code>[foo, bar]</code> 只 capture 这两个变量</p>
+<p><code>[&amp;]</code> capture surrounding scope 中所有的 variables by reference</p>
+<p><code>[=]</code> capture surrounding scope 中所有的 variables by value</p>
+<p><strong><code>[&amp;, foo]</code> capture <code>foo</code> by value，以及 surrounding scope 中所有其他 variables by reference</strong></p>
+<p><strong><code>[=, &amp;foo]</code> capture <code>foo</code> by ref，以及 surrounding scope 中所有其他 variables by value</strong></p>
+<p><code>[this]</code> capture the current object，如果这个 lambda 是 member function 中 define 的.</p>
+<h4 id="algorithm-problem-functor">Algorithm problem: functor</h4>
+<p>使用 lambda 和 STL algorithm 来 implement: take in a <code>threhold</code> value 和一个 vector of <code>&lt;Message&gt;</code>，如果 vector 中某个 Message 的长度大于 threshold 则返回 true</p>
+<p>Hint: <code>std::any_of(it1, it2, pred)</code> 返回 ture，如果某段 iterator range 里存在某个 <code>*it</code> 满足 <code>pred(*it)</code>.</p>
+<pre><code class="language-c++">bool msgPastThreshold(vector&lt;Message&gt; &amp;msg, uint64_t threshold) {
+    return any_of(begin(msg), end(msg), [threshold](const Message &amp;m) {return m.received - m.sent &gt; threshold;})
+}
+</code></pre>
+<h3 id="stdrandom"><code>std::random</code></h3>
+<p>生成一个对一些元素的随机排列:</p>
+<pre><code class="language-c++">#include &lt;random&gt;
+
+int main() {
+    random_device rd;   // 用于产生随机种子
+    mt19937_64 mt(rd());  // 创建一个 64 位的 Mersenne Twister 随机数生成器 mt，并使用 rd() 生成的种子来初始化
+
+    int size = 20; 
+    vector&lt;int&gt; values(size); 
+    iota(begin(values), end(values), 0);
+    shuffle(begin(values), end(values), mt);    // shuffle 随机打乱一段 iterator range 内的元素, take in 一个随机数生成器作为参数, 来随机打乱.
+}
+</code></pre>
+<p>生成随机数：</p>
+<pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;random&gt;
+
+int main() {
+    // 创建随机设备
+    std::random_device rd;
+    // 随机数引擎
+    std::mt19937 gen(rd());
+    // 创建一个分布来定义生成的浮点数范围（例如 0.0 到 1.0）
+    std::uniform_real_distribution&lt;&gt; dis(0.0, 1.0);
+    // 使用分布(随机引擎)生成分布内的随机数
+    double random_number = dis(gen);
+    return 0;
+}
+</code></pre>
+<h2 id="lec-8-heap-pq-heapsort">Lec 8 - Heap &amp; PQ &amp; Heapsort</h2>
+<h3 id="tree">tree</h3>
+<p>recall: a tree is a connected graph with no cycle.</p>
+<p>一些名词：</p>
+<ol>
+<li>ancestor: 某个节点是另一个节点的某个 parent of parent of ....</li>
+<li>descendent: 某个节点是另一个节点的 child of child of ....；</li>
+<li>一个 internal node: node with children；</li>
+<li>一个 leaf node: node without children</li>
+<li>height(node) = max(height(left_child), height(right_child))</li>
+<li>depth(node) = depth(node.parent) + 1;</li>
+</ol>
+<p>Note: 任何 subtree 本身也是 tree（recursion结构）</p>
+<h4 id="complete-binary-tree-array">Complete Binary tree: 可以用 array 表示</h4>
+<p>Binary tree: 所有 node 的 children 数量 &lt;= 2</p>
+<p>Complete Binary tree: 除了最后一个 level 外每个 level 都被 filled. 且最后一个 level 从左到右也没有空隙.</p>
+<p><img src="note-assets\{CEB4F7F3-1994-4992-BF82-F0DB8905A991}.png" alt="{CEB4F7F3-1994-4992-BF82-F0DB8905A991}" style="zoom:50%;" /></p>
+<p>Complete 即 tree 中没有 gap.</p>
+<p>Complete 的好处是: <strong>任意 complete tree 都可以用 array 表示.</strong></p>
+<p><img src="note-assets\{8C1035E2-879C-4522-B5FF-C6B5BDAECAFE}.png" alt="{8C1035E2-879C-4522-B5FF-C6B5BDAECAFE}" style="zoom: 33%;" /></p>
+<h4 id="heap-ordered-tree">Heap-ordered tree</h4>
+<p>一个 tree 被称为 max heap-ordered，如果它的每个 node 的 priority （即 value）都 &lt;= 它的 parent 的 priority.</p>
+<p>min heap-order: dually.</p>
+<p><strong>Note: heap-ordered 并不一定 ordered.</strong></p>
+<p><img src="note-assets\{9A520B51-712E-4164-89C8-C7FC305CBC01}.png" alt="{9A520B51-712E-4164-89C8-C7FC305CBC01}" style="zoom: 33%;" /></p>
+<h3 id="heap_1">Heap</h3>
+<p>Def：一个 heap 是一个 heap-ordered 的 complete binary tree.</p>
+<p>满足的是 max heap order 则称为 max heap，否则称为 min heap.</p>
+<p>Note: <strong>heap 的 logical structure 是 complete binary tree，但是通常使用 array 来 Implement.</strong></p>
+<p>Heap 的用处是 PQ 以及 Heapsort 等.</p>
+<p>Note:</p>
+<p><strong>Heap 中，任意一个 node 的 parent node 的 index 都可以由该 node 的一半向下取整获得。</strong></p>
+<p>即：
+$$
+i = \lfloor{i_\text{father}}\rfloor
+$$
+<strong>比如 father node 的 index 是 4，那么这个 node 的 Index 只可能是 8 或者 9.</strong></p>
+<p>所以我们可以很简单地获得一个 Node 的 parent 的 index by <code>i/2</code>.</p>
+<p>这个 property 使得我们可以让 father-son node 的交互是 O(1) 的，因而保持 heap 结构的复杂度理应不高.</p>
+<h4 id="alter-element-fixup-fixdown-heap">Alter element: <code>fixup()</code>, <code>fixdown()</code> 以保持 Heap 结构</h4>
+<p>假如我们有一个 node 的值被修改得更高了，那么我们要把它 fix up：和 ancestor nodes 更换值直到 parent 比他大为止.</p>
+<pre><code class="language-c++">void fixUp(Item heap[], int k) {
+    while (k &gt; 1 &amp;&amp; heap[k/2]&lt;heap[k]) {
+        swap(heap[k], heap[k/2]);
+        k /= 2;
+    }
+}
+</code></pre>
+<p>假如 node 的值被修改得更低了，那么 fix down：和 descendents 比较，交换(左child) 到两个 children 都比他小为止.</p>
+<pre><code class="language-c++">void fixDown(Iten heap[], int heapsize, int k) {
+    while (2 * k &lt;= heapsize) {
+        int j = 2*k;    // left child index
+        if (j &lt; heapsize &amp;&amp; heap[j] &lt; heap[j+1])
+            ++j;    // right child greater?
+        if (heap[k] &gt;= heap[j]) // node &gt; max(left, right), heap alreday restored
+            break;
+        swap(heap[k], heap[j]);
+        k = j;  // move down
+    }
+}
+</code></pre>
+<p>fixup, fixdown 是 <span class="arithmatex">\(O(\log n)\)</span> 的</p>
+<p>因以 remove 走 top item 的复杂度是 <span class="arithmatex">\(O(\log n )\)</span> 的：把它的值换成最低然后 fixdown，最后把 end pop掉就可以，fix </p>
+<p>Insert 一个 item 也是  <span class="arithmatex">\(O(\log n )\)</span> 的。直接 insert 在 end 上然后 fixup 就好。</p>
+<p>inspect top item: <span class="arithmatex">\(O(1)\)</span> (index 0 就可以)</p>
+<h3 id="priority-queue">Priority Queue</h3>
+<p>PQ 是一种基于 heap 的 data structure，支持三种运算：</p>
+<ol>
+<li><code>push</code>，插入元素 with priority</li>
+<li><code>top</code>，查看最高 priority 元素</li>
+<li><code>pop</code>，移除最高 priority 元素</li>
+</ol>
+<p>用处: shortest path, Dijkstra, heapsort, ...</p>
+<p>PQ 的 <code>push</code> 就是在 heap 中 insert 新元素。</p>
+<pre><code class="language-c++">void push(Item newitem) {
+    heap[++heapsize] = newItem;
+  fixUp(heap, heapsize);
+}
+</code></pre>
+<p>PQ 的 <code>pop</code> ：换成最低 priority 元素然后弹走。（PQ 只支持 remove top 元素）</p>
+<pre><code class="language-c++">void pop() {
+  heap[1] = heap[heapsize--];
+  fixDown(heap, heapsize, 1);
+}
+</code></pre>
+<p>PQ 也可以通过普通的 unsorted array 和 sorted array 而不是 heapified array 实现，复杂度是：</p>
+<p>unsorted array:</p>
+<ol>
+<li><span class="arithmatex">\(O(1)\)</span> insertion （insert end）</li>
+<li><span class="arithmatex">\(O(n)\)</span> inspect top（排序后最大的里面的最前面</li>
+<li><span class="arithmatex">\(O(1) / O(n)\)</span> pop（排序后最大的里面的最后面，可以 keep track</li>
+<li>O(n) create</li>
+</ol>
+<p>sorted array:</p>
+<ol>
+<li><span class="arithmatex">\(O(n)\)</span> insertion （排序）</li>
+<li><span class="arithmatex">\(O(1)\)</span> inspect top</li>
+<li><span class="arithmatex">\(O(1)\)</span> pop (移走end)</li>
+<li>O(nlogn) create</li>
+</ol>
+<p>binary heap:</p>
+<ol>
+<li>O(n) create</li>
+<li>O(log n) push</li>
+<li>O(log n) pop</li>
+<li>O(1) top</li>
+</ol>
+<h3 id="heapify">Heapify</h3>
+<p>Heapify 就是把一个 array / vector 做成一个 heap. space omplexity 为 <span class="arithmatex">\(O(1)\)</span>，不占用额外内存.</p>
+<p>选择有两个：</p>
+<ol>
+<li>bottom to top 进行 fix down repeatedly</li>
+<li>top to bottom 进行 fix up repeatedly</li>
+</ol>
+<p>top to bottom 进行 fix up: 要遍历完所有元素，每个元素 swap 的次数最多是所在层的数目，越往下越多，因而是 <span class="arithmatex">\(O(n \log n)\)</span></p>
+<p>bottom to top 进行 fix down: 最后一层不用 fix，从导数第二层开始，每一层 k 对于每个上层节点，左右两个 <span class="arithmatex">\(n1_k\)</span>, <span class="arithmatex">\(n2_k\)</span> 只需要 fix 一个就可以；并且每个元素 swap 的次数从导数第二层的 1 开始，往上一层就+1（同时元素也更少），复杂度的结果是 <span class="arithmatex">\(O(n)\)</span></p>
+<p><img src="note-assets/Screenshot 2024-09-29 at 12.53.48.png" alt="Screenshot 2024-09-29 at 12.53.48" style="zoom: 33%;" /></p>
+<p>直观上很显然 bottom to top 的 complexity 更低。事实也是:</p>
+<p>bottom to top fix down: <span class="arithmatex">\(O(n)\)</span></p>
+<p>top to bottom fix up: <span class="arithmatex">\(O(n \log n)\)</span></p>
+<p>我们我们采取 bottom up 策略。</p>
+<h3 id="algorithm-heapsort">Algorithm: Heapsort</h3>
+<p>Heapsort 一个 vector a[n]</p>
+<ol>
+<li>对 a[1 to n] 进行 heapify</li>
+<li>把 top element 和 tail element 互换</li>
+<li>把换来的 tail element <strong>在 a[1 to n-1] 范围内进行 fixdown</strong></li>
+<li>a[1 to n-1] 现在有 heap structure. 我们在 a[1 to n-1]  上重复这个过程.</li>
+</ol>
+<p><img src="note-assets/notes-01-08.png" alt="Screenshot 2024-09-29 at 12.58.37" style="zoom:33%;" /></p>
+<p>这一过程中每次被放到 [n-1] 位置的都是当前最大的，但是又比上一个放进去的小。形成了排序。</p>
+<p>time complexity: 执行 n 次 fixdown，<span class="arithmatex">\(O(n\log n)\)</span>，和 merge sort 渐进一样。</p>
+<pre><code class="language-c++">void heapsort(Item heap[], int n) {
+  heapify(heap, n);
+  for (int i = n; i &gt;= 2; --i) {
+    swap(heap[i], heap[1]);
+    fixDown(heap, i-1, 1);
+  }
+}
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="index.html" class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="notes-09-16.html" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="notes-09-16.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="javascripts/mathjax.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

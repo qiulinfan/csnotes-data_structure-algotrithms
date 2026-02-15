@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Overview - CS Notes</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "notes-17-25.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> CS Notes
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">notes 01 08</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="notes-01-08.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lab-1">Lab 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-2">Lec 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-3">Lec 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-5-recursion">Lec 5 - Recursion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-6-arrays-containers">Lec 6 - Arrays &amp; Containers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lab-2">Lab 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-7-stl">Lec 7 - STL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-8-heap-pq-heapsort">Lec 8 - Heap &amp; PQ &amp; Heapsort</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">notes 09 16</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="notes-09-16.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-9-ordered-sorted-containers">Lec 9 - ordered &amp; sorted containers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-10-elementary-sorting">Lec 10 Elementary Sorting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-11-quicksort">Lec 11: Quicksort</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-12-mergesort">Lec 12: Mergesort</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-13-strings-and-seqs">Lec 13 strings and seqs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lab-5-sorting">Lab 5 (Sorting)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lab-6-maps-and-sets">Lab 6 (Maps and sets)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-15-hashing">Lec 15: hashing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-16-hash-collision-resolution">Lec 16: Hash Collision Resolution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lab-7-hashing">Lab 7 Hashing</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">notes 17 25</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#def-property-of-trees">Def &amp;&amp; Property of trees</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#types-simpleundirected-rooteddirected">Types: Simple(Undirected) / Rooted(Directed)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#binary-tree-array-implementation">Binary Tree 的 array implementation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#binary-tree-pointer-based-implementation">Binary Tree 的 pointer-based implementation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#thinking-add-parent">Thinking: add parent ?</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#transfrom-a-tree-into-binary-tree">Transfrom a tree into Binary tree</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#binary-tree-traversal">Binary Tree Traversal</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#dfs-preorder-inorder-postorder">DFS (Preorder, Inorder, postorder)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bfs-levelorder">BFS (levelorder)</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-17-trees">Lec 17 (Trees)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-18-bst-avl-tree">Lec 18 (BST &amp; AVL tree)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-19-graphs">Lec 19 (Graphs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-20-mst">Lec 20 (MST)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lab-09-graphs">Lab 09 (Graphs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-21-algorithm-family">Lec 21 (Algorithm Family)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-22-backtracking-branch-and-bound">Lec 22 (Backtracking &amp;&amp; branch and bound)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-23-dp">Lec 23 (DP)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-24-knapsack-and-floyds-algorithm">Lec 24 (Knapsack and Floyd's algorithm)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lab-10-dp">Lab 10 (DP)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CS Notes</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">notes 17 25</li>
+      <li class="breadcrumb-item active">Overview</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="lec-17-trees">Lec 17 (Trees)</h2>
+<h3 id="def-property-of-trees">Def &amp;&amp; Property of trees</h3>
+<p>两个 equivalent def of trees:</p>
+<ol>
+<li>无 cycle 的 connected graph</li>
+<li>一个 graph，其中任意两个 node 之间的 paths 都存在唯一的 shortest one. （这个定义和 1 等价，因为这当且仅当没有 cycle. 如果有 cycle, 那么 cycle 之间一定存在两个点，有多个 path 都是 shortest 的）</li>
+</ol>
+<p>Properties:</p>
+<ol>
+<li><strong>如果一个 tree 有 n 个顶点，那么它一定有 n-1 个 edges.</strong>
+   $$
+   |E_{tree}| = |V_{tree}| -1
+   $$
+   这个性质是源于：tree 是一个连通图。</li>
+</ol>
+<p>by induction. </p>
+<p>base case: 单点图；</p>
+<p>如果要加入一个顶点，那么必须把它连接到当前的图上。所以必须添加 edge.</p>
+<p>但是，由于当前的图是 connected 的，一旦这个新顶点连接了超过一个其他顶点，那么它就会形成 cycle，因为它连接的两个顶点也相互连接了。</p>
+<p>所以，tree 中任意一个新加入的顶点都只带来一条边。</p>
+<p>并且，这条性质还可以用来 decide tree: </p>
+<p><strong>一个有 |V|-1 条边的连通图一定是 tree.</strong></p>
+<p><strong>其实这三条性质：边数n-1，连通，无环中只要有两条就可以推导出另一条并表明这是一个树</strong></p>
+<ol>
+<li><strong>只要往 tree 中加入任意一条新的边，就会形成 cycle</strong></li>
+</ol>
+<p>也是 by 连通图的定义</p>
+<ol>
+<li>
+<p><strong>只要在 tree 中去掉任意一条边，就会 disconnect</strong></p>
+</li>
+<li>
+<p>每个 tree 都是二分图. （图是二分图当且仅当不包含奇数长度的环</p>
+</li>
+</ol>
+<h3 id="types-simpleundirected-rooteddirected">Types: Simple(Undirected) / Rooted(Directed)</h3>
+<p>Tree 可以被分为 simple tree 和 rooted tree</p>
+<p><strong>tree 中，任何 node 都可以作为 root.</strong> </p>
+<ol>
+<li>simple tree 就是不特定选择 root 的 tree，rooted tree 就是选定了一个 node 作为 root 的 tree</li>
+</ol>
+<p>可以视作 <strong>simple tree 是 undirected 的，rooted tree 是 directed 的</strong>。因为 rooted tree 的所有 edges 都可以视作 directed away from the root. </p>
+<ol>
+<li>
+<p><strong>Ordered tree 是一种 rooted tree</strong>，选定了一个 root 并且给 children of each node 进行 linear ordering</p>
+</li>
+<li>
+<p><strong>Binary tree 就是任意 node 都有最多两个 children 的 ordered tree</strong></p>
+</li>
+<li>Complete binary tree 是一个 depth 为 d 的 tree，其中 depth 1, ...., d-1 都是满的，而最后一层 depth d 中间不能有空缺，空缺必须至多集中在右边。</li>
+</ol>
+<p><img src="note-assets/Screenshot 2024-11-17 at 19.48.31.png" alt="Screenshot 2024-11-17 at 19.48.31" style="zoom:67%;" /></p>
+<h3 id="binary-tree-array-implementation">Binary Tree 的 array implementation</h3>
+<ol>
+<li>Root 在 index 1（index 0 为 dummy）</li>
+<li>left child of node <span class="arithmatex">\(i\)</span> 在 index <span class="arithmatex">\(2i\)</span></li>
+<li>right child of node <span class="arithmatex">\(i\)</span> 在 index <span class="arithmatex">\(2i + 1\)</span></li>
+</ol>
+<p><strong>binary tree 如果用 arrray 表示，只能以 complete binary tree 的形式进行。</strong>因为我们使用的是连续的内存。当然，tree 本身不一定是 complete 的。在空缺的节点应有标注。</p>
+<p>我们发现这个 implementation 的时间复杂度，除了 remove 之外都很好。</p>
+<ol>
+<li>Insert: <strong>平均 O(1)</strong>，差在结尾。当 tree 当前一层满了要 grow 的时候是 O(n)，全部 copy</li>
+<li>Remove: 稍微有些麻烦，不能直接 remove 一个节点不管它的 subtree. 根据需求，要么 fix down 要么删除整个 subtree，但是都要 <strong>O(n)</strong></li>
+<li>Parent, child: O(1)，直接 n/2, 2n, 2n+1</li>
+</ol>
+<p>空间复杂度：tree 越接近 complete 越好，越 sparse 越差。</p>
+<p>best case: complete，<strong>O(n)</strong></p>
+<p>worst case: sparse，每层只有一个，<strong>O(2^n)</strong></p>
+<pre><code>         1
+       /  
+      2    
+     /     
+    4     
+</code></pre>
+<h3 id="binary-tree-pointer-based-implementation">Binary Tree 的 pointer-based implementation</h3>
+<pre><code class="language-c++">template &lt;class KEY&gt;
+struct Node {
+  KEY key,
+  Node *left = nullptr;
+  Node *right = nullptr;
+  Node(const KEY &amp;k)  : key{k} {}
+}; 
+</code></pre>
+<p>优点：首先在空间上优于 array. 总是 O(n)</p>
+<p>并且，moving down a tree from parent to child 更加 efficient</p>
+<h4 id="thinking-add-parent">Thinking: add <code>parent</code> ?</h4>
+<p>我们看到 pointer-based implementation 获取 parent 的 complexity 是 O(n) 的. 我们想这完全没必要：为什么不添加一个 <code>parent</code> 变量来直接把它变成 O(1) 呢？</p>
+<p>答案是在使用 pointer-based binary tree 作为 data structure 的模型里，我们通常需要 tree 来实现的是它 recursive 的特点，通常不太会需要知道一个 node 的 parent 是什么。</p>
+<p>所以功能性地，我们去掉这个变量来减轻 space complexity. 我们获取 parent 的方法是：traverse 整个树.</p>
+<p>我们发现这个 implementation 的时间复杂度，除了 remove 之外都很好。</p>
+<ol>
+<li>
+<p>Insert: <strong>best O(1), worst O(n)</strong>. binary tree 一般都有需要维持的不变量，比如 BST。insert takes 一个 root 和一个 Key 作为参数，从 root 一层层往下比较进行 insert. 最好的情况 root 是 null, 直接插入；最坏的情况遍历完一整个树。insert 也是一个 recursive 的函数，一层一层 root 下移。</p>
+</li>
+<li>
+<p>Remove:  <strong>O(n)</strong>. remove 特别复杂。以 BST 为例。</p>
+</li>
+</ol>
+<p>删除一个节点时分为三种情况：</p>
+<ul>
+<li>节点是叶子节点：直接删除。</li>
+<li>节点有一个子节点：用子节点替代被删除的节点。</li>
+<li>
+<p>节点有两个子节点：用右子树的最小节点（中序后继）或左子树的最大节点（中序前驱）替代被删除的节点。</p>
+</li>
+<li>
+<p>Parent: <strong>O(n)</strong>，traverse tree</p>
+</li>
+<li>
+<p>child: <strong>O(1)</strong></p>
+</li>
+</ul>
+<p>空间复杂度：<strong>O(n)</strong></p>
+<h3 id="transfrom-a-tree-into-binary-tree">Transfrom a tree into Binary tree</h3>
+<p>如何 transform 任意一个 tree 为一个 binary tree:</p>
+<p>我们使用 left/right children 的关系来取代 sibling 的关系</p>
+<p>对于 <span class="arithmatex">\(v\)</span>  的所有 children <span class="arithmatex">\(\{v_1, v_2, \cdots, v_k\}\)</span>，我们把 <span class="arithmatex">\(v_1\)</span> 变为 new tree 中 <span class="arithmatex">\(v\)</span> 的 left child，而 <span class="arithmatex">\(\{v_2, \cdots, v_k\}\)</span> 变为 a chain of right children of <span class="arithmatex">\(v_1\)</span></p>
+<p>Recursively do this to <span class="arithmatex">\(v_2, \cdots, v_k\)</span> 的 children . 这样就把所有信息都保存下来了. </p>
+<p><img src="note-assets/Screenshot 2024-11-17 at 20.23.52.png" alt="Screenshot 2024-11-17 at 20.23.52" style="zoom:50%;" /></p>
+<h3 id="binary-tree-traversal">Binary Tree Traversal</h3>
+<h4 id="dfs-preorder-inorder-postorder">DFS (Preorder, Inorder, postorder)</h4>
+<p>preorder:</p>
+<ol>
+<li>visit node</li>
+<li>visit left subtree</li>
+<li>visit right subtree</li>
+</ol>
+<pre><code class="language-c++">void preorder(Node *p) {
+  if (!p) return;
+  visit(p-&gt;key);
+  preorder(p-&gt;left);
+  preorder(p-&gt;right);
+}
+</code></pre>
+<p>inorder</p>
+<ol>
+<li>visit left subtree</li>
+<li>visit node</li>
+<li>visit right subtree</li>
+</ol>
+<p>postorder</p>
+<ol>
+<li>visit left subtree</li>
+<li>visit right subtree</li>
+<li>visit node</li>
+</ol>
+<h3 id="bfs-levelorder">BFS (levelorder)</h3>
+<p>Visit nodes in order of increasing depth</p>
+<p><img src="note-assets/Screenshot 2024-11-17 at 20.56.55.png" alt="Screenshot 2024-11-17 at 20.56.55" style="zoom:50%;" /></p>
+<p>BFS 总是要使用 queue 的. queue 就是一个用来 BFS 的数据结构. 这样总是能保证同一层的被遍历完了开始下一层.</p>
+<pre><code class="language-c++">void levelorder(Node *p) {
+  if (!p) return;
+  queue&lt;Node *&gt;q;
+  q.push(p);
+
+  while (!q.empty()) {
+    Node *n = q.front();
+    q.pop();
+    cout &lt;&lt; n-&gt;key &lt;&lt; &quot; &quot;;
+    if (n-&gt;left) q.push(n-&gt;left);
+    if (n-&gt;right) q.push(n-&gt;right);
+  }
+}
+</code></pre>
+<h2 id="lec-18-bst-avl-tree">Lec 18 (BST &amp; AVL tree)</h2>
+<p>BST 是一个 Binary tree, 并满足：</p>
+<p><strong>任意一个 node 都比它的 left subtree 中的所有 nodes 要大，比它的 right subtree 中的所有 nodes 要 &lt;=（可以有 duplicate</strong> </p>
+<p><img src="note-assets/Screenshot 2024-11-17 at 21.52.02.png" alt="Screenshot 2024-11-17 at 21.52.02" style="zoom:50%;" /></p>
+<p>THM：inorder traverse 一个 BST 获得一个 non-decreasing seq.</p>
+<p>Which means: 我们可以 do binary search / upper/lower_bound on BST. </p>
+<p>并且这个 binary search 由于树的结构，比 array 上的更简单</p>
+<h3 id="binary-search-on-bst">binary search on BST</h3>
+<pre><code class="language-c++">Node *tree_search(Node *x, KEY k) {
+  while (x != nullptr &amp;&amp; k!= x-&gt;key) {
+    if (k &lt; x-&gt; key) x = x-&gt; left;
+    else x = x-&gt; right;
+  }
+  return x;
+}
+</code></pre>
+<p>得到的是一个自顶向下的 path.</p>
+<p>O(logn) average.</p>
+<p>worst case: 退化成链表的 BST. 一个 stick. 只有这种极端情况有 O(n).</p>
+<h3 id="insert-in-bst"><code>insert</code> in BST</h3>
+<p>和 search 相似.</p>
+<p>找到 upper bound 和 lower bound，在中间插入.</p>
+<p><img src="note-assets/Screenshot 2024-11-17 at 22.00.41.png" alt="Screenshot 2024-11-17 at 22.00.41" style="zoom:50%;" /></p>
+<p>注意：我们需要一个没有唯一答案的 deterministic policy 来处理 duplicate. 放在左边还是右边？取决于我们对</p>
+<p>v ? current then search left</p>
+<p>v ?  current then search right </p>
+<p>的处理. STL 使用 &lt;, &gt;=</p>
+<p>（也可以使用 &lt;=, &gt;</p>
+<pre><code class="language-c++">void BST_insert(Node *&amp;x, KEY k) {
+  if (x == nullptr)
+    x = new Node(k);
+  else if (k &lt; x-&gt; key)
+    BST_insert(x-&gt;left, k);
+  else 
+    BST_insert(x-&gt;right, k);
+}
+</code></pre>
+<p>不论是插入还是搜索，处理 binary tree 的核心在于 rebase root，对左子树和右子树分别处理.</p>
+<p>Complexity:</p>
+<p>对于 well-balanced BST，O(log n)</p>
+<p>对于 stick, 退化成链表的 BST，worst case，O(n)</p>
+<p>average O(log n)</p>
+<p>实际上对于任意一组数据，都存在一个排列方式能触发 worst case（比如 sorted 的）</p>
+<p>实际上触发 worst case 居然挺容易的。</p>
+<p>这也是为什么我们需要一个可以 self balance 的 binary tree. 等下讲</p>
+<h4 id="exercise-find-min">exercise: find min</h4>
+<p>找到 leftmost 即可</p>
+<pre><code class="language-c++">Node *tree_min(Node *x) {
+  if (x == nullptr)
+    return nullptr;
+    while (x-&gt;left)
+    x = x-&gt;left;
+  return x;
+}
+</code></pre>
+<p>Average: O(log n)</p>
+<p>Worst: O(n)</p>
+<h3 id="remove-in-bst"><code>remove</code> in BST</h3>
+<p>Cases:</p>
+<ol>
+<li>no children (trivial)</li>
+<li>no left child</li>
+<li>no right child</li>
+<li>has two children</li>
+</ol>
+<p><strong>case 2,3 即：replace the current node by its left/right child.</strong> 也是等于 trivial 的. </p>
+<p>case 4 有一点难度.</p>
+<h4 id="when-v-has-both-children">when <code>v</code> has both children</h4>
+<p>observe: left subtree 中所有的元素，都比 right subtree 要小！</p>
+<p><strong>所以：我们把 right subtree 中最小的一个元素（一定是 leaf）拿出来 replace <code>v</code> 就可以了</strong></p>
+<p>称这个</p>
+<p><img src="note-assets/Screenshot 2024-11-17 at 22.22.04.png" alt="Screenshot 2024-11-17 at 22.22.04" style="zoom:50%;" /></p>
+<pre><code class="language-c++">template &lt;class T&gt;
+void BinaryTree&lt;T&gt;::remove(Node *&amp;tree, const T &amp;val) {
+    Node *nodeToDelete = tree;
+  Node *inorderSuccessor;
+
+  // first find the position containing the value to remove
+  if (!tree) return;
+  else if (val &lt; tree-&gt;value) remove(tree-&gt;left, val);
+  else if (val &gt; tree-&gt;value) remove(tree-&gt;right, val);
+
+  // do remove
+  else {
+    // two trivial cases
+    if (tree-&gt;left == nullptr) {
+      tree = tree-&gt;right;
+      delete nodeToDelete;
+    }
+    if (tree-&gt;right == nullptr) {
+      tree = tree-&gt;left;
+        delete nodeToDelete;
+    }
+    // real shit
+    else {
+      inorderSuccessor = tree-&gt;right;
+      //find the inorderSuccessor
+      while (inorderSuccessor-&gt;left != nullptr){
+        inorderSuccessor = inorderSuccessor-&gt;left;
+      }
+      // replace the value of the node with the value of the succssor
+      nodeToDelete-&gt;value = inorderSuccessor-&gt;value;
+      // do one more round, just to remove the original inorderSuccessor
+      remove(tree-&gt;right, inorderSuccessor-&gt;value);
+    }
+  }
+}
+</code></pre>
+<p>仍然是 average O(logn)，worst O(n).</p>
+<h3 id="avl-tree">AVL tree</h3>
+<p>BST 不足之处在于 worst case 总是 O(n) 的. 当数据插入的顺序不巧比较 sorted 时，我们会得到一个几乎退化成链表的 BST，使得所有行为都接近 O(n). 我们希望有一个能自动 balance 自己的 BST.</p>
+<p>所以就有了 AVL tree. 名字来自发明者</p>
+<p>AVL tree 是一种 self-balancing BST. Self-balancing 的意思是 AVL tree 有 <strong>Height Balance Property: 对于任意 internal node，它的左右 subtrees 的 height 差别 &lt;=1</strong></p>
+<p>这个性质的实现是它依靠 rotation 来 correct imbalance.</p>
+<p>Height Balance Property 使得 AVL tree 的 search, insert, remove 达到 <strong>worst case O(logn)</strong></p>
+<p><img src="note-assets/Screenshot 2024-11-17 at 23.33.07.png" alt="Screenshot 2024-11-17 at 23.33.07" style="zoom: 50%;" /></p>
+<p>虽然这很显然，但是我们也可以证明它:</p>
+<p>不妨考虑 AVL 树的最极端情况：任意左右树 height 都相差了 1</p>
+<p>Let <span class="arithmatex">\(n(h)\)</span> 表示 height <span class="arithmatex">\(h\)</span> 的 tree 的 ndoes 数量：</p>
+<p>Then
+$$
+n(h) = 1 + n(h-1) + n(h-2)
+$$
+for all h &gt;= 2</p>
+<p>因而
+$$
+n(h) &gt; 2 \times n(h-2)
+$$
+By induction
+$$
+n(h) &gt; 2^i \times n(h-2i)
+$$
+因而 
+$$
+h &lt; 2 \log n(h) + 2 = \Theta(\log n)
+$$</p>
+<h3 id="avl-insert">AVL: insert</h3>
+<p>AVL tree 的 search 和 sort 就是普通的 BST.</p>
+<p>它维持 Height Balance Property 的方法是 insertion 时维持. (以及 remove)</p>
+<p>基本 idea: 先正常 insert，然后 rearrange tree to balance height</p>
+<h4 id="compute-balance">compute <code>balance</code></h4>
+<p>AVL tree 中的每个元素都 record 其 height.</p>
+<p>计算一个 node 的 balance factor:</p>
+<pre><code class="language-c++">balance(n) = height(n-&gt;left) - height(n-&gt;right)
+</code></pre>
+<p>balance = 0, 1, -1 的都是 AVL-balanced node.</p>
+<p>|balance| &gt; 1: out of balance</p>
+<p><img src="note-assets/Screenshot 2024-11-17 at 23.48.22.png" alt="Screenshot 2024-11-17 at 23.48.22" style="zoom: 33%;" /></p>
+<h4 id="rotation">rotation</h4>
+<p>rotation 是一个 local change involving 三个 subtree ptrs 和两个 nodes.</p>
+<p>right rotation:</p>
+<p>让 left child <span class="arithmatex">\(L\)</span> and left subtree of <span class="arithmatex">\(L\)</span> 提到 root 上, 再把原本的 root <span class="arithmatex">\(V\)</span> 作为它的 right subtree，wtih <span class="arithmatex">\(L\)</span> 原本的 right subtree 成为 <span class="arithmatex">\(V\)</span> 的 left subtree</p>
+<p>left rotation:</p>
+<p>把 right child <span class="arithmatex">\(R\)</span> and right subtree of <span class="arithmatex">\(R\)</span> 提到 root 上，再把原本的 root <span class="arithmatex">\(V\)</span> 作为它的 left subtree，with <span class="arithmatex">\(R\)</span> 原本的 left subtree 成为 <span class="arithmatex">\(V\)</span> 的 right subtree</p>
+<p>(dually)</p>
+<p>容易验证，这保持了 BST 结构.</p>
+<p><img src="note-assets/Screenshot 2024-11-18 at 00.00.51.png" alt="Screenshot 2024-11-18 at 00.00.51" style="zoom:50%;" /></p>
+<pre><code class="language-c++">AVL::Node* AVL::rotate_left(AVL::Node* node) {
+    Node *rightchild = node-&gt;right;
+    Node *rightleftchild = rightchild-&gt;left;
+    node-&gt;right-&gt;left = node;
+    node-&gt;right = rightleftchild;
+    fixHeightBelow(rightchild);
+    return rightchild;
+}
+
+AVL::Node* AVL::rotate_right(AVL::Node* node) {
+    Node *leftchild = node-&gt;left;
+    Node *leftrightchild = leftchild-&gt;right;
+    node-&gt;left-&gt;right = node;
+    node-&gt;left = leftrightchild;
+    fixHeightBelow(leftchild);
+    return leftchild;
+}
+</code></pre>
+<h4 id="how-to-keep-balance-in-avl">how to keep balance in AVL</h4>
+<p>到底应该以哪个 Node 为 root 来 rotate 左右 subtree 呢？</p>
+<p>冷静分析：</p>
+<p>AVL tree，在插入一个节点前一定保持平衡，</p>
+<p>插入一个节点后，它下面的 subtree 的任意节点 balance factor 一定不变，而它的 siblings 以及它们的 subtree 的任意节点的 balance factor 也一定不变。换言之，<strong>balance factor 可能改变以至于不 balance 的只有它到 root 的这段 path 上的节点.</strong> 并且显然，balance 的绝对值至多为 2.</p>
+<p>一旦检测到 balance 绝对值为 2，设想这个时候，我们<strong>找到第一个 unbalance 的节点 <span class="arithmatex">\(V\)</span> ：它的 left, right subtree 不平衡，高度差距 =2. ** 这其中蕴含了一个推论，就是</strong>它的两个 subtree 中至少有一边一定 &gt;= 两层.**</p>
+<p>并且，由于之前所有的 node 的 balance factor 绝对值都 &lt;=1，我们知道<strong>这两个 subtree 中长的一边的左右 subtree (<span class="arithmatex">\(V\)</span> 的subsubtree) 的左右一定从等高变成了不等高，否则之前就不会平衡.</strong> </p>
+<p>所以，这里一定出现了三个高度：</p>
+<ol>
+<li><span class="arithmatex">\(V\)</span> 的短子树，最短</li>
+<li><span class="arithmatex">\(V\)</span> 的长子树的一边子树，其中间</li>
+<li><span class="arithmatex">\(V\)</span> 的长子树的另一边子树，最长</li>
+</ol>
+<p>并且注意到，<strong><span class="arithmatex">\(V\)</span> 的长子树的两边子树高度差距正好为 1，否则在插入前就不平衡；而 <span class="arithmatex">\(V\)</span> 的长子树的长子树和 <span class="arithmatex">\(V\)</span> 的短子树的高度差距正好为 2，导致了这个 imbalance.</strong></p>
+<p>所以只要把这三个树的顺序换一换就好了</p>
+<h4 id="four-cases-of-balance-2-problem">Four cases of balance = 2 problem</h4>
+<p>example:</p>
+<p><img src="note-assets/Screenshot 2024-11-18 at 00.16.29.png" alt="Screenshot 2024-11-18 at 00.16.29" style="zoom: 50%;" /></p>
+<p>我们发现，一次 rotation 并不能保证解决一切问题. 但是所幸，两次可以解决一切问题。因为一共只有 4 个情况。</p>
+<p>我们称为 left left, right right, left right, right left case</p>
+<p>LL, RR 最简单. 旋转一次如图.</p>
+<p><img src="note-assets/Screenshot 2024-11-18 at 23.53.13.png" alt="Screenshot 2024-11-18 at 23.53.13" style="zoom:67%;" /></p>
+<p><img src="note-assets/Screenshot 2024-11-18 at 23.53.04.png" alt="Screenshot 2024-11-18 at 23.53.04" style="zoom:67%;" /></p>
+<p>LR, RL 旋转两次. (第一次先转换成 LL, RR.)</p>
+<p><img src="note-assets/Screenshot 2024-11-18 at 23.54.08.png" alt="Screenshot 2024-11-18 at 23.54.08" style="zoom:80%;" /></p>
+<p>具体的代码：</p>
+<p>我们根本不需要在 imbalance 被发现时遍历树来找到第一个 imbalanced node，而是通过 recursion 找到应该插入的点时自动检测 imbalance，而后直接查询是四个情况中的哪一个. </p>
+<p>recursion 是自顶向下的，但是 stack 是自底向上一个一个完成的。insert 的复杂度等于 search，因为它等于我们 search 并在每个 stack 都完成一次 fix_height 和可能 rotate. 这两个行为是 O(1) 的.</p>
+<p>search 是 O(log n) 的, insert 等于执行 O(log n) 个 O(1) behavior，是 O(log n) 的.</p>
+<pre><code class="language-c++">AVL::Node* AVL::insert_node(AVL::Node* node, int datum) {
+    if (node == nullptr) {
+        // at a leaf position in the tree, so create a new node
+        return new Node{ datum, 1, nullptr, nullptr }; // it has height 1
+    }
+
+    if (datum &lt; node-&gt;datum) {
+        node-&gt;left = insert_node(node-&gt;left, datum);
+        node-&gt;fix_height(); // remember to fix the height of a node after modifying its children
+
+       // Left Left Case
+        if (node-&gt;balance()&gt;1 &amp;&amp; node-&gt;left-&gt;balance() &gt;=0) return rotate_right(node);
+        // Right Right Case
+        if (node-&gt;balance()&lt;-1 &amp;&amp; node-&gt;right-&gt;balance()&lt;=0) return rotate_left(node);
+        // Left Right Case
+        if (node-&gt;balance()&gt;1 &amp;&amp; node-&gt;left-&gt;balance()&lt;0) {node-&gt;left = rotate_left(node-&gt;left);
+            return rotate_right(node);}
+        // Right Left Case
+        if (node-&gt;balance()&lt;-1 &amp;&amp; node-&gt;right-&gt;balance()&gt;0) {node-&gt;right = rotate_right(node-&gt;right); return rotate_left(node);}
+    }
+    else {
+        node-&gt;right = insert_node(node-&gt;right, datum);
+        node-&gt;fix_height(); // remember to fix the height of a node after modifying its children
+
+        // Left Left Case
+        if (node-&gt;balance()&gt;1 &amp;&amp; node-&gt;left-&gt;balance() &gt;=0) return rotate_right(node);
+        // Right Right Case
+        if (node-&gt;balance()&lt;-1 &amp;&amp; node-&gt;right-&gt;balance()&lt;=0) return rotate_left(node);
+        // Left Right Case
+        if (node-&gt;balance()&gt;1 &amp;&amp; node-&gt;left-&gt;balance()&lt;0) {node-&gt;left = rotate_left(node-&gt;left);
+            return rotate_right(node);}
+        // Right Left Case
+        if (node-&gt;balance()&lt;-1 &amp;&amp; node-&gt;right-&gt;balance()&gt;0) {node-&gt;right = rotate_right(node-&gt;right); return rotate_left(node);}
+    }
+    return node;
+}
+</code></pre>
+<h2 id="lec-19-graphs">Lec 19 (Graphs)</h2>
+<p>graph.  set of a vertices collection and an edges collection.</p>
+<p>simple / non-simple ？</p>
+<p>(non-simple: 可以有同一个顶点到自己的 edge)</p>
+<p>directed / undirected  ？</p>
+<p>(directed 的表示方式是一条 edge 的第一个第二个顶点表示顺序)</p>
+<p>weighted / unweighted ？</p>
+<p>(weighted 的表示方式是 edge 加一个组成部分)</p>
+<h3 id="complete-dense-sparse-graph">Complete / Dense / Sparse graph</h3>
+<p>Complete graph: 每个节点都和其他所有节点 connect，一共有 |V| * |V-1| / 2 等于 |V|*2 - 2|V| + 1 个 edges</p>
+<p>Dense graph 和 sparse graph 不是严格的数学概念。</p>
+<p>Dense graph 表示 |E| 和 |V|^2 大小差距较小的 graph. Sparse graph 表示 |E| 和 |V|^2 大小差距较大的 graph (|E| 和 |V| 差不多大).</p>
+<p>显然所有 tree 都是 sparse 的，因为 |E| = |V| - 1</p>
+<p><img src="note-assets/Screenshot 2024-11-24 at 22.55.37.png" alt="Screenshot 2024-11-24 at 22.55.37" style="zoom: 33%;" /></p>
+<p>区分 dense graph 和 sparse graph 的目的是：<strong>我们通常用 adjacency matrix 来表示 dense graph，用 adjacency list 来表示 sparse graph.</strong> </p>
+<p>adjacency matrix 展现出的是 |V|^2 个 entry，表示每个点和每个点，包括自己和自己之间（容许non-simple）有没有边；可以接受 directed graph，用横竖来表示方向；可以接受 weighted graph，使用其变体 distance matrix. adjacency matrix 的 cost 也大，如果是一个 sparse graph 的话则大部分 entry 都是 0 （distance matrix 的话是 infty）</p>
+<h3 id="representing-a-graph-adjacency-matrix">Representing a graph: Adjacency matrix</h3>
+<p>Adjacency matrix 适合用来表示比较 dense 的 graph.（对于 unweighted graph，0 表示无 edge，1表示有 egde；对于 weighted graph，infty 表示无 edge，每个 entry 上表示 edge value）</p>
+<p>Space: |V|^2 </p>
+<p>查看两个顶点是否有边：O(1)</p>
+<p>修改和删除边：O(1)</p>
+<p>遍历某个顶点的所有 neighbor: O(|V|)</p>
+<p>遍历整个图：O(|V|^2)</p>
+<p><img src="note-assets/Screenshot 2024-11-24 at 23.00.43.png" alt="Screenshot 2024-11-24 at 23.00.43" style="zoom: 33%;" /></p>
+<p><img src="note-assets/Screenshot 2024-11-26 at 20.39.33.png" alt="Screenshot 2024-11-26 at 20.39.33" style="zoom: 33%;" /></p>
+<h4 id="c-infty">在 C++ 中表示 infty</h4>
+<pre><code class="language-c++">#include &lt;limits&gt;
+double infty = std::numeric_limits&lt;double&gt;::infinity();
+</code></pre>
+<p>它和有限非 0 数的任何操作都得到自己</p>
+<p>如果使用 VS 的集成编译系统，那么它除以自己得到 1，乘以 0 得到 0，减去自己得到 0</p>
+<p>如果自己使用 g++ 编译，那么这三个行为都得到 nan (not a number).</p>
+<h3 id="representing-a-graph-adjacency-list">Representing a graph: Adjacency list</h3>
+<p>Adjacency list 适合用来表示比较 sparse 的 graph.</p>
+<p>它的做法就是建立一个 vector of vectors，第一层数量等于 |V|，每个 vector 都是一个 vertex 的 vertex list</p>
+<p>于是：假设 edges 是随机分布的，<strong>每个 vertex 的 vertex list 长度是 O(E/V)</strong></p>
+<p>space 是: O(1+|E|/|V|) for each vertex，<strong>O(|V|+|E|)</strong> 总共（这是显然的因为一共的 entries 数量就是 |E|）</p>
+<p><strong>找到一个 edge 的 time：O(|E| / |V|)</strong></p>
+<h4 id="adajacency-list-directed-weighted-graph">Adajacency list 表示 directed, weighted graph</h4>
+<p>用 adjacency list 表示 directed graph：很简单，对于 undirected graph，每条边都会在两个顶点的 vertex list 中各出现一次；而对于 directed graph，每条边只会出现在起点的 vertex list.</p>
+<p>表示 <strong>unweighted graph：每个 vertex list 是 a list of vertices</strong>；表示 <strong>weighted graph：每个 vertex list 是 a list of pairs，一个 pair 是一个 vertex 和一个表示 weight 的数.</strong></p>
+<h4 id="complexity-analysis">常见的 Complexity Analysis</h4>
+<ol>
+<li>查看两点间是否有边</li>
+</ol>
+<p>Matrix: 全部 O(1)，直接 random access</p>
+<p>List: worst O(|V|)，best O(1)，average O(1 + |E| / |V|)，即遍历一个 list</p>
+<ol>
+<li>查找离一个点最近的一个点</li>
+</ol>
+<p>Matrix：全部 O(|V|)，找一行</p>
+<p>List：worst O(|V|)，best O(1)，average O(1 + |E| / |V|)，即遍历一个 list</p>
+<p>这些是最基本的操作。而我们在图上还有一些常用操作：比如查找最短路径，这是我们在图上最常用的操作</p>
+<p>有三个方法：</p>
+<ol>
+<li><strong>DFS：只适用于 trees！</strong>在 general 的 graph 上回由于 multiple paths 出现问题</li>
+<li><strong>BFS：只适用于 unweighted graph</strong></li>
+<li><strong>Dijstra：广泛适用于 weighted graph</strong></li>
+</ol>
+<h3 id="dfs-tree">DFS 找最短路: 只适用于 tree 性质的图</h3>
+<p>伪代码：</p>
+<pre><code>DFS(G):
+    mark the root as visited
+    push root to stack
+    while (stack not empty):
+        get and pop top
+    for each child of top:
+        if child visited:
+            mark visited
+            push child to top of stack
+            if child is the goal
+                return success
+  return failure
+</code></pre>
+<p><strong>DFS 只能找到两个顶点之间的一个 path，但是不保证是什么样的 path</strong></p>
+<p><strong>如果这个图是一个 tree，那么就可以用 DFS 找最短路，因为任意两个节点之间一定只有一条路，这条路就是最短路</strong></p>
+<p>但是一旦不是 tree，那么找到的 path 就不是最短 path.</p>
+<p>方法是把其中一个节点作为 root（recall：tree 中任何节点都可以作为 root！）从它起，深度优先遍历它的所有 subtree，也就是整个 graph</p>
+<p>流程：我们放一个 stack，先把作为 root 的起点放进去</p>
+<p>while stack 非空：把 top 弹出，top 的所有 neighbor 全部放进 stack</p>
+<p>（这样遍历实际上不是一根到底的，而是把 root 所有 children 都放进去，再遍历所有 children 中最右边 children 的所有 chilren，一直遍历到把右节点耗尽，然后从下往上遍历完 root 的最右子树，然后向左传播</p>
+<p>time: </p>
+<ol>
+<li>for list: O(1 + |E| / |V|) for each vertex list，因而是 <strong>O(|V| + |E|)</strong> </li>
+<li>for matrix: O(|V|^2)</li>
+</ol>
+<p><img src="note-assets/Screenshot 2024-11-27 at 19.36.12.png" alt="Screenshot 2024-11-27 at 19.36.12" style="zoom:50%;" /></p>
+<p><img src="note-assets/Screenshot 2024-11-27 at 19.36.33.png" alt="Screenshot 2024-11-27 at 19.36.33" style="zoom:50%;" /></p>
+<p>Remember：存一个  parent vector 表示每个 node 的上一个 node 是什么，通过回溯来决定 path 长度</p>
+<pre><code class="language-c++">class GraphMatrix {
+public:
+    std::vector&lt;std::vector&lt;int&gt;&gt; matrix; // 邻接矩阵
+    int vertices;                         // 顶点数
+
+    // DFS 只能确保在最短路唯一的情况下找到最短路，其他情况找到的路径不是最短的
+    int dfs(int start, int target) {
+          int path_length = 0;
+        std::vector&lt;int&gt; path;
+        std::vector&lt;bool&gt; visited(vertices, false);
+        std::stack&lt;int&gt; search;
+        std::vector&lt;int&gt; parent(vertices, -1);
+        search.push(start);
+        visited[start] = true;
+
+        while (!search.empty()) {
+            int current = search.top(); search.pop();
+
+            // found: backtrace
+            if (current == target) {
+                int v = target;
+                path_length = 0;
+                while (v != -1) {
+                    path.push_back(v);
+                    int p = parent[v];
+                    if (p != -1) {
+                        path_length += matrix[p][v];
+                    }
+                    v = p;
+                }
+                return path_length;
+            }
+
+            for (int i = 0; i &lt; vertices; ++i) {
+                if (matrix[current][i] != 0 &amp;&amp; !visited[i]) {
+                    visited[i] = true;
+                    parent[i] = current;
+                    search.push(i);
+                }
+            }
+        }
+        return -1;
+    }
+};
+</code></pre>
+<h3 id="bfs-unweighted-graph">BFS 找最短路: 只适用于 unweighted graph</h3>
+<p><img src="note-assets/Screenshot 2024-11-27 at 16.16.02.png" alt="Screenshot 2024-11-27 at 16.16.02" style="zoom: 50%;" /></p>
+<p>BFS 的流程和 DFS 的流程唯一的差别是用的是 queue 而不是 stack.</p>
+<p>BFS 能够在 unweighted graph 上找到最短路的原因就是：以起点为 root，BFS 每遍历一层，离起点的距离就远了一层。所以第一次找到终点，一定是最短的距离</p>
+<pre><code class="language-c++">        // BFS 找最短路（仅适用于无权图或等权图）
+    int bfs(int start, int end) {
+        std::queue&lt;int&gt; q;
+        std::vector&lt;bool&gt; visited(vertices, false);
+        std::vector&lt;int&gt; distance(vertices, -1);
+        std::vector&lt;int&gt; parent(vertices, -1);
+        q.push(start);
+        visited[start] = true;
+        distance[start] = 0;
+
+        while (!q.empty()) {
+            int current = q.front();
+            q.pop();
+
+            if (current == end) {
+                int pathLength = 0;
+                int node = end;
+                while (node != -1 &amp;&amp; node != start) {
+                    node = parent[node];
+                    pathLength+=1;
+                }
+                return pathLength;
+            }
+
+            for (int i = 0; i &lt; vertices; ++i) {
+                if (matrix[current][i] != 0 &amp;&amp; !visited[i]) {
+                    q.push(i);
+                    visited[i] = true;
+                    parent[i] = current;
+                    distance[i] = distance[current] + 1;
+                }
+            }
+        }
+        return -1; // 未找到路径
+    }
+</code></pre>
+<p>time: 同 BFS</p>
+<ol>
+<li>for list: O(1 + |E| / |V|) for each vertex list，因而是 <strong>O(|V| + |E|)</strong> </li>
+<li>for matrix: O(|V|^2)</li>
+</ol>
+<h3 id="dijkstra">Dijkstra 找最短路</h3>
+<p>DFS 和 BFS 找最短路本质上都是：遍历图，把找到的第一条路作为最短路。</p>
+<p>而它们的限制其实就是在什么情况下它们找到的第一条路就是最短路：DFS 是在只有一条路的情况下，BFS 是在权重全部相同的情况下。这些都是极端情况。</p>
+<p>找 single source 最短路的普遍算法是 Dijstra.</p>
+<p>Dijstra 可以找到：对于单个 source，其他所有的 nodes 到这个 source 的最短距离</p>
+<p>思路：</p>
+<ol>
+<li>记一个 distance vector，表示所有 nodes 到 source 的距离</li>
+</ol>
+<p>初始化：dist[source] = 0，dist[其他] = infty</p>
+<ol>
+<li>记一个 visited vector，表示哪些端点还没有被 visit 过（visit 指作为主顶点更新和它所有 neighbors 的 min distance）</li>
+</ol>
+<p>一直到所有端点都被 visit 完之前，持续 <strong>visit 当前没有被 visit 过的顶点中 dist 最小的一个，称之为 <span class="arithmatex">\(u\)</span></strong> ，访问它的所有 neighbors，尝试更新 <span class="arithmatex">\(u\)</span> 的每个 neighbor <span class="arithmatex">\(v\)</span> 的 dist 值：经过 <span class="arithmatex">\(u\)</span> 是否能让它的距离变短？
+   $$
+   dist[v] = min(dist[v], dist[u] + l(u,v))
+   $$</p>
+<p>这是一个 greedy 的算法。</p>
+<pre><code>Dijkstra(G, s)
+  for all u ∈ V \ {s}, d(u) = ∞
+  d(s) = 0
+  R = {}
+  while R 6= V
+    pick u not in R with smallest d(u)
+    R = R ∪ {u}
+    for all vertices v adjacent to u
+        if d(v) &gt; d(u) + l(u, v)
+            d(v) = d(u) + l(u, v)
+</code></pre>
+<h4 id="proof-invariant-hypothesis-of-dijkstra">Proof: Invariant Hypothesis of Dijkstra</h4>
+<p>Claim:  <strong>每次循环后，如果不是所有的 unvisited nodes 的 dist 都是无穷，那么 unvisited nodes 中 dist 最短的那个一定是最终形态；</strong></p>
+<p>（<strong>因而，我们每次都选择当前 dist 最短的 unvisited node 来 visit，最后一定可以得到所有 nodes 和 source 都是最短距离</strong>）</p>
+<p>Base case: source 距离自己的路径长度是 0.</p>
+<p>Inductive step: 假设现在所有 visited 的 nodes 的 dist 已经是最终形态，且当前存在dist 非 infty 的 nodes；WTS：目前 unvisited 的 nodes 中当前 dist 最短的 node <span class="arithmatex">\(u\)</span> 是最终形态</p>
+<p>Pf: suppose for contradiction 它不是最终形态</p>
+<p><strong>那么之后存在一条路径达到它，这条路径的距离比更新它的时候检查的所有 neighbors 中转达到它更加短</strong></p>
+<p>关键事实：<strong>这条路径在到达 <span class="arithmatex">\(u\)</span> 前，要么全部都是当前的 visited nodes，要么存在当前的 unvisited nodes</strong></p>
+<p>case（1）上一个节点是当前的 visited node：由于 visited nodes 的 dist 已经全部 finalize 了，在访问这些 nodes 的过程中已经把它们的 neighbors，包括 <span class="arithmatex">\(u\)</span> 在内，更新到了当前 visited nodes 能够涵盖的最小。既然这条路所有的 nodes 都 visited 过了，那么这个 path 的长度就是当前的 dist(u). 所以矛盾</p>
+<p>case（2）路径上存在至少一个 unvisited node：令 <strong><span class="arithmatex">\(v\)</span> 为这条路径上第一个 unvisited node.</strong> </p>
+<p>注意：<strong>决定选择 <span class="arithmatex">\(u\)</span> 作为准备 visit 的 node 的时候，也查看了 <span class="arithmatex">\(v\)</span>！由于我们选择了 <span class="arithmatex">\(u\)</span>，这个时候从 visit 过的确认是最短路径的任何节点，到其他 unvisited 节点，到 <span class="arithmatex">\(v\)</span> 要比到 <span class="arithmatex">\(u\)</span> 更远！</strong> </p>
+<p>那么由于每个 edge 长度都是非负的，从 <span class="arithmatex">\(v\)</span> 到 <span class="arithmatex">\(u\)</span> 的这段路径非负，</p>
+<p>已知最终的 dist(u) = 当前的 dist(v) + v到u的某段路径，而当前的 dist(v) 又比当前的 dist(u) 大，当前的 dist(u) 比最终的 dist(u) 大。矛盾</p>
+<p>下面就是上述的 Dijkstra 的  implementation </p>
+<h4 id="naive-dijkstra">Naive Dijkstra</h4>
+<pre><code class="language-c++">const int INF = INT_MAX;
+// 不使用优先队列的 Dijkstra 算法
+void dijkstraWithoutPQ(int n, int source, vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt; &amp;graph) {
+    vector&lt;int&gt; dist(n, INF);       // 最短距离数组
+    vector&lt;bool&gt; visited(n, false); // 是否访问过
+
+    dist[source] = 0;
+    for (int i = 0; i &lt; n; ++i) {
+        int u = -1;
+        int minDist = INF;
+        // 找到未访问节点中距离最小的节点
+        for (int j = 0; j &lt; n; ++j) {
+            if (!visited[j] &amp;&amp; dist[j] &lt; minDist) {
+                u = j;
+                minDist = dist[j];
+            }
+        }
+        if (u == -1) break; // 所有节点都访问过或者无法到达
+        visited[u] = true;
+
+        // 更新相邻节点的距离
+        for (auto &amp;edge : graph[u]) {
+            int v = edge.first, weight = edge.second;
+            if (!visited[v] &amp;&amp; dist[u] + weight &lt; dist[v]) {
+                dist[v] = dist[u] + weight;
+            }
+        }
+    }
+    // 输出结果
+    for (int i = 0; i &lt; n; ++i) {
+        cout &lt;&lt; &quot;Distance from source to node &quot; &lt;&lt; i &lt;&lt; &quot;: &quot;;
+        if (dist[i] == INF) cout &lt;&lt; &quot;INF&quot; &lt;&lt; endl;
+        else cout &lt;&lt; dist[i] &lt;&lt; endl;
+    }
+}
+</code></pre>
+<p>复杂度显然是：O(|V|^2 + |E|) </p>
+<p>|E| 是更新节点距离的总共消耗，|V|^2 则是遍历所有 vertices list</p>
+<h4 id="dijkstra-with-pq">Dijkstra with PQ</h4>
+<p>由于我们每次都要选取非 infty 的 unvisited 中最短的一个来作为 visited，我们不如建立一个 PQ.</p>
+<p>这样只需要 O(log|V|) 就可以找到最短的</p>
+<p>注意到：实际上我们并不需要一个 visited vector 来追踪哪些访问过了哪些没有。使用 PQ 的情况下，我们持续地把新的待开发 neighbors 的 node 放入其中，只要 PQ 还没空就一直按照我们的期望跑下去。<strong>如果 PQ 空了，那就说明所有联通 source 的节点都找到了最短路。如果还有节点没有找到，要么它不联通 source，否则一定会在某个 visited node 的轮次内找到更短的路径，从而被放进 PQ。这是我们证明过的。</strong></p>
+<p>因而这个版本的 Dijkstra 非常简洁。</p>
+<pre><code class="language-c++">// 使用优先队列的 Dijkstra 算法
+void dijkstraWithPQ(int n, int source, vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt; &amp;graph) {
+    vector&lt;int&gt; dist(n, INF); // 最短距离数组
+    priority_queue&lt;pair&lt;int, int&gt;, vector&lt;pair&lt;int, int&gt;&gt;, greater&lt;&gt;&gt; pq;
+
+    dist[source] = 0;
+    pq.push({0, source}); // {距离, 节点}
+
+    while (!pq.empty()) {
+        auto [curDist, u] = pq.top(); pq.pop();
+        if (curDist &gt; dist[u]) continue; // 当前路径不优，不处理
+        // 更新相邻节点的距离
+        for (auto &amp;edge : graph[u]) {
+            int v = edge.first, weight = edge.second;
+            if (dist[u] + weight &lt; dist[v]) {
+                dist[v] = dist[u] + weight;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+
+    // 输出结果
+    for (int i = 0; i &lt; n; ++i) {
+        cout &lt;&lt; &quot;Distance from source to node &quot; &lt;&lt; i &lt;&lt; &quot;: &quot;;
+        if (dist[i] == INF) cout &lt;&lt; &quot;INF&quot; &lt;&lt; endl;
+        else cout &lt;&lt; dist[i] &lt;&lt; endl;
+    }
+}
+</code></pre>
+<h4 id="backtracking-dijkstra-finding-path">Backtracking Dijkstra finding path</h4>
+<p>这是一个带 backtracking 的 Dijkstra，通过添加一个 prev vector 来追踪具体路径</p>
+<pre><code class="language-c++">// 使用优先队列的 Dijkstra 算法，带回溯功能
+void dijkstraWithPath(int n, int source, vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt; &amp;graph) {
+    vector&lt;int&gt; dist(n, INF);          // 最短距离数组
+    vector&lt;int&gt; prev(n, -1);           // 前驱节点数组，用于回溯路径
+    priority_queue&lt;pair&lt;int, int&gt;, vector&lt;pair&lt;int, int&gt;&gt;, greater&lt;&gt;&gt; pq;
+
+    dist[source] = 0;
+    pq.push({0, source}); // {距离, 节点}
+
+    while (!pq.empty()) {
+        auto [curDist, u] = pq.top(); pq.pop();
+
+        if (curDist &gt; dist[u]) continue; // 当前路径不优，不处理
+
+        // 更新相邻节点的距离
+        for (auto &amp;edge : graph[u]) {
+            int v = edge.first, weight = edge.second;
+            if (dist[u] + weight &lt; dist[v]) {
+                dist[v] = dist[u] + weight;
+                prev[v] = u; // 记录前驱节点
+                pq.push({dist[v], v});
+            }
+        }
+    }
+
+    // 输出结果：最短距离和路径
+    for (int i = 0; i &lt; n; ++i) {
+        cout &lt;&lt; &quot;Distance from source to node &quot; &lt;&lt; i &lt;&lt; &quot;: &quot;;
+        if (dist[i] == INF) {
+            cout &lt;&lt; &quot;INF&quot; &lt;&lt; endl;
+            continue;
+        }
+        cout &lt;&lt; dist[i] &lt;&lt; endl;
+
+        // 回溯路径
+        cout &lt;&lt; &quot;Path: &quot;;
+        vector&lt;int&gt; path;
+        for (int at = i; at != -1; at = prev[at]) {
+            path.push_back(at);
+        }
+        reverse(path.begin(), path.end()); // 路径需要反转
+        for (size_t j = 0; j &lt; path.size(); ++j) {
+            cout &lt;&lt; path[j];
+            if (j &lt; path.size() - 1) cout &lt;&lt; &quot; -&gt; &quot;;
+        }
+        cout &lt;&lt; endl;
+    }
+}
+</code></pre>
+<p>测试:</p>
+<pre><code class="language-c++">int main() {
+    int n = 5;
+    vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt; graph(n);
+    graph[0].push_back({1, 10});
+    graph[0].push_back({4, 5});
+    graph[1].push_back({2, 1});
+    graph[1].push_back({4, 2});
+    graph[2].push_back({3, 4});
+    graph[3].push_back({0, 7});
+    graph[3].push_back({2, 6});
+    graph[4].push_back({1, 3});
+    graph[4].push_back({2, 9});
+    graph[4].push_back({3, 2});
+
+    std::cout &lt;&lt; &quot;Dijkstra without priority queue:&quot; &lt;&lt; std::endl;
+    dijkstraWithoutPQ(n, 0, graph);
+    std::cout &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;Dijkstra with priority queue:&quot; &lt;&lt; std::endl;
+    dijkstraWithPQ(n, 0, graph);
+    std::cout &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;Dijkstra with priority queue and path:&quot; &lt;&lt; std::endl;
+    dijkstraWithPath(n, 0, graph);
+}
+</code></pre>
+<h2 id="lec-20-mst">Lec 20 (MST)</h2>
+<p>一个 <strong>weighted undirected connected graph</strong> 的一个 <strong>spanning tree</strong> 就是它的一个 subgraph，其 connect 所有点并且无 cycle（即是一个 tree）</p>
+<p>minimal spaning tree 就是它的所有 spanning tree 中总 weights 和最小的 （可以有多个</p>
+<h3 id="cut-property">Cut Property</h3>
+<p>Cut Property: <strong>任意地切分一个图（把顶点分为两个集合，其 disjoint union 是整个 V），在 cross 两个顶点集的所有边上，如果其中一条严格小于其他所有边，那么这条边一roof: 个切分，并取它的 crossing edges 中的最短一边。</strong></p>
+<p>假设存在一个 MST，称为 T，不包含这条边 e：</p>
+<p>由于 T 是 connected 的，这些边中至少有一条，称为 e' ，在 T 中</p>
+<p>by 连通图的性质，<strong>这两个顶点集组成的两个子图都是连通图，所以去掉 e' 加入 e 后仍然是连通的</strong></p>
+<p>于是有
+$$
+w(T   \backslash {e} \; \cup {e'}) &lt; w(T)
+$$
+和 T 是 MST 矛盾了 </p>
+<h4 id="corollary-shortest-edge-for-one-vertex-must-be-in-all-mst-in-some-if-unstrict">Corollary: shortest edge for one vertex must be in all MST; in some if unstrict</h4>
+<p>对于任意一个 edge，我们都可以把它和其他所有顶点分为两个 subgraph（单点集和其他所有点的子图）</p>
+<p>所以 by cut property，任意一个顶点 associated 的所有 edges 中如果存在严格最短的，那么这条 edge 一定在所有 MST 中</p>
+<p>类似逻辑可证明：<strong>任意一个顶点 associated 的所有 edges 中如果存在多个最短的，那么它们都各自在某个 MST 中.</strong></p>
+<p>（And Another Trivial Collary: Cycle Property</p>
+<p>于图中的任意 cycle，如果其中的一条边比 cycle 中的其他边都严格长，那么它一定不在任何 MST 中。This is trivially true.）</p>
+<h3 id="prims-algorithm-using-cut-property">Prim's Algorithm: Using Cut Property</h3>
+<p>记录三个 vector，每个都 of |V| size</p>
+<ol>
+<li>visited vector：每个 node v 是否被 visited</li>
+<li>minimal edge weight vector: 每个 node v 的 minimal edge weight</li>
+<li>parent vector: 每个 node v 的 parent</li>
+</ol>
+<h4 id="correctness">Correctness 分析</h4>
+<p>流程：</p>
+<ol>
+<li>设置所有的 visited 是 false（not visited）；设置 minimal edge weight vector 全部是 infty；设置 parent vector 全部是 -1（no parent）</li>
+</ol>
+<p>我们<strong>用 k_v 来把整个图分割成两个集合</strong>，于是就可以运用 cut property（Corollary: shortest edge for one vertex must be in all MST; in some if unstrict）</p>
+<p>minimal weight edges vector 用来保存所有 nodes 在作为 outie set 元素的时候，与 intie set 元素形成的边中最短的一个；于是，遍历整个 outie set，<strong>所有的 minimal weight edges 中最短的一个就是 outie set 和 intie set 边缘上最短的边！</strong></p>
+<ol>
+<li><strong>loop |V| 次，每次选择 intie set 和 outie set 边缘上最短的一个 edge，把它连接的 outie node 加入 intie set 中，这样就无 cycle 地添加了 |V-1| 条 edges，根据连通图的性质，最后一定会得到一个 spanning tree！</strong></li>
+</ol>
+<p>每一次我们把一个 node 加入 intie set，我们就更新它所有 neighbors 的边的长度，放入 minimal weight edges vector</p>
+<p>这样，我们就总是能 keep track of intie 和 outie 边缘处的边，因为一旦一个 node 变成 intie，它和它周围的 outies 的边就立刻被更新</p>
+<p>通过 corollary of cut property，我们可以证明<strong>每次携带一条边加入新 node 后，生成的都是某个 MST 的一个 subtree</strong>，于是 by 联通图的性质，最后生成的一定是一个完整的 MST!</p>
+<h4 id="heap-prim">不使用 heap 的朴素 prim</h4>
+<pre><code class="language-c++">void primMST(vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt; &amp;graph, int V) {
+    vector&lt;int&gt; key(V, INT_MAX);   // To store the minimum weight for each vertex
+    vector&lt;bool&gt; inMST(V, false);   // To check if a vertex is included in the MST
+    vector&lt;int&gt; parent(V, -1);      // To store the parent of each vertex in the MST
+
+    key[0] = 0;   // Start from vertex 0
+    for (int count = 0; count &lt; V - 1; count++) {
+        int minKey = INT_MAX, u;
+
+        // Find the minimum key vertex not included in the MST
+        for (int v = 0; v &lt; V; v++) {
+            if (!inMST[v] &amp;&amp; key[v] &lt; minKey) {
+                minKey = key[v];
+                u = v;
+            }
+        }
+
+        inMST[u] = true; // Include the vertex in the MST
+
+        // Update key value and parent for adjacent vertices
+        for (auto &amp;edge : graph[u]) {
+            int v = edge.first;
+            int weight = edge.second;
+            if (!inMST[v] &amp;&amp; weight &lt; key[v]) {
+                key[v] = weight;
+                parent[v] = u;
+            }
+        }
+    }
+
+    // Print the MST
+    cout &lt;&lt; &quot;Prim's MST:\n&quot;;
+    for (int i = 1; i &lt; V; i++) {
+        cout &lt;&lt; parent[i] &lt;&lt; &quot; - &quot; &lt;&lt; i &lt;&lt; &quot;\n&quot;;
+    }
+}
+</code></pre>
+<p>过一个流程：</p>
+<ol>
+<li>更新第一个 node 进入 intie.</li>
+</ol>
+<p>更新它三个 neighbors 的 minimal edges</p>
+<p><img src="note-assets/Screenshot 2024-11-28 at 05.18.13.png" alt="Screenshot 2024-11-28 at 05.18.13" style="zoom:50%;" /></p>
+<ol>
+<li>进入下一循环，遍历 outie 发现这个时候 intie, outie 的cut 上最短边来自 d</li>
+</ol>
+<p>于是把 d 放进 intie，更新 d 周围的 minimal edges.</p>
+<p>有四条，<strong>其中一条是和 a 的，发现 a 在 intie 里（True），于是这条不更新</strong>；<strong>其余三条，d 造成的新边都要比老边短，于是更新</strong></p>
+<p><img src="note-assets/Screenshot 2024-11-28 at 05.19.41.png" alt="Screenshot 2024-11-28 at 05.19.41" style="zoom:50%;" /></p>
+<ol>
+<li>下一循环，发现 outies 里最短边来自 e</li>
+</ol>
+<p>更新</p>
+<p><img src="note-assets/Screenshot 2024-11-28 at 05.23.52.png" alt="Screenshot 2024-11-28 at 05.23.52" style="zoom:50%;" /></p>
+<ol>
+<li>更新，下一个最低来自 f</li>
+</ol>
+<p><img src="note-assets/Screenshot 2024-11-28 at 05.24.18.png" alt="Screenshot 2024-11-28 at 05.24.18" style="zoom:50%;" /></p>
+<ol>
+<li><img src="note-assets/Screenshot 2024-11-28 at 05.25.14.png" alt="Screenshot 2024-11-28 at 05.25.14" style="zoom:50%;" /></li>
+<li><img src="note-assets/Screenshot 2024-11-28 at 05.25.34.png" alt="Screenshot 2024-11-28 at 05.25.34" style="zoom:50%;" /></li>
+</ol>
+<p>这是一个贪心算法，核心在于每次更新 indie，indie 里所有的 nodes 的三个值都不用再变了，是局部最优。</p>
+<h4 id="heap-prim_1">使用 heap 的 Prim</h4>
+<p>和 Dijkstra 一样，我们既然每次都要找到 outies 的 minimal edges 里面的最小值，不如起一个 PQ，总能提高运行效率</p>
+<p>PQ：每次更新 minimal edges，我们都把更新好的 <node, min_edge_val> 放进 PQ.</p>
+<p>这个 implementation 比 Dijkstra 更简单，因为我们处理丢进 PQ 但中途被放进 intie 的 nodes 的方法也很简单：每次从 PQ 中弹出 top 元素，检查它是不是 outie 元素，是的话就正常操作，不是就忽略。</p>
+<pre><code class="language-c++">void primMSTHeap(vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt; &amp;graph, int V) {
+    priority_queue&lt;pair&lt;int, int&gt;, vector&lt;pair&lt;int, int&gt;&gt;, greater&lt;pair&lt;int, int&gt;&gt;&gt; pq;
+    vector&lt;int&gt; key(V, INT_MAX); 
+    vector&lt;bool&gt; inMST(V, false); 
+    vector&lt;int&gt; parent(V, -1);
+    key[0] = 0;
+
+    pq.push({0, 0});  // (weight, vertex)
+    while (!pq.empty()) {
+        int u = pq.top().second;
+        pq.pop();
+
+        if (inMST[u]) continue; // ignore if already intie
+        inMST[u] = true; // Include the vertex in the MST
+
+        // Update key value and parent for adjacent vertices
+        for (auto &amp;edge : graph[u]) {
+            int v = edge.first;
+            int weight = edge.second;
+            if (!inMST[v] &amp;&amp; weight &lt; key[v]) {
+                key[v] = weight;
+                parent[v] = u;
+                pq.push({key[v], v});
+            }
+        }
+    }
+
+    // Print the MST
+    cout &lt;&lt; &quot;Prim's MST using Heap:\n&quot;;
+    for (int i = 1; i &lt; V; i++) {
+        cout &lt;&lt; parent[i] &lt;&lt; &quot; - &quot; &lt;&lt; i &lt;&lt; &quot;\n&quot;;
+    }
+}
+</code></pre>
+<h4 id="complexity">Complexity 分析</h4>
+<ol>
+<li>不使用 heap 的朴素实现</li>
+</ol>
+<p>loop: |V|</p>
+<p>每个 loop 内，loop 一层 outie 来选择 minimal edge：|V|；更新 neighbors 的 min edges: O(1 + |E|/|V|)</p>
+<p>因而是 <span class="arithmatex">\(O(|V|^2 + |E|)\)</span></p>
+<ol>
+<li>使用 heap 的实现：</li>
+</ol>
+<p>While pq nonempty：loop 是 O(|E|) 的</p>
+<p>​     PQ.Getmin: O(log |E|)</p>
+<p>​     在 loop 内遍历更新 neighbors 的 min edges：O(1 + |E|/|V|)；</p>
+<p>​            对于每个 neighbor 都 insert PQ: O(log|E|)</p>
+<p>因而是 $O(|E| log|E|) $</p>
+<p>所以使用 heap 未必更快。可以明确的是：<strong>在 graph 比较 sparse 的情况下，使用 heap 更快</strong></p>
+<h3 id="minimum-cost-egde-property">Minimum-cost egde property</h3>
+<p>如果 graph 中 minimum cost 的 edge 是 Unique 的，那么它一定在任何 MST 中</p>
+<p>proof: 假设存在一个 MST 没有这一边，那么把它放进 T 中 形成一个循环，去掉任意一个其他边仍然是一个 tree</p>
+<h4 id="corollary-sorting-property">Corollary: sorting property</h4>
+<p>对一个 connected graph 的所有边长<strong>进行排序，前 k 个不形成 cycle 的 edges 一定是某个 MST 的 subgraph</strong>。</p>
+<p>（因而，前 |V| -1 个不形成 cycle 的 edges 一定一个 MST.）</p>
+<p>proof: </p>
+<p>Proof by induction.</p>
+<p>Base case: k = 0. </p>
+<p>Inductive step: 假设 <span class="arithmatex">\(e_1, ..., e_{k-1}\)</span> 是某个 MST <span class="arithmatex">\(T\)</span> 的 subgraph，并且 e_k 是接下来的最小且和 <span class="arithmatex">\(e_1, ..., e_{k-1}\)</span> 不形成 cycle</p>
+<p>那么我们看向 <span class="arithmatex">\(T\)</span>：把  <span class="arithmatex">\(e_k\)</span> 加入到 <span class="arithmatex">\(T\)</span> 中形成了一个 cycle，于是把其中一个边去掉又是一个 tree. 由于有其他边长都大于等于 <span class="arithmatex">\(e_k\)</span>，那么一定可以用 <span class="arithmatex">\(e_k\)</span> 来替换这个边</p>
+<p>实际上我们可以这么想：</p>
+<p>一个 spanning tree 是由一个点作为起点，每加入一条边就是新加入一个顶点。加入 <span class="arithmatex">\(|V|-1\)</span> 次就结束了</p>
+<p>因而当我们固定起点，其实<strong>每个新加入的顶点都 associate 了它被加入时的边。</strong></p>
+<p>MST 就是让加入每个顶点时它 associate 的边尽量最短</p>
+<p>我们<strong>选择一个加入后不形成 cycle 的边，其实就是加入一个新的顶点。</strong></p>
+<p>我们把所有边都排序好，<strong>选择前 <span class="arithmatex">\(|V|-1\)</span> 个最短的不形成 cycle 的边，就是加入 $|V|-1 $ 个其他顶点，并且确保它们的 weights 总和达到最小</strong>. 任何其他选择都只不过是换一换两个点加入的顺序和它们加入时 associate 的边，但是这个选择一定不会比我们通过排序获得的选择更好。</p>
+<h3 id="kruskals-algorithm-using-sorting-property">Kruskal's Algorithm: Using sorting property</h3>
+<p>Kruskal's algorithm 就是 sorting property 的直接 application.</p>
+<p>算法：我们 sort edges，然后 loop through all edges，跳过形成 cycle 的. Idea 十分简单</p>
+<h4 id="cycle-union-find-set">如何检测是否有 cycle: union-find set</h4>
+<p>sorting 很简单，而检测有无 cycle 则需要思考</p>
+<p>Idea：<strong>当我们想添加一条边的时候，它会形成一个 cycle 当且仅当它的两个顶点已经 connected</strong></p>
+<p>所以：我们用一个 <strong>union-find set 来 keep track of connectivity.</strong></p>
+<p>用两个顶点属于同一个集合来表示 connected，每当放一个新的 edge 等待判断的时候，我们首先查看它们是否在同一个集合</p>
+<p><strong>进入 MST 的时候，我们就把它们的顶点 union</strong>. （设置其中一个的 parent 为另一个）</p>
+<p>note：每次加入新边，一定是带着一个新元素。当所有元素都进入同一个 set，也就意味着 MST 形成。</p>
+<p>对于所有不在 MST 中的 nodes，它们的 representative 一定是自己，因为没有修改过。</p>
+<p>所以一条边的两个顶点都在 MST subgraph 中，当且仅当它会导致 cycle，当且仅当它的两个顶点被 find 出来发现 root 相同.</p>
+<p>这证明了 union-find set 来检测 cycle 的正确性。</p>
+<pre><code class="language-c++">// Union-Find Disjoint Set data structure
+struct DisjointSet {
+    vector&lt;int&gt; parent, rank;
+    DisjointSet(int n) : parent(n), rank(n, 0) {
+        for (int i = 0; i &lt; n; i++) {
+            parent[i] = i;
+        }
+    }
+
+    int find(int u) {
+        if (u != parent[u]) {
+            parent[u] = find(parent[u]);
+        }
+        return parent[u];
+    }
+
+    void unite(int u, int v) {
+        int rootU = find(u);
+        int rootV = find(v);
+        if (rootU != rootV) {
+            if (rank[rootU] &lt; rank[rootV]) {
+                parent[rootU] = rootV;
+            } else if (rank[rootU] &gt; rank[rootV]) {
+                parent[rootV] = rootU;
+            } else {
+                parent[rootV] = rootU;
+                rank[rootU]++;
+            }
+        }
+    }
+};
+
+
+void kruskalMST(vector&lt;Edge&gt; &amp;edges, int V) {
+    sort(edges.begin(), edges.end(), compareEdges);
+
+    DisjointSet ds(V);
+    vector&lt;Edge&gt; mst;
+
+    for (auto &amp;edge : edges) {
+        if (ds.find(edge.src) != ds.find(edge.dest)) {
+            mst.push_back(edge);
+            ds.unite(edge.src, edge.dest);
+        }
+    }
+
+    // Print the MST
+    cout &lt;&lt; &quot;Kruskal's MST:\n&quot;;
+    for (auto &amp;edge : mst) {
+        cout &lt;&lt; edge.src &lt;&lt; &quot; - &quot; &lt;&lt; edge.dest &lt;&lt; &quot;\n&quot;;
+    }
+}
+</code></pre>
+<h2 id="lab-09-graphs">Lab 09 (Graphs)</h2>
+<h3 id="algorithm-problem-decide-graph-has-a-cycle">algorithm problem: decide graph has a cycle</h3>
+<p>Given: 一个 connected graph with adjacent list</p>
+<p>idea:
+DFS the graph. </p>
+<p>每次到一个 Node, mark it as visited.</p>
+<p>每次 DFS 的时候，我们有：</p>
+<ol>
+<li>当前 node 的上一个 node (当前 node 是哪个 node DFS 来的)</li>
+<li>当前 node</li>
+<li>当前 node 的 adjacent nodes, 等待 DFS</li>
+</ol>
+<p>我们传入当前 node 的上一个 node 为 parent；检查每个新到的 node 是不是当前 node 的 parent 或者 unvisited：如果既不是 parent 又已经 visited 了，那么说明它是一个 back route. 于是一定存在 cycle.</p>
+<pre><code class="language-c++">// complexity: O(V + E)
+bool is_graph_cyclic(const vector&lt;vector&lt;int&gt;&gt; &amp;adj_list) {
+    unordered_set&lt;int&gt; visited;
+
+    // Since the graph is connected, we only need to start from one node (e.g., node 0 or 1)
+    return hasCycleDFS(0, -1, adj_list, visited);
+}
+
+bool hasCycleDFS(int node, int parent, 
+                const vector&lt;vector&lt;int&gt;&gt;&amp; adjList, 
+                unordered_set&lt;int&gt;&amp; visited) {
+    visited.insert(node);
+
+    for (int neighbor : adjList[size_t(node)]) {
+        // If the neighbor is not visited, recurse
+        if (visited.find(neighbor) == visited.end()) {
+            return hasCycleDFS(neighbor, node, adjList, visited);
+        }
+        // If the neighbor is visited and not the parent, we found a cycle
+        else {
+          if (neighbor != parent)
+            return true;
+        }
+    }
+    // reach here: all neighbors are visited, and not parent, then ends
+    return false;
+}
+
+
+int main() {
+    // Example: Input graph
+    const vector&lt;vector&lt;int&gt;&gt; adjList = {
+        {2, 3}, //0
+        {2},  //1
+        {0, 1}, //2
+        {0} //3
+    };
+
+    if (is_graph_cyclic(adjList)) {
+        cout &lt;&lt; &quot;Graph contains a cycle&quot; &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; &quot;Graph does not contain a cycle&quot; &lt;&lt; endl;
+    }
+
+</code></pre>
+<h2 id="lec-21-algorithm-family">Lec 21 (Algorithm Family)</h2>
+<h3 id="brute-force-greedy-algorithm">Brute-Force &amp;&amp; Greedy Algorithm</h3>
+<p>简称暴力搜索。</p>
+<p>例子：Counting Change</p>
+<p>我现在有 1, 2, 5, 10 元的硬币一些，请使用最少的硬币，来 sum up to <span class="arithmatex">\(x\)</span> 元</p>
+<p>Brute-Force Algorithm:</p>
+<p>对于 <span class="arithmatex">\(n\)</span> 个 coins，有 <span class="arithmatex">\(2^n\)</span> 中可能的 subset</p>
+<p>把它们全部都列出来，并检查每一种是否 add up to <span class="arithmatex">\(x\)</span>，keep 当前最少的硬币数量</p>
+<p>Complexity：<span class="arithmatex">\(O(n2^n)\)</span></p>
+<p>Def: Greedy Algorithm 就是做出一系列 locally optimal decisions 以取得一个 globally optimal solution（我们不对 locally optimal decisions 做出任何修改）；<strong>当且仅当我们可以证明 locally optimal decisions lead to globally optimal solution 时，greedy algorithm 是有效的。</strong></p>
+<p>Possible Greedy way to Count change：</p>
+<p>我们希望 minimize #amounts of coins，to reach sum = <span class="arithmatex">\(x\)</span></p>
+<p>我们发现，把所有 coins 从大到小排列，如果大的 fit in 就直接拿一枚大的硬币 <span class="arithmatex">\(c_i\)</span>，再考虑如何 reach <span class="arithmatex">\(x-value(c_i)\)</span> </p>
+<p>Complexity: <span class="arithmatex">\(O(n)\)</span></p>
+<p>但是这个 greedy 并不成立。</p>
+<p>反例：现在有 25，10，1 元硬币，要凑齐 30 元</p>
+<p>如果拿了 25 元：那么不得不拿 5 个一元，结果一共拿了 6 个硬币</p>
+<p>最优解：3个10元</p>
+<h2 id="lec-22-backtracking-branch-and-bound">Lec 22 (Backtracking &amp;&amp; branch and bound)</h2>
+<p>我们介绍两种问题：</p>
+<ol>
+<li>Constraint Satisfaction Problems：给定很多 Constraints，我们是否能 satisfy 它们所有？如何 satisfy？</li>
+</ol>
+<p>可能有多个答案。</p>
+<p>ex: sorting</p>
+<ol>
+<li>Optimization problems：在 satisfy 所有 constraints 的前提下，我们如何 minimize 一个 objective function？</li>
+</ol>
+<p><strong>对于 constraint satisfaction problems，backtracking 通常是好的算法；对于 Optimization problems，branch and bound 通常是好的算法</strong></p>
+<h3 id="backtracking-idea">Backtracking: idea</h3>
+<p>实际上 backtracking 和暴力搜索很像，不同的点在于：<strong>我们沿着一个 tree 来 preorder traverse 它，每当发现解行不通时，我们就把当前 node 下面的整个 subtree 给剪掉（称为剪枝），然后回溯到它的 parent node，换一个 child node 继续遍历。</strong></p>
+<p>好的剪枝策略可以大大降低时间损耗。</p>
+<p>backtracking 的 idea 就是：在庞大的解空间中，通过剪枝来不断削减其大小，最后只需要遍历一小部分 promising 的解，就可以找到所有可能的解</p>
+<p>流程</p>
+<p>form 1:</p>
+<pre><code>Algorithm checknode(node v)
+    if (promising(v))
+        if (isSol(v))
+            done
+        else
+            for each node u adjacent to v
+                checknode(u)
+</code></pre>
+<p>form 2:</p>
+<pre><code>Algorithm checknode(node v)
+    if (isSol(v))
+        good, add to solution set
+    else
+        for each node u adjacent to v
+            if (promising(u))
+                checknode(u)
+</code></pre>
+<h3 id="n-queens-backtracking-problem">n-queens: 经典 backtracking problem</h3>
+<p>n-queens 的规则（constraints）：</p>
+<ol>
+<li>同行只能有一个 queen</li>
+<li>同列只能有一个 queen</li>
+<li>两个 queen 不能在对角线上</li>
+</ol>
+<p>否则就会相互攻击。我们在 n*n 的棋盘上放 n 个 queens，看看有多少种放置方法可以使它们都无法相互攻击。</p>
+<p>Idea：</p>
+<pre><code class="language-c++">void NQueens::solve() {
+    putQueen(0);
+}
+
+// promising if would not violate any constraints
+bool NQueens::promising(uint32_t row, uint32_t col) {
+    return   column[col] == AVAILABLE
+        &amp;&amp; leftDiagonal[row + col] == AVAILABLE
+        &amp;&amp; rightDiagonal[row - col + (size - 1)] == AVAILABLE;
+}  // NQueens::promising()
+
+// Place a queen in row
+// If display == true, display each board as a solution is found
+void NQueens::putQueen(uint32_t row) {
+    // 如果这个时候已经 proceed 到了最后行, 说明这是一个 sol.
+    if (row == size) {++solutions;return;} 
+
+    // Check every column within this row
+    for (size_t col = 0; col &lt; size; ++col) {
+        // Check if proposed placement is promising
+        if (promising(row, col)) {
+            // Make the move, and a recursive call to next move
+            positionInRow[row] = col;
+            column[col] = !AVAILABLE;
+            leftDiagonal[row + col] = !AVAILABLE;
+            rightDiagonal[row - col + (size - 1)] = !AVAILABLE;
+            putQueen(row + 1);
+
+            // Undo this move and thus backtrack
+            column[col] = AVAILABLE;
+            leftDiagonal[row + col] = AVAILABLE;
+            rightDiagonal[row - col + (size - 1)] = AVAILABLE;
+        }  // if
+        ++tried;
+    }  // for
+}  // NQueens::putQueen()
+</code></pre>
+<p>复杂度：<span class="arithmatex">\(O(n!)\)</span></p>
+<p>还是很大，但是比暴力搜索的 <span class="arithmatex">\(O(n^n)\)</span> 要好；并且由于剪枝的建立，实际情况会比 <span class="arithmatex">\(O(n!)\)</span> 要好。</p>
+<h3 id="branch-and-bound-backtracking-with-optimization">Branch and Bound: Backtracking with optimization</h3>
+<h3 id="solve-tsp-with-branch-and-bound">Solve TSP with Branch and Bound</h3>
+<p>TSP 问题：给定 n 个城市及它们之间的距离矩阵 dist，找到一条从城市 0 开始，访问所有城市最后回到城市 0 （hamilton cycle）的最短路径。</p>
+<pre><code class="language-c++">const int INF = numeric_limits&lt;int&gt;::max();
+struct Node {
+    int level;       // 当前深度
+    int cost;        // 当前路径的代价
+    int bound;       // 当前节点的下界
+    vector&lt;int&gt; path; // 当前路径
+    // PQ 比较函数，小的优先
+    bool operator&lt;(const Node&amp; other) const {
+        return bound &gt; other.bound;
+    }
+};
+
+// 计算给定矩阵的最小边界
+int calculateBound(const vector&lt;vector&lt;int&gt;&gt;&amp; dist, const vector&lt;int&gt;&amp; path, int n) {
+    int bound = 0;
+
+    // 标记已经访问的城市
+    vector&lt;bool&gt; visited(n, false);
+    for (int city : path) visited[city] = true;
+
+    // 加上路径中已有的代价
+    for (size_t i = 1; i &lt; path.size(); ++i) {
+        bound += dist[path[i - 1]][path[i]];
+    }
+
+    // 为未访问的城市估计下界
+    for (int i = 0; i &lt; n; ++i) {
+        if (!visited[i]) {
+            int minCost = INF;
+            for (int j = 0; j &lt; n; ++j) {
+                if (i != j &amp;&amp; !visited[j]) {
+                    minCost = min(minCost, dist[i][j]);
+                }
+            }
+            if (minCost != INF) bound += minCost;
+        }
+    }
+
+    return bound;
+}
+
+// TSP 分支限界主函数
+int tspBranchAndBound(const vector&lt;vector&lt;int&gt;&gt;&amp; dist) {
+    int n = dist.size();
+    priority_queue&lt;Node&gt; pq; // 优先队列，按节点的下界排序
+    int bestCost = INF;      // 当前最优解
+    vector&lt;int&gt; bestPath;    // 最优路径
+
+    // 初始节点
+    Node root;
+    root.level = 0;
+    root.cost = 0;
+    root.path = {0}; // 从城市 0 开始
+    root.bound = calculateBound(dist, root.path, n);
+    pq.push(root);
+
+    // 分支限界搜索
+    while (!pq.empty()) {
+        Node curr = pq.top();
+        pq.pop();
+
+        // 如果当前节点的下界大于最优解，剪枝
+        if (curr.bound &gt;= bestCost) continue;
+
+        // 如果当前路径包含所有城市并回到起点
+        if (curr.level == n - 1) {
+            // 计算完整路径的代价
+            int totalCost = curr.cost + dist[curr.path.back()][0];
+            if (totalCost &lt; bestCost) {
+                bestCost = totalCost;
+                bestPath = curr.path;
+                bestPath.push_back(0); // 回到起点
+            }
+            continue;
+        }
+
+        // 生成子节点
+        for (int i = 0; i &lt; n; ++i) {
+            if (find(curr.path.begin(), curr.path.end(), i) == curr.path.end()) {
+                Node child;
+                child.level = curr.level + 1;
+                child.path = curr.path;
+                child.path.push_back(i);
+                child.cost = curr.cost + dist[curr.path.back()][i];
+                child.bound = child.cost + calculateBound(dist, child.path, n);
+
+                // 如果下界小于当前最优解，加入优先队列
+                if (child.bound &lt; bestCost) {
+                    pq.push(child);
+                }
+            }
+        }
+    }
+
+    // 输出最优路径
+    cout &lt;&lt; &quot;最优路径: &quot;;
+    for (int city : bestPath) {
+        cout &lt;&lt; city &lt;&lt; &quot; &quot;;
+    }
+    cout &lt;&lt; endl;
+
+    return bestCost;
+}
+
+
+int main() {
+    // 示例：距离矩阵
+    vector&lt;vector&lt;int&gt;&gt; dist = {
+        {0, 10, 15, 20},
+        {10, 0, 35, 25},
+        {15, 35, 0, 30},
+        {20, 25, 30, 0}
+    };
+
+    int result2 = tspBranchAndBound(dist);
+    cout &lt;&lt; &quot;Shortest path by branch and bound: &quot; &lt;&lt; result2 &lt;&lt; endl;
+
+    return 0;
+}
+</code></pre>
+<h4 id="approximation-algorithms">Approximation Algorithms</h4>
+<h5 id="nearest-neighbor-2opt">nearest neighbor + 2opt 优化</h5>
+<ol>
+<li>nearest neighbor: 从 node 0 开始，每次都选择最近的未访问 neighbor</li>
+</ol>
+<p>这是一个很直白的算法.</p>
+<p><strong>O(n^2)</strong></p>
+<p>问题在于：在刚开始的时候, 总权重很小，不亚于正确的 TSP 路径；但是越到后面，已访问的nodes多了，就会出现 nodes 比较近的 neighbors 都已经被访问，只能绕远路的情况。因而比较极端的数据会导致误差很大</p>
+<ol>
+<li>2opt:  对于 nearest neighbor 选取好的路径，尝试选取任意两条不相邻的边 AB, CD 看看能否换成 AC, BD，如果能的话，换了之后能否降低总路径。</li>
+</ol>
+<p>while (局部优化无法再提高, 即上一次循环中没有被提高) {</p>
+<p>​    for (all nodes)</p>
+<p>​        for(all other nodes)</p>
+<p>​            ...</p>
+<p>​            // if swap succeed, then 局部优化又一次提高了</p>
+<p>}</p>
+<p><strong>O(n^3)</strong></p>
+<h4 id="insertion">insertion</h4>
+<p>分为 nearest, furtherest 以及 arbitratary insertion. 但其实都一样，就是每次加入一个点进入当前的 partial tour，</p>
+<p>这个点的选取，根据三个策略有不同，但没有明显的优劣之分</p>
+<p>这个点的插入就是在 partial tour 中减去一条边 AB，添加两条边 AC, BC. 我们选择它插入 partial tour 的位置使得 这个 AC+BC-BC 最小，也就是它造成的 distance 的增加最小</p>
+<ol>
+<li>
+<p>首先锁定第一个 node 0 和与它最近/最远/随机的 node i，0 to i to 0 形成一个 partial tour</p>
+</li>
+<li>
+<p>每次迭代都是一个 partial tour (subTSP cycle), </p>
+</li>
+</ol>
+<p>(1) for nearest/furtherest: 随便选一个 partial tour 中的 node 里，看看不在 partial tour 中的 nodes 哪个和它最近/最远，选取这个 node 为下一个访问的点；for arbitrary: 随机选取一个不在 partial tour 中的 node 作为下一个访问的点.</p>
+<p>(2) 遍历 partial tour，找到插入位置</p>
+<h2 id="lec-23-dp">Lec 23 (DP)</h2>
+<p>通常的 recursive algorithm 是把整个问题 recursively 划分为 independent 的子问题</p>
+<p>而 DP 则用来处理可以分成 subproblems，但它们之间却不 independent 的问题</p>
+<p>并且，DP 可以 reduce 一个 recursive function 的 runtime（通<strong>过一个 table 储存子问题的 solution</strong>，把时间从 <strong>O(c^n) exponential 降到 O(n^c) polynomial</strong>），是一个<strong>用 memory 来 trade time 的做法</strong>，这种 technique 叫做 <strong>memoization</strong></p>
+<h3 id="memoization">Memoization</h3>
+<p>Rewrite 一个 recursive function:
+    On Exit:</p>
+<p>​       Save inputs and the result</p>
+<p>​   On entry: </p>
+<p>​       Check the inputs: whether have seen before</p>
+<p>​       if so, then retrieve the result from memo</p>
+<h3 id="fibo-naive-and-dp">Fibo: naive and DP</h3>
+<pre><code class="language-c++">uint64_t naiveFibo(uint32_t i) {
+    if (i == 1 || i == 0) return i;
+    return naiveFibo(i-1) + naiveFibo(i-2);
+}
+</code></pre>
+<p>O(1.6^n)，exponential</p>
+<pre><code class="language-c++">uint64_t topDownFibo(uint32_t n) {
+    static uint64_t memo[MAX_FIB + 1] = {0, 1}; //initial value
+    // if n is too large, not in range of service
+    if (n &gt; MAX_FIB) return 0;
+    // if already computed, return the value
+    if (memo[n] &gt; 0 || n==0) return memo[n];
+
+    memo[n] = topDownFibo(n-1) + topDownFibo(n-2);
+    return memo[n];
+}
+</code></pre>
+<p>O(n)，因为每个 entry 至多只会被计算一次</p>
+<pre><code class="language-c++">uint64_t bottomUpFibo(uint32_t n) {
+    static uint64_t memo[MAX_FIB + 1] = {0, 1}; //initial value
+    for (uint32_t i = 2; i &lt;= n; i++) {
+        memo[i] = memo[i-1] + memo[i-2];
+    }
+    return memo[n];
+}
+</code></pre>
+<p>更明显的 O(n)</p>
+<h3 id="binomial-coefficent-dp">Binomial Coefficent DP</h3>
+<div class="arithmatex">\[
+\binom{n}{k}
+ = \frac{n!}{k!(n-k)!}
+\]</div>
+<p>按照数学公式直接计算：good idea，complexity 也只有 O(n)，</p>
+<p>但是：仅仅 21! 就能 overflow 一个 int64.</p>
+<p>阶乘数实在太大了。所以更加好的办法是使用递归公式：
+$$
+\binom{n}{k}  = \binom{n-1}{k-1} + \binom{n-1}{k}
+$$
+（n 个东西里面选 k 个，就等于 </p>
+<p>Case 1：第 n 个东西被选中，所以还要在 n-1 个东西里选 k-1 个；</p>
+<p>Case 2：第 n 个东西没被选中，所以还要在 n-1 个东西里选 k 个</p>
+<p>的情况的相加）</p>
+<p>Base case:
+$$
+\binom{n}{0} = \binom{n}{n} = 1<br />
+$$</p>
+<p>Recursion 做法：</p>
+<pre><code class="language-c++">uint64_t binomialCoeffRecursion(uint32_t n, uint32_t k) {
+    if (k == 0 || k == n) return 1;
+    return binomialCoeffRecursion(n-1, k-1) + binomialCoeffRecursion(n-1, k);
+}
+</code></pre>
+<p>exponential.</p>
+<p>Top-Down DP：</p>
+<pre><code class="language-c++">uint64_t binomialCoeffHelper(uint32_t n, uint32_t k, vector&lt;vector&lt;uint64_t&gt;&gt;&amp; memo) {
+    if (k == 0 || k == n) {
+        memo[k][n] = 1;
+        return 1;
+    }
+    if (memo[k][n] &gt; 0) return memo[k][n];
+    memo[k][n] = binomialCoeffHelper(n-1, k-1, memo) + binomialCoeffHelper(n-1, k, memo);
+    return memo[k][n];
+}
+
+uint64_t binomialCoeffTopDown(uint32_t n, uint32_t k) {
+    vector&lt;vector&lt;uint64_t&gt;&gt; memo(k+1, vector&lt;uint64_t&gt;(n+1, 0));
+    return binomialCoeffHelper(n, k, memo);
+}
+</code></pre>
+<p>Bottom-Up DP:</p>
+<pre><code class="language-c++">uint64_t binomialCoeffBottomUp(uint32_t n, uint32_t k) {
+    vector&lt;vector&lt;uint64_t&gt;&gt; memo(k+1, vector&lt;uint64_t&gt;(n+1));
+    for (size_t i = 0; i &lt;= k; i++) {
+        for (size_t j = i; j &lt;= n; j++) {
+            if (i==j || i==0) memo[i][j] = 1;
+            else memo[i][j] = memo[i-1][j-1] + memo[i][j-1];
+        }
+    }
+    return memo[k][n];
+}
+</code></pre>
+<p>O(nk)</p>
+<p>THM: 任何 top-down DP 都可以转化为 bottom-up DP！</p>
+<p>但是，bottom-up 不见得总比 top-down 要轻松</p>
+<h3 id="knight-moves-dp">Knight Moves DP</h3>
+<p>knight 也就是象棋里的马，可以往任何方向直走两格之后再转90度走一格。</p>
+<p><img src="note-assets/Screenshot 2024-11-30 at 19.34.44.png" alt="Screenshot 2024-11-30 at 19.34.44" style="zoom:50%;" /></p>
+<p>问题：从某个格子 (startX, startY) 出发，走 exactly K 步，有多少种走法可以到另一个格子 (destX, destY)？</p>
+<p>Idea: DP！建立一个 3D table，其中第一个维度表示第几步，第二第三维度是整个棋盘</p>
+<p>这是一个简单的 DP. 第 N 步的棋盘就是：遍历第 N-1 步的棋盘，所有 &gt;0 (说明第 N-1 步possible 到达这个地方) 的格子的 possible moves.
+$$
+dp[k][x][y]= \sum_{\text{(nx, ny) 是有效位置}}</p>
+<p>dp[k−1][nx][ny]
+$$
+注意 1：第 N-1 步的棋盘上的一格上面的数字多大，say it is M，就表示 <strong>前 N-1 步有 M 种方法在第 N-1 步时到达这个格子</strong>，于是第 N-1 步到第 N 步，这个格子上 8 个方向上的 moves 都有 M 重.（直观）也就是 for all 8 directions，<code>dp[k][nx][ny] += dp[k - 1][x][y];</code></p>
+<p>注意 2：超过棋盘边界不算。</p>
+<pre><code class="language-c++">int knightMoveDP(int plateWidth, int totalMoves, int startX, int startY, int destX, int destY) {
+    // Initialize a 3D DP table with all zeros
+    vector&lt;vector&lt;vector&lt;int&gt;&gt;&gt; dp(totalMoves + 1, vector&lt;vector&lt;int&gt;&gt;(plateWidth, vector&lt;int&gt;(plateWidth, 0)));
+
+    // Base case: starting position
+    dp[0][startX][startY] = 1;
+
+    // Fill DP table
+    for (int k = 1; k &lt;= totalMoves; ++k) {
+        for (int x = 0; x &lt; plateWidth; ++x) {
+            for (int y = 0; y &lt; plateWidth; ++y) {
+                if (dp[k - 1][x][y] &gt; 0) { // If there are paths to this cell
+                    for (auto move : knightMoves) {
+                        int nx = x + move.first;
+                        int ny = y + move.second;
+                        if (nx &gt;= 0 &amp;&amp; nx &lt; plateWidth &amp;&amp; ny &gt;= 0 &amp;&amp; ny &lt; plateWidth) { // Valid move
+                            dp[k][nx][ny] += dp[k - 1][x][y];
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Print the entire chessboard for the K-th step
+    cout &lt;&lt; &quot;Chessboard at step &quot; &lt;&lt; totalMoves &lt;&lt; &quot;:&quot; &lt;&lt; endl;
+    for (int x = 0; x &lt; plateWidth; ++x) {
+        for (int y = 0; y &lt; plateWidth; ++y) {
+            cout &lt;&lt; dp[totalMoves][x][y] &lt;&lt; &quot; &quot;;
+        }
+        cout &lt;&lt; endl;
+    }
+
+    // Return the number of paths to (tx, ty) after K moves
+    return dp[totalMoves][destX][destY];
+}
+
+
+/*
+Chessboard at step 4:
+16 0 17 0 18 0 7 0 
+0 10 0 22 0 8 0 7 
+17 0 16 0 23 0 10 0 
+0 22 0 36 0 14 0 9 
+18 0 23 0 18 0 9 0 
+0 8 0 14 0 6 0 4 
+7 0 10 0 9 0 6 0 
+0 7 0 9 0 4 0 0    
+*/  
+</code></pre>
+<p>时间： <span class="arithmatex">\(O(KN^2)\)</span></p>
+<p>实际运行：每走一步，所有数字的总和大概乘以 8，实际上比 8 小，因为有很多超过边界的。</p>
+<p><img src="note-assets/Screenshot 2024-11-30 at 20.11.33.png" alt="Screenshot 2024-11-30 at 20.11.33" style="zoom: 67%;" /></p>
+<p><img src="note-assets/Screenshot 2024-11-30 at 20.11.51.png" alt="Screenshot 2024-11-30 at 20.11.51" style="zoom:50%;" /></p>
+<p><img src="note-assets/Screenshot 2024-11-30 at 20.12.03.png" alt="Screenshot 2024-11-30 at 20.12.03" style="zoom:50%;" /></p>
+<p><img src="note-assets/Screenshot 2024-11-30 at 20.12.14.png" alt="Screenshot 2024-11-30 at 20.12.14" style="zoom:50%;" /></p>
+<h3 id="solve-tsp-with-dp">Solve TSP with DP</h3>
+<p>TSP 问题：给定 n 个城市及它们之间的距离矩阵 dist，找到一条从城市 0 开始，访问所有城市最后回到城市 0 （hamilton cycle）的最短路径。</p>
+<pre><code class="language-c++">
+// TSP 动态规划解法
+int tsp(int n, const vector&lt;vector&lt;int&gt;&gt;&amp; cost) {
+    // dp[mask][i] 表示从起点 0 出发，经过 mask 表示的所有城市，最后停留在城市 i 的最短路径长度
+    vector&lt;vector&lt;int&gt;&gt; dp(1 &lt;&lt; n, vector&lt;int&gt;(n, INT_MAX));
+
+    // 初始状态，从起点 0 出发，路径长度为 0
+    dp[1][0] = 0;
+
+    // 遍历所有状态 mask
+    for (int mask = 1; mask &lt; (1 &lt;&lt; n); ++mask) {
+        for (int i = 0; i &lt; n; ++i) {
+            // 如果城市 i 不在当前 mask 中，跳过
+            if (!(mask &amp; (1 &lt;&lt; i))) continue;
+
+            // 尝试从集合 mask 中的其他城市转移到 i
+            for (int j = 0; j &lt; n; ++j) {
+                if (j != i &amp;&amp; (mask &amp; (1 &lt;&lt; j)) &amp;&amp; dp[mask ^ (1 &lt;&lt; i)][j] != INT_MAX) {
+                    dp[mask][i] = min(dp[mask][i], dp[mask ^ (1 &lt;&lt; i)][j] + cost[j][i]);
+                }
+            }
+        }
+    }
+
+    // 最后计算从每个终点返回起点的最短路径
+    int result = INT_MAX;
+    for (int i = 1; i &lt; n; ++i) {
+        if (dp[(1 &lt;&lt; n) - 1][i] != INT_MAX) {
+            result = min(result, dp[(1 &lt;&lt; n) - 1][i] + cost[i][0]);
+        }
+    }
+
+    return result;
+}
+</code></pre>
+<h3 id="difference-between-dp-and-divide-and-conquer">Difference between DP and Divide-and-Conquer</h3>
+<p>Divide-and-Conquer 即把一个问题分成 non-overlapping 的子问题，通过一个递推式表示 recursion 关系。我们希望最好能把一个问题切分成 equal size 且参数呈倍数关系的子问题，这样我们更加可能用 master theorem 找出复杂度</p>
+<p>比如 
+$$
+f(x) = 2f(x/3) + x^2
+$$
+这种递推式.</p>
+<p>Divide and Conquer 也分为 Top down 和 Bottom up(combine and conquer)</p>
+<ol>
+<li>
+<p>通常 Divide and Conquer：Binary search，quicksort...</p>
+</li>
+<li>
+<p>Combine and Conquer：merge sort...</p>
+</li>
+</ol>
+<pre><code>// Divide and Conquer(top down)
+quicksort(array)
+    partition;
+    quicksort(left)
+    quicksort(right)
+
+// Combine and Conquer(bottom up)
+mergesort(array)
+    merge_sort(left);
+    merge_sort(right);
+    merge(left, right);
+</code></pre>
+<p>（merge sort 先解决子问题，再 combine 子问题的 solutions；quick sort 先切分成两部分，两部分子问题都解决之后原问题自然解决）</p>
+<p>DP 和 Divide-and-Conquer 的区别在于：</p>
+<p>DP 使用几个可能 overlapping 的 subproblems 的答案来解决大问题，并通过表格储存先前的 subproblems 答案；</p>
+<p>Divide and Conquer 不允许 overlapping subproblems，而是把问题分成几个不相关的子问题，逐个解决。</p>
+<h2 id="lec-24-knapsack-and-floyds-algorithm">Lec 24 (Knapsack and Floyd's algorithm)</h2>
+<h3 id="0-1-knapsack">0-1 knapsack</h3>
+<pre><code class="language-c++">// 0-1 Knapsack Function
+int knapsack(const vector&lt;int&gt;&amp; weights, const vector&lt;int&gt;&amp; values, int W) {
+    int n = weights.size();
+    vector&lt;vector&lt;int&gt;&gt; dp(n + 1, vector&lt;int&gt;(W + 1, 0));
+
+    for (int i = 1; i &lt;= n; ++i) {
+        for (int w = 0; w &lt;= W; ++w) {
+            if (weights[i - 1] &lt;= w) {
+                dp[i][w] = max(dp[i - 1][w], dp[i - 1][w - weights[i - 1]] + values[i - 1]);
+            } else {
+                dp[i][w] = dp[i - 1][w];
+            }
+        }
+    }
+
+    return dp[n][W];
+}
+
+int main() {
+    // Input: weights, values, and max capacity of knapsack
+    vector&lt;int&gt; weights = {2, 3, 4, 5};
+    vector&lt;int&gt; values = {3, 4, 5, 6};
+    int W = 8;
+
+    int max_value = knapsack(weights, values, W);
+    cout &lt;&lt; &quot;Maximum value that can be obtained: &quot; &lt;&lt; max_value &lt;&lt; endl;
+
+    return 0;
+}
+//Maximum value that can be obtained: 10
+</code></pre>
+<h3 id="floyds-algorithm">Floyd's algorithm</h3>
+<pre><code class="language-c++">const int INF = INT_MAX;
+
+void floydWarshall(vector&lt;vector&lt;int&gt;&gt;&amp; graph) {
+    int V = graph.size();
+    vector&lt;vector&lt;int&gt;&gt; dist = graph;
+
+    // 三重循环
+    for (int k = 0; k &lt; V; ++k) {
+        for (int i = 0; i &lt; V; ++i) {
+            for (int j = 0; j &lt; V; ++j) {
+                // 如果通过 k 能连接 i 和 j，并且减少路径距离
+                if (dist[i][k] != INF &amp;&amp; dist[k][j] != INF &amp;&amp;
+                    dist[i][j] &gt; dist[i][k] + dist[k][j]) {
+                    dist[i][j] = dist[i][k] + dist[k][j];
+                }
+            }
+        }
+    }
+
+    // 输出结果
+    cout &lt;&lt; &quot;Shortest distances between every pair of vertices:\n&quot;;
+    for (int i = 0; i &lt; V; ++i) {
+        for (int j = 0; j &lt; V; ++j) {
+            if (dist[i][j] == INF) {
+                cout &lt;&lt; &quot;INF &quot;;
+            } else {
+                cout &lt;&lt; dist[i][j] &lt;&lt; &quot; &quot;;
+            }
+        }
+        cout &lt;&lt; endl;
+    }
+}
+
+int main() {
+    // 输入：邻接矩阵表示的图 (无穷大用 INF 表示)
+    vector&lt;vector&lt;int&gt;&gt; graph = {
+        {0, 3, INF, 7},
+        {8, 0, 2, INF},
+        {5, INF, 0, 1},
+        {2, INF, INF, 0}
+    };
+
+    floydWarshall(graph);
+
+    return 0;
+}
+
+/*
+Shortest distances between every pair of vertices:
+0 3 5 6 
+5 0 2 3 
+3 6 0 1 
+2 5 7 0  
+*/
+</code></pre>
+<h2 id="lab-10-dp">Lab 10 (DP)</h2>
+<h4 id="algorithm-problem-discount-dp">Algorithm Problem: Discount DP</h4>
+<p>given a sequence of orders，for each one, either:</p>
+<ol>
+<li>25% discount (always have)</li>
+<li>先前 pay full 五次, 得到一次免费（上限为 5，积累超过 5 次则再多次数不算</li>
+</ol>
+<p>要求：minimize cost</p>
+<p>Idea: 建立 <code>memo[6][num_orders]</code></p>
+<p>每个 entry 表示</p>
+<p>状态转移方程:</p>
+<p>for k = 1~5:</p>
+<p>第 n 个 order 结束攒了 k 个 fullpay 点数的情况的最优解 = </p>
+<p>Min(第 n-1 个 order 结束攒了 k-1 个 fullpay 点数时的钱 + 第 n 个 order pay full 的钱攒点数, </p>
+<p>第 n-1 个 order 结束攒了 k 个 fullpay 点数时的钱 + 第 n 个 order 使用 discount 的钱)</p>
+<p>for k = 0:</p>
+<p>第 n 个 order 结束攒了 k 个 fullpay 点数的情况的最优解 = </p>
+<p>Min(</p>
+<p>第 n-1 个 order 结束攒了 0 个 fullpay 点数的钱 + 第 n 个 order 使用 discount 的钱,</p>
+<p>第 n-1 个 order 结束攒了 5 个 fullpay 点数的钱 + 第 n 个 order 消耗 5 fullpay 免费</p>
+<p>)</p>
+<pre><code class="language-c++">// How much you pay for a discounted (25% off) meal.
+cost discounted(cost full_price) {
+    return full_price * 3 / 4;
+}
+
+cost best_price(const std::vector&lt;cost&gt;&amp; prices) {
+    // NOTE: if you use a bottom-up approach, initialize your table with
+    // std::numeric_limits&lt;cost&gt;::max()/4 ... you MUST divide by 4!
+    if (prices.size() == 0) {
+        return 0;
+    }
+
+    std::vector&lt;std::vector&lt;cost&gt;&gt; dp(6, std::vector&lt;cost&gt;(prices.size(), std::numeric_limits&lt;cost&gt;::max()/4));
+
+    // base case: 第一次没有 punch card
+    dp[0][0] = discounted(prices[0]);
+    dp[1][0] = prices[0];
+
+    for (size_t j = 1; j &lt; prices.size(); ++j) {
+        for (size_t i = 0; i &lt; 6; ++i) {
+            if (i == 0) {
+                // Min(第 j-1 个 order 结束攒了 0 个 fullpay 点数的钱 + 第 j 个 order 使用 discount 的钱,
+                //     第 j-1 个 order 结束攒了 5 个 fullpay 点数的钱 + 第 j 个 order 消耗 5 fullpay 免费)
+                dp[i][j] = std::min(discounted(prices[j]) + dp[0][j-1], dp[5][j-1]);
+            } else {
+                // Min(第 j-1 个 order 结束攒了 i-1 个 fullpay 点数时的钱 + 第 j 个 order pay full 的钱攒点数, 
+                //     第 j-1 个 order 结束攒了 i 个 fullpay 点数时的钱   + 第 j 个 order 使用 discount 的钱)
+                dp[i][j] = std::min(prices[j] + dp[i-1][j-1], discounted(prices[j]) + dp[i][j-1]);
+            }
+        }
+    }
+    return dp[0][prices.size() - 1];
+}
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="notes-09-16.html" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="notes-09-16.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="javascripts/mathjax.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

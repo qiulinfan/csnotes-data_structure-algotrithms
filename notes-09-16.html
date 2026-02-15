@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Overview - CS Notes</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "notes-09-16.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> CS Notes
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">notes 01 08</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="notes-01-08.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lab-1">Lab 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-2">Lec 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-3">Lec 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-5-recursion">Lec 5 - Recursion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-6-arrays-containers">Lec 6 - Arrays &amp; Containers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lab-2">Lab 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-7-stl">Lec 7 - STL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-01-08.html#lec-8-heap-pq-heapsort">Lec 8 - Heap &amp; PQ &amp; Heapsort</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">notes 09 16</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#types-of-containers">Types of Containers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#complexities-of-arraylist-based">Complexities of array/list based</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#binary-search">Binary Search</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#binary-search-on-array">Binary Search on array</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#speed-up-bs">Speed up BS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lower_bound-upper_bound">lower_bound(), upper_bound()</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#representing-sets">Representing sets</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#complexity-of-set-operations">Complexity of set operations</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#representing-disjoint-set-union-find">Representing disjoint set: Union-Find</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#naive-union-find-set">naive union-find set</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#path-compression-rank-union-find-set">path compression &amp;&amp; rank: 优化 union-find set</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_1">复杂度分析</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-9-ordered-sorted-containers">Lec 9 - ordered &amp; sorted containers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-10-elementary-sorting">Lec 10 Elementary Sorting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-11-quicksort">Lec 11: Quicksort</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-12-mergesort">Lec 12: Mergesort</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-13-strings-and-seqs">Lec 13 strings and seqs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lab-5-sorting">Lab 5 (Sorting)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lab-6-maps-and-sets">Lab 6 (Maps and sets)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-15-hashing">Lec 15: hashing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lec-16-hash-collision-resolution">Lec 16: Hash Collision Resolution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-09-16.html#lab-7-hashing">Lab 7 Hashing</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">notes 17 25</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="notes-17-25.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-17-trees">Lec 17 (Trees)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-18-bst-avl-tree">Lec 18 (BST &amp; AVL tree)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-19-graphs">Lec 19 (Graphs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-20-mst">Lec 20 (MST)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lab-09-graphs">Lab 09 (Graphs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-21-algorithm-family">Lec 21 (Algorithm Family)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-22-backtracking-branch-and-bound">Lec 22 (Backtracking &amp;&amp; branch and bound)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-23-dp">Lec 23 (DP)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lec-24-knapsack-and-floyds-algorithm">Lec 24 (Knapsack and Floyd's algorithm)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="notes-17-25.html#lab-10-dp">Lab 10 (DP)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CS Notes</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">notes 09 16</li>
+      <li class="breadcrumb-item active">Overview</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="lec-9-ordered-sorted-containers">Lec 9 - ordered &amp; sorted containers</h2>
+<h3 id="types-of-containers">Types of Containers</h3>
+<p>container: 可以 <code>add</code>, <code>remove</code> </p>
+<p>searchable container: 可以 <code>find</code> 的 container</p>
+<p>sequential container: 可以 iterate over elements 的 container</p>
+<p>ordered container: elements 的顺序<strong>通过它们被加入的顺序来决定</strong>的 sequential container（比如 stack, queue...)，但是可以 <strong>arbitrarily insert 元素到任意位置</strong></p>
+<p>sorted container: 有 pre-defined order 的 container，不可以 arbitrarily insert 元素，<strong>只能 add/remove 到 pre-defined order 的位置上</strong> （比如 PQ</p>
+<p>implement sorted/ordered container 的两种 style: connected 或者 contiguous，典型的是 underlying d.s. 是 linked list / array</p>
+<h3 id="complexities-of-arraylist-based">Complexities of array/list based</h3>
+<p>For ordered container:</p>
+<p>(add 的复杂度是 <span class="arithmatex">\(O(1)\)</span>, 因为直接加在最后）</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: center;">array-based</th>
+<th style="text-align: center;">link-list-based</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td>remove(val)</td>
+<td style="text-align: center;">n</td>
+<td style="text-align: center;">n</td>
+</tr>
+<tr>
+<td><strong>remove(iterator)</strong></td>
+<td style="text-align: center;"><strong>n</strong></td>
+<td style="text-align: center;"><strong>n (1 for doubly linked)</strong></td>
+</tr>
+<tr>
+<td>find(val)</td>
+<td style="text-align: center;">n</td>
+<td style="text-align: center;">n</td>
+</tr>
+<tr>
+<td>op*</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td><strong>op[]</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>n</strong></td>
+</tr>
+<tr>
+<td><strong>insert</strong></td>
+<td style="text-align: center;"><strong>n</strong></td>
+<td style="text-align: center;"><strong>n (1 for doubly linked)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>For sorted:</p>
+<p>（add 的复杂度是 n, 因为先要找到应该加入的位置）</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: center;">array-based</th>
+<th style="text-align: center;">link-list-based</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add</td>
+<td style="text-align: center;">n</td>
+<td style="text-align: center;">n</td>
+</tr>
+<tr>
+<td>remove(val)</td>
+<td style="text-align: center;">n</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td><strong>remove(iterator)</strong></td>
+<td style="text-align: center;"><strong>n</strong></td>
+<td style="text-align: center;"><strong>n (1 for doubly linked)</strong></td>
+</tr>
+<tr>
+<td><strong>find(val)</strong></td>
+<td style="text-align: center;"><strong><span class="arithmatex">\(\log n\)</span></strong></td>
+<td style="text-align: center;"><strong>n</strong></td>
+</tr>
+<tr>
+<td>op*</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td><strong>op[]</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>n</strong></td>
+</tr>
+</tbody>
+</table>
+<p>从 ordered 到 sorted container，除了 add 变了外唯一的区别是 array_based 的 <code>find(val)</code>  复杂度降了，因为可以在 contiguous 的内存上使用 Binary search. </p>
+<p>所以对于 sorted 的 container，使用 array instead of list 作为 underlying d.s. 在 find 上有额外的好处. </p>
+<h3 id="binary-search">Binary Search</h3>
+<p><span class="arithmatex">\(O(n \log n)\)</span></p>
+<h4 id="binary-search-on-array">Binary Search on array</h4>
+<pre><code class="language-c++">int bsearch(double a[], double val, int left, int right) {
+    while (right &gt; left) {
+        int mid = left + (right - left) / 2;
+        if (val == a[mid])
+            return mid;
+        if (val &lt; a[mid])
+            right = mid;
+        else
+            left = mid + 1
+    }
+
+    return -1; // not found
+}
+</code></pre>
+<h4 id="speed-up-bs">Speed up BS</h4>
+<p>我们知道 <code>==</code> 是 rarely happen 的. </p>
+<p>所以把 <code>==</code> 放到 else 上，先check &lt;，然后 check &gt;</p>
+<pre><code class="language-c++">int bsearch(double a[], double val, int left, int right) {
+    while (right &gt; left) {  //comp1
+        int mid = left + (right - left) / 2;
+
+        if (a[mid] &lt; val)   //comp2
+            left = mid + 1
+        else if (val &lt; a[mid])  //comp3(only halfs the time)
+            right = mid;
+        else
+            return mid;
+    }
+
+    return -1; // not found
+}
+</code></pre>
+<h4 id="lower_bound-upper_bound"><code>lower_bound()</code>, <code>upper_bound()</code></h4>
+<p>一个更快的 version: 总是只有两次 comp，但是无法检测 value 不在 array 里的情况.</p>
+<pre><code class="language-c++">int lower_bound(double a[], double val, int left, int right) {
+    while (right &gt; left) {  //comp1
+        int mid = left + (right - left) / 2;
+
+        if (a[mid] &lt; val)   //comp2
+            left = mid + 1
+        else
+            right = mid;
+    }
+
+    return left
+}
+</code></pre>
+<p>所以称之为 <strong>lower_bound.</strong> 会<strong>返回 array 里第一个大于等于 target 的 item.</strong> （不论 value 在不在 array 里.）</p>
+<p>dually 我们还有 upper_bound 函数.</p>
+<p>以及 equal_range，检测一段范围里是否所有 items 都有等于 target.</p>
+<h3 id="representing-sets">Representing sets</h3>
+<p>我们可以让一个 container 拥有 set 的性质：需要 union, intersect, difference 和 symmetric difference</p>
+<p>以及添加 element, 去除 element, 判断是否是 element 的运算.</p>
+<p><code>std::set_union</code> 依赖于 sortedness. 对于两个 set （或者任意储存同种数据类型的 container），它可以在某段范围上实现 set union 的效果.</p>
+<pre><code class="language-c++">template&lt;class ForIterator1, class ForIterator2, class OutIterator, class Compare&gt;
+OutIterator set_union(ForIterator1 first1, ForIterator1 last1,
+                      ForIterator2 first2, ForIterator2 last2,
+                      OutIterator result, Compare compare) {
+    while (first1 != last1 &amp;&amp; first2 != last2) {
+        if (compare(*first1, *first2)) {    //compare 返回的是 (x&lt;=y)
+            *result++ = *first1++;  // set1 element less than set2 element
+        } else if (compare(*first2, *first1)) {
+            *result++ = *first2++;  // set2 element less than set1 element
+        } else {    //else: 两个元素相等, both index++
+            *result++ = *first1++;
+            ++first2;
+        }
+    }
+    // get remainings elements
+    while (first1 != last1)
+        *result++ = *first1++; 
+    while (first2 != last2)
+        *result++ = *first2++; 
+    return result;  // sorted union of set1 and set2
+}
+</code></pre>
+<h4 id="complexity-of-set-operations">Complexity of set operations</h4>
+<p>Initialize: <span class="arithmatex">\(O(1)\)</span> 如果 unsorted；<span class="arithmatex">\(O(n\log n)\)</span> if sorted（需要排序）;</p>
+<p>clear: <span class="arithmatex">\(O(n)\)</span> </p>
+<p>isMember: <span class="arithmatex">\(O( \log n)\)</span> ，需要binary search</p>
+<p>copy: <span class="arithmatex">\(O(n)\)</span>，即和空集 union</p>
+<p>union, intersect：<span class="arithmatex">\(O(n)\)</span></p>
+<p>STL 的 ordered_set 是基于 red-black tree 的，unordered_set 是基于 hash table 的</p>
+<h3 id="representing-disjoint-set-union-find">Representing disjoint set: Union-Find</h3>
+<p>之前我们表示的是把一个 set 作为一个 container，支持 set 和 set 之间的运算</p>
+<p>但是如果我们想要一个 set of disjoint sets：所有元素构成一个大集合，并且这个大集合分成一些小集合的 disjoint unions，我们随时都可以 union 小集合，这种数据结构称为 union-find set</p>
+<p>实现方法：我们给每个集合选择一个 "Representative"，用它来表示这个集合</p>
+<p>一开始，每个元素各自代表自己的单点集，representative 就是自己</p>
+<p>每次我们做 union 两个集合（即两个元素所在的集合），我们就找到这两个元素的 representative，并把其中一个 representative 作为另一个的 representative</p>
+<p>于是，<strong>当我们查询 representative 的时候，我们通过递归查找 representative 的 representative，一直查到 representative 等于自己的元素：这个元素是这个集合最终的 representative。</strong></p>
+<h4 id="naive-union-find-set">naive union-find set</h4>
+<pre><code class="language-c++">        int find(int x) {
+      int root = x;
+      // find until root, the charateristic is it represents itself
+      while (parent[x] != x) {
+        root = parent[x];
+        x = parent[x];
+      }
+      return x;
+    }
+
+    void unionSets(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
+        parent[rootY] = rootX;
+    }
+
+        // 判断两个节点是否属于同一集合，即 root 是否相同
+    bool isConnected(int x, int y) {
+        return find(x) == find(y);
+    }
+</code></pre>
+<h4 id="path-compression-rank-union-find-set">path compression &amp;&amp; rank: 优化 union-find set</h4>
+<p>我们发现，如果我们把两个元素所在的集合 union 的时候，嵌套太多层</p>
+<p>（ex：a，b，c，d，e 五个元素，我们合并 ab，bc，cd，de，于是 e 的 parent 为 d，d 的 parent 为 c，c 的 parent 为 b，b 的 parent 为 a.）</p>
+<p>最终，find root 的行为是 <strong>O(n) worst case</strong> 的，我们无法避免这种极端的深层嵌套发生。</p>
+<p>我们可以优化这个行为：</p>
+<p>实际上，<strong>可以把每个集合都看作一个树，representative 等于自己的元素就是这个 tree 的 root.</strong></p>
+<p>union 的行为，实际上就是合并两棵树：把一棵树作为另一棵的 root 的 subtree</p>
+<p><img src="note-assets/image-20241128170227000.png" alt="image-20241128170227000" style="zoom: 33%;" /></p>
+<p>find 的行为实际上向上找 root，<strong>操作次数等于这个节点的树高。</strong></p>
+<p>所以<strong>优化 union-find set 实际上就是优化每个树(集合)的树高</strong></p>
+<p>也就是优化在 union 时，树的平衡程度</p>
+<p>我们提出两个优化：</p>
+<ol>
+<li><strong>rank optimization</strong>：控制 union 行为时，两个树谁作为另一个的子树</li>
+</ol>
+<p>我们希望，<strong>尽量让新的树平衡，不要出现过高的子树，在合并时用宽度来代替深度，因为 union find set 中宽度没有代价</strong></p>
+<p>因而，我们总是希望把高度更高的树作为 root，更低的树作为它的 subtree. 这样，新的树高就被二者中高的一棵树给 bounded 了. </p>
+<p><strong>这样的话，当且仅当两棵树高度相同时，新的树高才会是 max(height(left), height(right)) + 1；其他情况新的树高都等于 max(height(left), height(right))</strong></p>
+<p>实现方法也很简单：<strong>我们用一个 rank 来表示每个 root 的树高.</strong></p>
+<p>```c++
+   class UnionFind {
+   private:
+       vector<int> parent;  // 存储每个节点的父节点
+       vector<int> rank;    // 用于按秩优化 </p>
+<pre><code>    // 合并操作，按秩优化
+   void unionSets(int x, int y) {
+       int rootX = find(x);
+       int rootY = find(y);
+
+       if (rootX != rootY) {
+           if (rank[rootX] &gt; rank[rootY]) {
+               parent[rootY] = rootX;
+           } else if (rank[rootX] &lt; rank[rootY]) {
+               parent[rootX] = rootY;
+           } else {
+               parent[rootY] = rootX;
+               rank[rootX] += 1;  // 如果秩相同，提升 rootX 的秩
+           }
+       }
+   }
+</code></pre>
+<p>};
+   ```</p>
+<p>并且在 union 的行为上，持续 keep track of 每个 root 元素的树高</p>
+<ol>
+<li><strong>path compression:</strong>  我们在 find 行为时，<strong>递归地把当前元素到它所在集合的 root 元素 的路径上每个元素的 parent 都改变成 root，让它们的所在高度都变成 2.</strong></li>
+</ol>
+<p>```c++
+        // 查找操作，带路径压缩
+       int find(int x) {
+           if (parent[x] != x) {
+               parent[x] = find(parent[x]);  // 递归查找根节点并路径压缩
+           }
+           return parent[x];
+       }</p>
+<p>```</p>
+<p>整体：</p>
+<pre><code class="language-c++">class UnionFind {
+private:
+    vector&lt;int&gt; parent;  // 存储每个节点的父节点
+    vector&lt;int&gt; rank;    // 用于按秩优化
+
+public:
+    // 构造函数，初始化 n 个节点
+    UnionFind(int size) {
+        parent.resize(size);
+        rank.resize(size, 0);  // 初始秩为 0
+        for (int i = 0; i &lt; size; ++i) {
+            parent[i] = i;  // 每个节点的初始父节点是自己
+        }
+    }
+
+    // 查找操作，带路径压缩
+    int find(int x) {
+        if (parent[x] != x) {
+            parent[x] = find(parent[x]);  // 递归查找根节点并路径压缩
+        }
+        return parent[x];
+    }
+
+    // 合并操作，按秩优化
+    void unionSets(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
+
+        if (rootX != rootY) {
+            if (rank[rootX] &gt; rank[rootY]) {
+                parent[rootY] = rootX;
+            } else if (rank[rootX] &lt; rank[rootY]) {
+                parent[rootX] = rootY;
+            } else {
+                parent[rootY] = rootX;
+                rank[rootX] += 1;  // 如果秩相同，提升 rootX 的秩
+            }
+        }
+    }
+
+    // 判断两个节点是否属于同一集合
+    bool isConnected(int x, int y) {
+        return find(x) == find(y);
+    }
+};
+
+</code></pre>
+<h4 id="_1">复杂度分析</h4>
+<p><strong>不带优化</strong>：<strong>union 和 find 都是 O(n)</strong></p>
+<p><strong>带 path compression 和 rank 优化</strong>：<strong>union 和 find 平均 <span class="arithmatex">\(O(\alpha(n))\)</span></strong>，这是一个 inverse-Ackerman 函数，增长非常缓慢，<strong>可以看作 constant</strong> </p>
+<p>这两个优化是非常大的提升。</p>
+<h2 id="lec-10-elementary-sorting">Lec 10 Elementary Sorting</h2>
+<p>Elementary sorts:</p>
+<ol>
+<li>bubble sort</li>
+<li>selection sort</li>
+<li>insertion sort</li>
+<li>counting sort (限于 int)</li>
+</ol>
+<p>High performance sorts:</p>
+<ol>
+<li>quicksort</li>
+<li>mergesort</li>
+<li>heapsort</li>
+<li>radix sort (限于 int, char*, ...)</li>
+</ol>
+<p>Array 和 Linked lists container 都可以被 sort. 并且同一个 method 对 array/linked list 的 sorting performance 会不一样.</p>
+<p>STL sorting based on iterators。我们这里只用 array 和 indices 来举例。</p>
+<h3 id="size-sorting">Size 如何影响 sorting 策略</h3>
+<p>当数据规模较小，可以 fit into memory 时：</p>
+<ol>
+<li><strong>Internal Sort（内部排序）</strong></li>
+</ol>
+<p>如果可以“看到所有elements“，即：存在 O(1) random access to any element 的时候，可以采取 internal sort.</p>
+<ul>
+<li>典型的内部排序算法包括：</li>
+<li>快速排序（Quick Sort）</li>
+<li>堆排序（Heap Sort）</li>
+<li>归并排序（Merge Sort）</li>
+<li>
+<p>冒泡排序（Bubble Sort）</p>
+</li>
+<li>
+<p><strong>Indirect Sort（间接排序）</strong></p>
+</li>
+</ul>
+<p>如果可以“看到所有 items 的 indices”， 也可以采取 indirect sort. </p>
+<p>通过对数据的索引（或者指针）进行排序，而不直接修改原数据的顺序。</p>
+<ul>
+<li>通常用于<strong>需要保持原始数据不变的场景</strong>，以及 <strong>copying 代价昂贵</strong>的场景（比如图和树，深嵌套型 containers，需要 deep copy 的 containters 等</li>
+</ul>
+<p>当数据规模大到无法 fit into memory 时：</p>
+<p><strong>External Sort（外部排序）</strong></p>
+<ul>
+<li>数据被分块存储在外部存储介质（如磁盘）中，部分数据被加载到内存中进行排序。</li>
+<li>通常使用<strong>归并排序</strong>或<strong>多路归并</strong>（K-Way Merge）算法来将多个排序好的小数据块合并成一个有序的数据集。</li>
+<li>用于处理海量数据，特别是在数据库、分布式系统或数据仓库中处理超大规模数据时。</li>
+</ul>
+<h4 id="exercise-swap">Exercise: swap</h4>
+<pre><code class="language-c++">template &lt;typename TYPE&gt;
+void swap(TYPE &amp;a, TYPE &amp;b) {
+    TYPE temp = a;
+    a = b;
+    b = temp;
+}
+</code></pre>
+<h3 id="stability">Stability</h3>
+<p>除了 time complexty 的 best/worst case 以及 memory 的考量，我们还需要考虑 stability</p>
+<p>Stability 指的是：preservation of relative order of items with duplicate keys. 即<strong>对于 key 相同的元素，sorting 是否会改变其原本的排序方式</strong></p>
+<p>elementary sorts 通常 stable，complex sorts 则不然</p>
+<p><strong>当存在多个 key 时，stability 尤其重要（因为是一个一个 key 排序的，如果在一个 key 上，两个相同 key 的元素的位置失去了原本的结构，可能在这一环里没区别，但是到下一个 Key 的排序就完全不对了。</strong></p>
+<h3 id="adaptivity">Adaptivity 自适应性</h3>
+<p><strong>Adaptive（自适应）</strong> 和 <strong>Nonadaptive（非自适应）</strong>表示算法对数据初始顺序的利用程度</p>
+<p><strong>Adaptive Sort（自适应排序）</strong></p>
+<ul>
+<li>自适应排序算法能够根据输入数据的初始顺序调整其行为。如果输入数据已经部分有序或接近有序，自适应排序算法可以更高效地完成排序，减少比较和交换的次数。</li>
+<li><strong>特点</strong>：</li>
+<li><strong>处理接近有序数据较快</strong>：对于部分已经排序的输入，算法的表现更优。</li>
+<li><strong>动态调整</strong>：在运行时，算法能够动态调整其行为以适应数据的有序程度。</li>
+<li><strong>适用场景</strong>：</li>
+<li>输入数据已经部分有序。</li>
+<li>希望充分利用已有的数据顺序。</li>
+</ul>
+<p><strong>Nonadaptive Sort（非自适应排序）</strong></p>
+<p>不管输入数据的初始顺序如何，总是按照固定的方式进行操作，执行相同的操作步骤</p>
+<ul>
+<li><strong>特点</strong>：</li>
+<li><strong>固定的时间复杂度</strong>：时间复杂度与数据的初始顺序无关。</li>
+<li>
+<p><strong>通常更加通用</strong>：这种算法适用于任何类型的输入，不依赖数据的初始状态。</p>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+</li>
+<li><strong>堆排序（Heap Sort）</strong>：堆排序不管输入数据是否部分有序，总是先构建一个堆，然后进行堆排序操作，时间复杂度为 <span class="arithmatex">\(O(n \log n)\)</span>。</li>
+<li><strong>快速排序（Quick Sort）</strong>：经典的快速排序不利用输入数据的初始顺序，即使输入数据已经有序，它的时间复杂度仍然保持 <span class="arithmatex">\(O(n \log n)\)</span>（最佳情况下），最坏情况下为 <span class="arithmatex">\(O(n^2)\)</span>。</li>
+<li>
+<p><strong>归并排序（Merge Sort）</strong>：归并排序也是非自适应的，始终按照分治法进行操作，不管输入数据是否已经部分有序。</p>
+</li>
+<li>
+<p><strong>适用场景</strong>：</p>
+</li>
+<li>输入数据无序，或不关心输入的有序性。</li>
+<li>希望算法有稳定的时间复杂度表现。</li>
+</ul>
+<h3 id="bubble-sort">Bubble Sort</h3>
+<p>bubble sort 的做法是：对于把每个元素 <code>a[i]</code> 都替换成 <code>a[i:end]</code> 中最小的元素</p>
+<p>具体是从 end 往左遍历所有 <code>a[i::]</code> 的元素，右边比左边小就交换，这样 greedily 可以得到最后 left 的元素一定是范围内最小的。</p>
+<pre><code class="language-c++">void bubble(Item a[], size_t left, size_t right) {
+    for (size_t i = left; i &lt; right - 1; i++) { // last element 不用排序
+        for (size_t j = right-1; j &gt; i; j--) {
+            if (a[j] &lt; a[j-1]) {
+                std::swap(a[j], a[j-1]);
+            }
+        }
+    }
+}
+</code></pre>
+<h4 id="adaptive-bubble-sort">adaptive Bubble Sort</h4>
+<p>Bubble sort 的 adaptive 版本很弱。就是追踪这个 array 是否已经 sorted 了，如果哪个元素之后 array 已经 sorted，那么就 break</p>
+<p>对局部的 sorted 部分并不能利用</p>
+<pre><code class="language-c++">void adaptive_bubble_sort(Item a[], size_t left, size_t right) {
+    for (size_t i = left; i &lt; right - 1; i++) {
+        bool swapped = false;
+        for (size_t j = right - 1; j &gt; i; j--) {
+            if (a[j] &lt; a[j-1]) {
+                std::swap(a[j], a[j-1]);
+                swapped = true;
+            }
+        }
+        if (!swapped) {
+            break;
+        }
+    }
+}
+</code></pre>
+<p>改进了 best case behavior, 只需要 ~n 次 comparisons（第一次之后就 sorted）</p>
+<h4 id="analysis">Analysis</h4>
+<p>bubble sort 的优点：</p>
+<ol>
+<li>stable</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>O(n^2) time. </li>
+</ol>
+<h3 id="selection-sort">Selection Sort</h3>
+<p>其实和 bubble sort 一样，只是选出 min element 的方式不一样</p>
+<pre><code class="language-c++">void selection_sort(Item a[], size_t left, size_t right) {
+    for (size_t i = left; i &lt; right - 1; i++) {
+        size_t min_index = i;
+        for (size_t j = i + 1; j &lt; right; j++) {
+            if (a[j] &lt; a[min_index]) {
+                min_index = j;
+            }
+        }
+        std::swap(a[i], a[min_index]);
+    }
+}
+</code></pre>
+<h4 id="adaptive-selection-sort">adaptive Selection Sort</h4>
+<p>比 bubble sort 的 adaptive version 更飞舞。就改了一个只在 min_index 不是自己时 swap.</p>
+<p>差别是本来在任何 case 都是 n-1 swaps；现在 worst case n-1 swaps, best case 0 swap</p>
+<p>但是 comparisons 的数量多了（多出了 n-1 个 if</p>
+<p>本来是 <span class="arithmatex">\(\frac{n^2 -n}{2}\)</span> comps，现在是 <span class="arithmatex">\(\frac{n^2 -n}{2} + n-1\)</span> comps</p>
+<pre><code class="language-c++">void adaptive_selection_sort(Item a[], size_t left, size_t right) {
+    for (size_t i = left; i &lt; right - 1; i++) {
+        size_t min_index = i;
+        for (size_t j = i + 1; j &lt; right; j++) {
+            if (a[j] &lt; a[min_index]) {
+                min_index = j;
+            }
+        }
+        if (min_index != i) {
+            std::swap(a[i], a[min_index]);
+        }
+    }
+}
+
+</code></pre>
+<h4 id="analysis_1">Analysis</h4>
+<p>selection sort  优点：</p>
+<ol>
+<li>copy items 的 cost 消耗小（每轮至多一次 swap</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>
+<p>O(n^2) time</p>
+</li>
+<li>
+<p><strong>non stable</strong></p>
+</li>
+</ol>
+<p>比如：</p>
+<p><code>[5a, 3, 4, 5b, 2]</code></p>
+<p>排序后：</p>
+<p><code>[2, 3, 4, 5b, 5a]</code></p>
+<p>相对顺序被破坏了</p>
+<ol>
+<li>adaptive version 没什么用。对于 sorted 和 randomly arranged array 表现相同。</li>
+</ol>
+<h3 id="insertion-sort">Insertion Sort</h3>
+<p>insertion sort 的做法：</p>
+<p>把所有items 分成 sorted 和 unsorted 两组</p>
+<p>每次从 unsorted 移动一个元素进入 sorted.</p>
+<p>repeat 直到 unsorted 空</p>
+<pre><code class="language-c++">void insertion_sort(Item a[], size_t left, size_t right) {
+    for (size_t i = left + 1; i &lt; right; i++) {
+        // a[left:i] is sorted
+        for (size_t j = i; i &gt; left; --j) {
+            // we expand the sorted region to a[left:i+1], 
+            // by ctnsly move a[i+1] to the right position on the left
+            if (a[j] &lt; a[j-1]) {
+                std::swap(a[j], a[j-1]);
+            }
+        }
+    }
+}
+</code></pre>
+<h4 id="imprved-adaptive-insertion-sort">imprved adaptive Insertion Sort</h4>
+<p>我们把连续的 swap 替换为 move, for 替换为 while，break 移除</p>
+<pre><code class="language-c++">void improved_insertion_sort(Item a[], size_t left, size_t right) {
+    for (size_t i = right - 1; i &gt; left; --i) { // first find the min item, move to left
+        if (a[i] &lt; a[i-1]) {
+            std::swap(a[i], a[i-1]);
+        }
+    }
+
+    for (size_t i = left + 2; i &lt; right; i++) {
+        // a[left:i-1] is sorted
+        Item v = a[i]; 
+        size_t j = i;
+        // while v in the wrong position j, we let a[j]=a[j-1], 
+        // ready to move v to a[j-1] (when j-1 is the right pos)
+        while (v &lt; a[j-1]) {
+            a[j] = a[j-1];
+            j--;
+        }
+        a[j] = v;
+    }
+}
+</code></pre>
+<h4 id="analysis_2">Analysis</h4>
+<p>adaptive insertion sort 是优于普通的 insertion sort 的.</p>
+<p>并且 insertion sort 的好处就是：<strong>既是 adaptive 又是 stable 的.</strong></p>
+<p><strong>adaptive insertion sort 是当需要 sort 的数目较小时，最优的 sort 方法（比 bubble, selection 好</strong></p>
+<p>但是仍然 O(n^2)</p>
+<h3 id="elementary-sorting">Elementary Sorting 对比分析</h3>
+<p>定义：一个 inversion 就是 a pair of keys that are out of order (就像 determinant 里的 inversion)</p>
+<p>Property 1: 当 data 有一个 <strong>const upper limit to the number of inversions for each element</strong> (即：partially sorted，没有一个元素存在O(n) 个相关的 inversion) 的时候，<strong>insertion/bubble sort 的 comparisons 和 swaps 数量几乎是 linear 的.</strong></p>
+<p>Property 2: 当 <strong>{a <span class="arithmatex">\(\in\)</span> data : a 相关的 inversions 数量 constant} 这个集合大小是 const</strong> 时，<strong>insertion sort 的 comparisons 和 swaps 数量几乎是 linear 的.</strong></p>
+<p>Property 3: 当 key 很小时，即便 item 大，selection sort 几乎是 linear 的（comparison 主导，swap cheap，comparison 消耗小的时候很好）</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">sort</th>
+<th style="text-align: center;">time</th>
+<th style="text-align: center;">memory</th>
+<th style="text-align: center;">stable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">bubble</td>
+<td style="text-align: center;">n^2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">yes</td>
+</tr>
+<tr>
+<td style="text-align: center;">selection</td>
+<td style="text-align: center;">(n^2-n)/2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">no</td>
+</tr>
+<tr>
+<td style="text-align: center;">insertion</td>
+<td style="text-align: center;">n^2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">yes</td>
+</tr>
+<tr>
+<td style="text-align: center;">count</td>
+<td style="text-align: center;">n</td>
+<td style="text-align: center;">n+k</td>
+<td style="text-align: center;">yes</td>
+</tr>
+<tr>
+<td style="text-align: center;">merge</td>
+<td style="text-align: center;">n log n</td>
+<td style="text-align: center;">n</td>
+<td style="text-align: center;">yes(stable merge)</td>
+</tr>
+<tr>
+<td style="text-align: center;">heap</td>
+<td style="text-align: center;">n log n</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">no</td>
+</tr>
+<tr>
+<td style="text-align: center;">quick</td>
+<td style="text-align: center;">n log n, n^2</td>
+<td style="text-align: center;">log n</td>
+<td style="text-align: center;">no</td>
+</tr>
+</tbody>
+</table>
+<p>bubble, insertion: efficient when data are closed to final pos</p>
+<p>insertion: also efficient when add new item to sorted data</p>
+<p>selection: sorted when key is small, especially when items large</p>
+<p>std::sort take 两个 iterator 和一个 operator&lt;</p>
+<h2 id="lec-11-quicksort">Lec 11: Quicksort</h2>
+<p>Elementary sort 的两个问题：</p>
+<ol>
+<li>compare every pair of elements</li>
+<li>move element one place at a time. </li>
+</ol>
+<p>因而总是 O(n^2) 的</p>
+<p>而 quicksort 运用了 divide and conquer 的方法。</p>
+<p>Quicksort 的想法：</p>
+<ol>
+<li>用一个元素 <code>elt</code> partition the array</li>
+<li>divide: 把整个 array 切成大于等于 <code>elt</code> 的元素和小于 <code>elt</code> 的元素，放在左右两边</li>
+<li>Conquer: recursively do this to LHS 和 RHS 的 subarray</li>
+</ol>
+<h3 id="partition">partition</h3>
+<p>我们首先进行最简单的 rightmost partition. 就是拿最后一个元素作为 Pivot</p>
+<pre><code class="language-c++">size_t partition_right(int a[], size_t left, size_t right) {
+    size_t pivot = --right; // rightmost element as partition   
+    while (true) {
+        // find the first element that is greater than or equal to pivot
+        while (a[left] &lt; a[pivot]) {
+            ++left;
+        }
+        // find the first element that is less than or equal to pivot
+        while (left &lt; right &amp;&amp; a[right-1] &gt;= a[pivot]) {
+            --right;
+        }
+        // check: if left &gt;= right, then we are done
+        if (left &gt;= right) {
+            break;
+        }
+        // swap the first element that is greater than or equal to pivot
+        swap(a[left], a[right-1]);
+    }
+    // after doing this, we will get all a[::left-1] elements less than pivot,
+    // and all a[::right-1] elements greater than pivot. 
+    // finally, swap pivot with left
+    swap(a[left], a[pivot]);
+    return left;
+}
+</code></pre>
+<h4 id="middle-partition">middle-partition</h4>
+<pre><code class="language-c++">size_t partition_middle(int a[], size_t left, size_t right) {
+    size_t pivot = left + (right - left) / 2; // middle point as partition
+    swap(a[pivot], a[--right]); // move the content of pivot to the end
+    // then everything is the same as partition_right
+
+    pivot = right;
+    while(true) {
+        while (a[left] &lt; a[pivot]) {
+            left++;
+        }
+        while (left &lt; right &amp;&amp; a[right] &gt;= a[pivot]) {
+            right--;
+        }
+        if (left &gt;= right) {
+            break;
+        }
+        swap(a[left], a[right - 1]);
+    }
+    swap(a[left], a[pivot]);
+    return left;
+}
+</code></pre>
+<h3 id="quicksort-recursion">quicksort recursion</h3>
+<pre><code class="language-c++">void quicksort(int a[], size_t left, size_t right) {
+    if (left+1 &gt;= right) {
+        return;
+    }
+    size_t pivot_index = partition_middle(a, left, right);
+    quicksort(a, left, pivot_index);  //not tail
+    quicksort(a, pivot_index + 1, right); //tail recursion
+}
+</code></pre>
+<h3 id="analysis_3">Analysis</h3>
+<h4 id="time">time</h4>
+<p>Worst case：每次 pivot 都是极端值，把 array 分成 长度为 k-1, 1 和 0 的三部分</p>
+<p>那么
+$$
+T(n) = n + T(n-1) + T(0)
+$$
+我们得到 T(n) = O(n^2)</p>
+<p>Best case:
+$$
+T(n) = n + T(n/2) + T(n/2)
+$$
+我们得到 T(n) = O(nlogn)</p>
+<p>Average case 也是 T(n) = O(nlogn)</p>
+<h4 id="memory">memory</h4>
+<p>第一个 recursive call 不是 tail 的</p>
+<p>第二个 recursive call 是 tail 的</p>
+<p>所以只需要考虑第一个 recursive call 的 cost</p>
+<p>best case: 每次都恰好差不多二分，then O(logn)</p>
+<p>worst case: 每次都是极端分割(pivot 左右 0 和 k-1)，then O(n)</p>
+<p>有一个缺点：quicksort 是 not stable 的 (可以使其 stable，但是花费一定 time, memory)</p>
+<h4 id="a-little-improvement-sort-smaller-part">a little improvement: 先 sort smaller part</h4>
+<p>由于第一个 call 是 non-tail 的，第二个 call 是 tail 的，我们总是希望第一个 call sort 的部分更大。</p>
+<p>所以加一个小判断</p>
+<pre><code class="language-c++">void quicksort2(int a[], size_t left, size_t right) {
+    if (left+1 &gt;= right) {
+        return;
+    }
+    size_t pivot_index = partition_middle(a, left, right);
+
+    // sort the smaller partition first
+    if (pivot_index - left &lt; right - pivot_index) {
+        quicksort2(a, left, pivot_index);
+        quicksort2(a, pivot_index + 1, right);
+    } else {
+        quicksort2(a, pivot_index + 1, right);
+        quicksort2(a, left, pivot_index);
+    }
+}
+</code></pre>
+<h4 id="a-little-improvement-on-partition-median-sampling">a little improvement on Partition: median sampling</h4>
+<p>我们可以这样取 pivot：每次都取 left, right 和 middle element 这三个数中的 median(中间的数)作为 pivot，可以避免极端情况</p>
+<h4 id="sort-heapsort">混合其他 sort 来提高 heapsort 效率</h4>
+<p>我们可以 reduce the cost of sorting small regions: 当检测到 size 小于某个 constant 时，转为使用 insertion sort，因为对于更小的 arraies，insetion sort 的 cost 更低</p>
+<p>当 quicksort 的 recursionDepth 很大的时候，我们可以使用 heapsort</p>
+<p>我们可以把这三个 sort 融合起来</p>
+<pre><code class="language-c++">void quicksortWithHeapsortFallback(int a[], int left, int right, int depth) {
+    if (right - left &lt;= CUTOFF) {
+        insertionSort(a, left, right);  // 小数组使用插入排序
+        return;
+    }
+
+    if (depth &gt; MAX_DEPTH) {
+        heapsort(a, left, right);  // 超过最大深度，使用堆排序
+        return;
+    }
+
+    size_t pivot_index = partition_middle(a, left, right);
+    quicksortWithHeapsortFallback(a, left, pivot_index, depth + 1);
+    quicksortWithHeapsortFallback(a, pivot_index + 1, right, depth + 1);
+}
+</code></pre>
+<h2 id="lec-12-mergesort">Lec 12: Mergesort</h2>
+<p>quicksort: 分割后 sort 两边</p>
+<p>mergesort: sort 两边之后 merge</p>
+<pre><code>quicksort(array)
+    partition;
+    quicksort(left)
+    quicksort(right)
+
+mergesort(array)
+    merge_sort(left);
+    merge_sort(right);
+    merge(left, right);
+</code></pre>
+<h3 id="ternary-operator">Ternary Operator</h3>
+<pre><code class="language-c++">c[k] = (a[i] &lt;= b[j]) ? a[i++] : b[j++];
+</code></pre>
+<p>等价于</p>
+<pre><code class="language-c++">if (a[i] &lt;= b[j]) {
+    c[k] = a[i];
+    ++i;
+}
+else {
+    c[k] = b[j];
+    ++j;
+}
+</code></pre>
+<h3 id="merge">Merge</h3>
+<pre><code class="language-c++">void mergeAB(Item c[], Item a[], size_t size_a, Item b[], size_t size_b) {
+    size_t i = 0, j = 0;
+    for (size_t k = 0; k &lt; size_a + size_b; k++) {
+        if (i == size_a) {
+            c[k] = b[j++];
+        } else if (j == size_b) {
+            c[k] = a[i++];
+        } else {
+            c[k] = (a[i] &lt; b[j]) ? a[i++] : b[j++];
+        }
+    }
+}
+</code></pre>
+<p>time: <span class="arithmatex">\(\Theta(\text{sizea + sizeb})\)</span></p>
+<h4 id="modified-merge-into-itself">Modified: merge into itself</h4>
+<p>把参数里的三个 array 去掉了。这个写法更适合递归</p>
+<pre><code class="language-c++">void merge(Item a[], size_t left, size_t middle, size_t right) {
+    size_t n = right - left;
+    vector&lt;Item&gt; c(n);
+
+    for (size_t i = left, j = middle, k = 0; k &lt; n; ++k) {
+        if (i == middle) {
+            c[k] = a[j++];
+        } else if (j == right) {
+            c[k] = a[i++];
+        } else {
+            c[k] = (a[i] &lt; a[j]) ? a[i++] : a[j++];
+        }
+    }
+}
+</code></pre>
+<h3 id="top-down-merge-sort">Top-down merge sort</h3>
+<pre><code class="language-c++">void topDown_Mergesort(Item a[], size_t left, size_t right) {
+    if (right &lt; left + 2) return;
+    size_t middle = left + (right - left) / 2;
+    topDown_Mergesort(a, left, middle);
+    topDown_Mergesort(a, middle, right);
+    merge(a, left, middle, right);
+}
+</code></pre>
+<h3 id="analysis_4">Analysis</h3>
+<p>优点：</p>
+<ol>
+<li>O(nlogn)</li>
+<li>当 merge 函数 stable 时，mergesort 是 stable 的（std的 <code>stable_sort&lt;&gt;()</code></li>
+<li>并不要求 data 可以 random access</li>
+</ol>
+<h2 id="lec-13-strings-and-seqs">Lec 13 strings and seqs</h2>
+<p>null-terminated C string:</p>
+<ol>
+<li>使用一个 ptr 和一个 null char 作为首尾</li>
+<li><strong>.size 是 O(n) 的</strong></li>
+<li>使用 ASCII 作为 alphabet</li>
+<li>使用 pointer arithmetic 和 stdlibc functions 进行 operations</li>
+</ol>
+<p>Object oriented C++ string:</p>
+<ol>
+<li>使用两个 ptr begin(), end() 作为首尾</li>
+<li><strong>.size 是 O(1) 的</strong></li>
+<li>alphabet configurable</li>
+<li>使用 class functions, STL 和 stdlibc++ functions 进行 Operations</li>
+</ol>
+<h3 id="stdequal"><code>std::equal</code></h3>
+<p>用来比较两个 sequences. </p>
+<p>比较 range [first1, last1)</p>
+<p>和 [first2, first2 + (last1 - first1))</p>
+<p>内是否相同。（即范围就是 first2 - first1）</p>
+<pre><code class="language-c++">template&lt;class InputIt1, class InputIt2&gt;
+bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2) {
+    for (; first1 != last1; ++first1, ++first2) {
+        if (*first1 != *first2) {
+            return false;
+        }
+    }
+    return true;
+}
+</code></pre>
+<h4 id="algorithm-problem-equal-with-customizable-operator">Algorithm Problem: <code>equal()</code> with customizable <code>operator==()</code></h4>
+<pre><code class="language-c++">template&lt;class InputIt1, class InputIt2, class BinaryPredicate&gt;
+bool equal_custom_operator(InputIt1 first1, InputIt1 last1, 
+InputIt2 first2, BinaryPredicate pred) {
+    for (; first1 != last1; ++first1, ++first2) {
+        if (!pred(*first1, *first2)) {
+            return false;
+        }
+    }
+    return true;
+}
+</code></pre>
+<h4 id="example-using-equal-palindreme">example using <code>equal()</code>: palindreme</h4>
+<pre><code class="language-c++">bool is_palindrome(const string&amp; s) {
+    return std::equal(s.begin(), s.begin() + s.size() / 2, s.rbegin());
+}
+</code></pre>
+<p>(rbegin 是反向的 iterator, 起始值等于 end, ++ 效果往前)</p>
+<h3 id="lexicographic-comparison">Lexicographic Comparison</h3>
+<p>lexicographic comparison 比较哦啊的是两个范围内的元素的字典序</p>
+<p>我们只需要 &lt; 和 == 就可以 Implement 所有 6 个比较 Operators，并且都只需要另一个 operator 加上 ! 就可以 implement</p>
+<p>比较 string:</p>
+<pre><code class="language-c++">int compareHelper(const string&amp; s1, const string&amp; s2) {
+  const size_t len1 = s1.length();
+  const size_t len2 = s2.length();
+  for(size_t i = 0; i!=std::min(len1, len2); ++i) {
+    // compare the first different character
+    if(s1[i] &lt; s2[i]) {
+      return -1;
+    } else if(s1[i] &gt; s2[i]) {
+      return 1;
+    }
+  }
+  // if all characters are the same, the shorter string is less
+  if(len1 &lt; len2) {
+    return -1;
+  } else if(len1 &gt; len2) {
+    return 1;
+  }
+  // all the way to here, the strings are equal
+  return 0;
+
+}
+</code></pre>
+<p>比较任意 iteratable container 里的 sequence:</p>
+<pre><code class="language-c++">template&lt;class InputIt1, class InputIt2&gt;
+bool lexicographical_compare(InputIt1 first1, InputIt1 last1, 
+                            InputIt2 first2, InputIt2 last2) {
+    while ((first1 != last1) &amp;&amp; (first2 != last2)) {
+        if (*first1 &lt; *first2) {
+            return true;
+        }
+        if (*first2 &lt; *first1) {
+            return false;
+        }
+        ++first1;
+        ++first2;
+    }
+    return (first1 == last1) &amp;&amp; (first2 != last2);
+}
+</code></pre>
+<h4 id="algorithm-problem-remove-duplicate">Algorithm Problem: remove duplicate</h4>
+<p>如何移除一个 container of strings 里的重复元素</p>
+<ol>
+<li>std::sort，使得重复元素都相邻</li>
+<li>使用 == 来比较 neighbours，循环</li>
+<li>检查到 duplicate 则移除第一个</li>
+</ol>
+<h2 id="lab-5-sorting">Lab 5 (Sorting)</h2>
+<h4 id="algorithm-problem-sort-012-vector-on-time-o1-space">Algorithm Problem: sort 一个 0,1,2 组成的 vector, O(n) time, O(1) space</h4>
+<p>我用两个 index i = 0,j = n 来追踪首末的位置，每次监测到0就和 v[i] 交换上并且 i++，检测到 2 就和 v[j] 交换并且 j++. 这样最后所有 0 都在前面，所有2都在后面，中间一定都是1</p>
+<p>Note: 用来存 lowindex 的变量和用来 iterate 的变量必须区分开，否则有 bug. 所以是三个变量</p>
+<pre><code class="language-c++">void sort012(vector&lt;int&gt;&amp; nums) {
+    int low = 0, scan = 0;
+    int high = nums.size() - 1;
+
+    while (scan &lt;= high) {
+        if (nums[scan] == 0) {
+            std::swap(nums[low], nums[scan]);
+            low++;
+            scan++;
+        } else if (nums[scan] == 2) {
+            std::swap(nums[high], nums[scan]);
+            high--;
+        } else {
+            scan++;
+        }
+    }
+}
+</code></pre>
+<h2 id="lab-6-maps-and-sets">Lab 6 (Maps and sets)</h2>
+<h4 id="algorithm-problem-two-pair-sum">Algorithm Problem: two pair sum</h4>
+<p>Find pair (a,b), (c,d) s.t. a+b= c+d</p>
+<p>assumption: 对于每个 (a,b) 至多只有一个 pair 和它 sum 一样。</p>
+<p>assumption 使得我们可以使用动态更新 hash table 来解决。我们 i,j 遍历，以 sum 为 key，以 pair 为 value，匹配到相同的就动态更新 value. </p>
+<p>（如果没有 assumption 就不能这么解，因为如果 (1,6) 匹配到了 (2,5)，可能还有 (3,4) 但是我们已经把 7 的 value 更新成 (2,5) 了，会错过 (1,6) 和 (3,4) 的 pair</p>
+<pre><code class="language-c++">void two_pair_sums(const vector&lt;int&gt;&amp; nums, ostream&amp; os) {
+    unordered_map&lt;int, pair&lt;int, int&gt;&gt; sum_pairs;
+    int n = nums.size();
+
+    for (int i = 0; i &lt; n; ++i) {
+        for (int j = i + 1; j &lt; n; ++j) {
+            int sum = nums[i] + nums[j];
+
+            // Check if we already have a pair with this sum
+            if (sum_pairs.find(sum) != sum_pairs.end()) {
+                pair&lt;int, int&gt; prev_pair = sum_pairs[sum];
+
+                // Ensure all elements are distinct
+                if (prev_pair.first != i &amp;&amp; prev_pair.second != i &amp;&amp; prev_pair.first != j &amp;&amp; prev_pair.second != j) {
+                    os &lt;&lt; &quot;(&quot; &lt;&lt; nums[prev_pair.first] &lt;&lt; &quot;, &quot; &lt;&lt; nums[prev_pair.second] &lt;&lt; &quot;) and (&quot;
+                    &lt;&lt; nums[i] &lt;&lt; &quot;, &quot; &lt;&lt; nums[j] &lt;&lt; &quot;)\n&quot;;
+                }
+            } else {
+                // Store the current pair
+                sum_pairs[sum] = {i, j};
+            }
+        }
+    }
+}
+
+</code></pre>
+<h4 id="algorithm-problem-find-first-non-repeated-integer">Algorithm Problem: find first non-repeated integer</h4>
+<p>ex: [-234, 1, 2, 10, 1, 2, -234]: 得到 10</p>
+<p>solution: 把每个元素设置为 key, 出现次数设置为 value. </p>
+<p>最后遍历 vector，每次把元素作为 key 来在 hash table 里查找，取第一个 value ==1 的 key.</p>
+<h2 id="lec-15-hashing">Lec 15: hashing</h2>
+<h3 id="dictionary-adt">dictionary ADT</h3>
+<p>dictionary: 一个 item 是一个 key-value pair</p>
+<p>support 两个 basic op:</p>
+<ol>
+<li>insert</li>
+<li>search(retrieve) an item with a given key</li>
+</ol>
+<p>desirable ops (除了 Insert 和 search外)</p>
+<ol>
+<li>
+<p>remove item</p>
+</li>
+<li>
+<p>sort</p>
+</li>
+<li>
+<p>select the kth largest item</p>
+</li>
+<li>
+<p>join two dicts</p>
+</li>
+</ol>
+<p>主要的用处：</p>
+<ol>
+<li>check if sth in the set</li>
+<li>look up values by keys</li>
+</ol>
+<h4 id="ideas-to-build-a-dict">Ideas to build a dict</h4>
+<p>我们使用 std::pair<key, value> 作为一个 item</p>
+<ol>
+<li>
+<p>sorted vector: insert O(n)</p>
+</li>
+<li>
+<p>unsorted vectors: search O(n)</p>
+</li>
+<li>
+<p>linked list: Search O(n)</p>
+</li>
+<li>
+<p>BST (比如 std::map 使用 red-black tree)： </p>
+</li>
+</ol>
+<p>search 平均 O(logn), worst O(n)</p>
+<p>insert 平均 O(logn), worst O(n)</p>
+<ol>
+<li>hash table (比如 std::unordered_map&lt;&gt;使用 hash table)</li>
+</ol>
+<p>search 平均 O(1), worst O(n)</p>
+<p>insert 平均 O(1), worst O(n)</p>
+<p>fastest: hash table.</p>
+<p>因而通常我们使用 hash table 来 represent dictionary.</p>
+<p>Hash table 的 Idea: 我们并不对 key 进行排序或者查找，而是想办法把 key 以某个函数转化成一个 Int，于是可以使用 arithmetic operations to calculate a table index from a given key</p>
+<p>如果这是可行的，那么我们的 insert 与 search 都可以近似 random access 的方式来进行. 于是除了 grow 的时候之外理论上 const time.（为了达到 const time，我们希望函数是 bijective 的；我们很难做到，不过没关系，近似于 injective 也可以，我们可以解决冲突）</p>
+<p><img src="note-assets\{33F1B77F-C82F-47E6-AA4B-014742CCE03B}.png" alt="{33F1B77F-C82F-47E6-AA4B-014742CCE03B}" style="zoom: 50%;" /></p>
+<p>我们需要做这些事情：</p>
+<ol>
+<li>translation: 把一个 key 翻译为一个 int</li>
+<li>compression: limit an int to a valid index</li>
+<li>collision resolution: 解决 hash to same table index 的 search keys 的冲突</li>
+</ol>
+<p>前两步合称一个 hash function</p>
+<h3 id="hash-function">hash function</h3>
+<p>我们之所以需要 compression 是因为 translation 的范围由 translate function 决定，是固定的而不会随着 table size 变化而变化. 我们需要通过 compression 把这个 hashint 转化成一个 valid table index，from 0 to M
+$$
+h:key \mapsto t(key) \mapsto c(t(key))
+$$</p>
+<p>Note: <code>std::hash&lt;&gt;</code> 只 Provide translation，没有 compression. 如果我们不使用 <code>std::unordered_map</code> 而是使用 <code>std::hash</code> 那么我们要自己写 compression.</p>
+<p>example:</p>
+<p>这个简单的 translate function 把 key 的首字符映射到它的 ascii - 'a'</p>
+<pre><code class="language-c++">int translate(const char *c) {
+    return (*c - 'a');
+}
+</code></pre>
+<h4 id="translate-floatng-pts">translate floatng pts</h4>
+<p>key in [0,1)
+$$
+h(key) = \lfloor key * M \rfloor
+$$
+key in [s,t)
+$$
+h(key) = \lfloor \frac{key-s}{t-s} * M \rfloor
+$$</p>
+<p>example: range = [1.38, 6.75), M=13
+$$
+h(3.65) = \lfloor \frac{3.65-1.38}{6.75-1.38} * 13 \rfloor = 5
+$$</p>
+<h4 id="translate-int">translate int</h4>
+<p>我们使用 modular 来 translate Int
+$$
+t(key) = key\
+c(x) = x \mod M\
+h(key) = key \mod M
+$$
+如果 data randomly distributed，那么这是个很不错的 hash function.</p>
+<p>但是如果它们有很多都是 M 的 multiples，那么就不好。</p>
+<p>比如我们选取 M = 5.</p>
+<p>结果我们的数据是 10, 15, 20, 25</p>
+<p>那么 collusions 太多了.</p>
+<h4 id="translate-string">translate string</h4>
+<p>idea: sum up ascii of chars</p>
+<p>但是 Bad: "stop", "post", "tops" 的 hash address 都一样.</p>
+<p>太多 collusions.</p>
+<p>Idea: order matters. 所以我们可以 take </p>
+<p><img src="note-assets\{79C7EA6A-F46B-4030-AF8C-CE95FD1B2E58}.png" alt="{79C7EA6A-F46B-4030-AF8C-CE95FD1B2E58}" style="zoom:50%;" /></p>
+<p>基于长度。每次读到新的位，前面的位的 hash value 就乘以 10.</p>
+<p>这样确保了：1. 长度短的比长度长的要尽量 hash int 更大；2. 越前面的字符权重越大</p>
+<h3 id="compression">Compression</h3>
+<h2 id="lec-16-hash-collision-resolution">Lec 16: Hash Collision Resolution</h2>
+<h2 id="lab-7-hashing">Lab 7 Hashing</h2>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="notes-01-08.html" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="notes-17-25.html" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="notes-01-08.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="notes-17-25.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="javascripts/mathjax.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
