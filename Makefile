@@ -1,6 +1,6 @@
 .PHONY: docs deploy depoly
 
-DEPTH ?= 2
+DEPTH ?= 3
 
 docs:
 	python scripts/gen_mkdocs.py --depth $(DEPTH)
