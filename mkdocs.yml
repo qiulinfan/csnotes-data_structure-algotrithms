@@ -1,0 +1,48 @@
+site_name: 'CS Notes'
+docs_dir: docs
+theme:
+  name: readthedocs
+markdown_extensions:
+  - toc
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+use_directory_urls: false
+nav:
+  - Home: index.md
+  - 'notes 01 08':
+      - 'Overview': notes-01-08.md
+      - 'Lab 1': notes-01-08.html#lab-1
+      - 'Lec 2': notes-01-08.html#lec-2
+      - 'Lec 3': notes-01-08.html#lec-3
+      - 'Lec 5 - Recursion': notes-01-08.html#lec-5-recursion
+      - 'Lec 6 - Arrays &amp; Containers': notes-01-08.html#lec-6-arrays-containers
+      - 'Lab 2': notes-01-08.html#lab-2
+      - 'Lec 7 - STL': notes-01-08.html#lec-7-stl
+      - 'Lec 8 - Heap &amp; PQ &amp; Heapsort': notes-01-08.html#lec-8-heap-pq-heapsort
+  - 'notes 09 16':
+      - 'Overview': notes-09-16.md
+      - 'Lec 9 - ordered &amp; sorted containers': notes-09-16.html#lec-9-ordered-sorted-containers
+      - 'Lec 10 Elementary Sorting': notes-09-16.html#lec-10-elementary-sorting
+      - 'Lec 11: Quicksort': notes-09-16.html#lec-11-quicksort
+      - 'Lec 12: Mergesort': notes-09-16.html#lec-12-mergesort
+      - 'Lec 13 strings and seqs': notes-09-16.html#lec-13-strings-and-seqs
+      - 'Lab 5 (Sorting)': notes-09-16.html#lab-5-sorting
+      - 'Lab 6 (Maps and sets)': notes-09-16.html#lab-6-maps-and-sets
+      - 'Lec 15: hashing': notes-09-16.html#lec-15-hashing
+      - 'Lec 16: Hash Collision Resolution': notes-09-16.html#lec-16-hash-collision-resolution
+      - 'Lab 7 Hashing': notes-09-16.html#lab-7-hashing
+  - 'notes 17 25':
+      - 'Overview': notes-17-25.md
+      - 'Lec 17 (Trees)': notes-17-25.html#lec-17-trees
+      - 'Lec 18 (BST &amp; AVL tree)': notes-17-25.html#lec-18-bst-avl-tree
+      - 'Lec 19 (Graphs)': notes-17-25.html#lec-19-graphs
+      - 'Lec 20 (MST)': notes-17-25.html#lec-20-mst
+      - 'Lab 09 (Graphs)': notes-17-25.html#lab-09-graphs
+      - 'Lec 21 (Algorithm Family)': notes-17-25.html#lec-21-algorithm-family
+      - 'Lec 22 (Backtracking &amp;&amp; branch and bound)': notes-17-25.html#lec-22-backtracking-branch-and-bound
+      - 'Lec 23 (DP)': notes-17-25.html#lec-23-dp
+      - 'Lec 24 (Knapsack and Floyd''s algorithm)': notes-17-25.html#lec-24-knapsack-and-floyds-algorithm
+      - 'Lab 10 (DP)': notes-17-25.html#lab-10-dp
